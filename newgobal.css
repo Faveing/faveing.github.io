@@ -6,7 +6,7 @@ eBay Global
 body																			{ margin:0 2px !important; padding:0 !important; }
 .stBadge																		{ min-width: 320px; max-width:100%; }
 .su-bg																			{ width:100% !important; }
-.su-bg *																		{ margin:0; padding:0; vertical-align:top; max-width:100%; }
+.su-bg *																		{ margin:0; padding:0; vertical-align:top; }
 .su-bg img																	{ border:0; }
 .su-bg-02																	{ width:100%; max-width:100%; padding:0; display:block; }
 .su-bg, .su-bg-02, .su-content									{ margin:0 auto; text-align:center; vertical-align:top; }
