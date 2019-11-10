@@ -638,3 +638,247 @@ eBay Category Page
   from {opacity: .4}
   to {opacity: 1}
 }
+
+.product_carasel {
+  background-color: transparent;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.product_carasel .content{
+  height: auto;
+  width: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.product_carasel img {
+  float: left;
+  /* height: 300px; */
+  /* height: 20vw; */
+  height: 300px;
+  max-width: 100%;
+  padding: 10px 10px 10px 10px;
+}
+
+@media screen and (max-width: 1225px) {
+  .product_carasel img {
+    height: 250px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .product_carasel img {
+    height: 150px;
+  }
+}
+
+.product_carasel #section1 {
+  /* max-width: 100px; */
+  background-color: transparent;
+}
+
+.product_carasel #section2 {
+  background-color: transparent;
+}
+.product_carasel #section3 {
+  background-color: transparent;
+}
+
+.product_carasel .controls #button1 {
+  padding: 15px 32px;
+  /* background: black; */
+  background: gray;
+  height: 300px;
+  border-radius: 12px;
+  border: none;
+  float: left;
+  width: 100px;
+
+}
+.product_carasel .controls #button2 {
+  padding: 15px 32px;
+  height: 300px;
+  border-radius: 12px;
+  /* background: black; */
+  background: grey;
+  /* background-size: 300%; */
+  border: none;
+  float: right;
+  width: 100px;
+}
+
+/* .product_carasel .controls #button1:hover {
+  padding: 15px 32px;
+  background: url(https://www.designbolts.com/wp-content/uploads/2012/11/Dark-Geometric-Semi-Dark-Seamleass-Pattern-for-website-backgrounds.jpg);;
+  height: 300px;
+  border-radius: 12px;
+  border: 2px black solid;
+  border: none;
+  float: left;
+  width: 100px;
+}
+
+.product_carasel .controls #button2:hover {
+  padding: 15px 32px;
+  height: 300px;
+  border-radius: 12px;
+  background: url(https://www.designbolts.com/wp-content/uploads/2012/11/Dark-Geometric-Semi-Dark-Seamleass-Pattern-for-website-backgrounds.jpg);;
+  border: 2px black solid;
+  float: right;
+  width: 100px;
+} */
+
+@media screen and (max-width: 1225px) {
+  .product_carasel .controls #button1 {
+    height: 250px;
+  }
+  .product_carasel .controls #button2 {
+    height: 250px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .product_carasel .controls #button1 {
+    height: 150px;
+  }
+  .product_carasel .controls #button2 {
+    height: 150px;
+  }
+}
+
+.spacer {
+  height: 1100px;
+}
+
+@media screen and (max-width: 1125px) {
+   .spacer {
+     height: 0px;
+   }
+}
+
+.info_menu {
+  background: url(https://www.designbolts.com/wp-content/uploads/2012/11/Dark-Geometric-Semi-Dark-Seamleass-Pattern-for-website-backgrounds.jpg);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  /* margin-top: 1px; */
+}
+
+.info_menu #section1 a {
+  font-size: 20px;
+  text-decoration: none;
+  margin-top: 3px;
+  /* font-family:"Ropa Sans", sans-serif; 
+  text-decoration:none; */
+}
+.info_menu #section2 a {
+  font-size: 20px;
+  text-decoration: none;
+  margin-top: 3px;
+  /* font-family:"Ropa Sans", sans-serif; 
+  text-decoration:none; */
+}
+.info_menu #section3 a {
+  font-size: 20px;
+  text-decoration: none;
+  margin-top: 3px;
+  /* font-family:"Ropa Sans", sans-serif; 
+  text-decoration:none; */
+}
+.contactus {
+  background: url(https://www.designbolts.com/wp-content/uploads/2012/11/Dark-Geometric-Semi-Dark-Seamleass-Pattern-for-website-backgrounds.jpg);
+  height: 600px;
+  width: 50%;
+  transform: translate(50%);
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1125px) {
+  .contactus {
+    width: 100%;
+    transform: translate(0);
+  }
+}
+
+.contactus #header {
+  /* background: grey; */
+  border-bottom: 1px solid darkgray;
+  padding-top:20px;
+  padding-bottom: 20px; 
+}
+
+.contactus #header p{
+  font-size: 30px;
+}
+
+.contactus #content p {
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: left;
+  font-size: 20px;
+}
+
+.shipping {
+  background: url(https://www.designbolts.com/wp-content/uploads/2012/11/Dark-Geometric-Semi-Dark-Seamleass-Pattern-for-website-backgrounds.jpg);
+  height: 600px;
+  width: 50%;
+  transform: translate(50%);
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1125px) {
+  .shipping {
+    width: 100%;
+    transform: translate(0);
+  }
+}
+
+.shipping #header {
+  border-bottom: 1px solid darkgray;
+  padding-top:20px;
+  padding-bottom: 20px; 
+}
+
+.shipping #header p{
+  font-size: 30px;
+}
+
+.shipping #content p {
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: left;
+  font-size: 20px;
+}
+.About {
+  background: url(https://www.designbolts.com/wp-content/uploads/2012/11/Dark-Geometric-Semi-Dark-Seamleass-Pattern-for-website-backgrounds.jpg);
+  height: 600px;
+  width: 100%;
+  width: 50%;
+  transform: translate(50%);
+  /* margin-bottom: 20px; */
+}
+
+@media screen and (max-width: 1125px) {
+  .About {
+    width: 100%;
+    transform: translate(0);
+  }
+}
+
+.About #header {
+  border-bottom: 1px solid darkgray;
+  padding-top:20px;
+  padding-bottom: 20px; 
+}
+
+.About #header p{
+  font-size: 30px;
+}
+
+.About #content p {
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: left;
+  font-size: 20px;
+}
