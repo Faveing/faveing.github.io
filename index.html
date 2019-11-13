@@ -94,7 +94,7 @@
 	<h4 id="su-side-tbar-cats" class="su-ttba su-fftb su-brdt su-bktt"><div class="su-tins su-ffac">YuGiOh Deck Lots</div></h4>
 	<div id="su-side-cats" class="su-sbox su-brdm su-bklt"><div class="su-tins">
 		<ul class="lev1">
-			<li><a target="_blank" href="https://www.ebay.com/itm/DREAM-MIRROR-DECK-CHIM-RIRA-IKELOS-MORPHEUS-HYPNAGOGIA-ONEIROS-PHANTASOS-YuGiOh/202806528155?hash=item2f3836089b">DREAM MIRROR DECK CHIM RIRA: IKELOS MORPHEUS HYPNAGOGIA ONEIROS PHANTASOS YuGiOh</a></li>
+			<li><a target="_blank" href="https://www.ebay.com/itm/DREAM-MIRROR-DECK-CHIM-RIRA-IKELOS-MORPHEUS-HYPNAGOGIA-ONEIROS-PHANTASOS-YuGiOh/202806528155?hash=item2f3836089b">Dream Mirror Deck CHIM RIRA: Ikelos Morpheus Hypnagogia Oneiros Phantasos YuGiOh</a></li>
 					<!-- <li><a target="_blank" href="https://www.ebay.com/str/FTD-Games/YuGiOh-Card-Lots/_i.html?_storecat=9169804014">Dream Mirror</a></li> -->
 					<!-- <li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/YUGIOH-SINGLES/_i.html?_storecat=26691736014">Tenyi Deck CHIM RIRA</a></li> -->
 		</ul>
@@ -286,13 +286,13 @@ Before leaving a negative feedback please message us so we can help create a mor
 	</div> -->
 	
 	<div class="info_menu">
-		<div id="section1"><a href="#shipping" target="_top">Shipping Policy</a></div>
-	</div>
-	<div class="info_menu">
 		<div id="section2"><a href="#contactus" target="_top">Contact Us</a></div>
 	</div>
 	<div class="info_menu">
 		<div id="section3"><a href="#About"target="_top">About Us</a></div>
+	</div>
+	<div class="info_menu">
+			<div id="section1"><a href="#shipping" target="_top">Shipping Policy</a></div>
 	</div>
     <!-- <div id="su-main-shop" class="su-prom su-prot"><div class="su-tins">
 	 	<span class="su-left"><span class="su-font">simplyunlucky</span><br>No One Sells Better!</span>
@@ -310,8 +310,8 @@ Before leaving a negative feedback please message us so we can help create a mor
 <div class="spacer"></div>
 <div class="product_carasel">
 	<div class="controls">
-		<button class="btn" id="button1" onclick="prevPage()"></button>
-		<button class="btn" id="button2" onclick="nextPage()"></button>
+		<button class="btn" id="button1" onclick="prevPage()"><i class="fa fa-arrow-left fa-5x"></i></button>
+		<button class="btn" id="button2" onclick="nextPage()"><i class="fa fa-arrow-right fa-5x"></i></button>
 	</div>
 	<div class="content">
 		<div id="section1">
@@ -336,36 +336,44 @@ Before leaving a negative feedback please message us so we can help create a mor
 
 <!-- Description area -->
 
-
-<section id="shipping">
-	<div class="shipping">
-		<div id=header>
-			<p>Shipping Policy</p>
-		</div>
-		<div id="content">
-			<p>Enter Shipping Policy</p>
-		</div>
-	</div>
-</section>
-
 <div class="contactus" id="contactus">
-	<div id="header">
-		<p>Contact Us!</p>
+	<div class="bannerimage">
 	</div>
-	<div id="content">
-		<p>Phone Number: 2098572805</p>
-		<p>Email: simplysquadsq@gmail.com</p>
+
+	<div id="content-right">
+		<p>Phone Number:</p>
+		<p style="text-align: right;">209-857-2805</p>
+		<p>Email:</p>
+		<p style="text-align: right;">simplysquadsq@gmail.com</p>
+	</div>
+	<div id="content-left">
+		<p>Ebay Contact</p>
+		<button onclick="window.location.href = 'https://contact.ebay.com/ws/eBayISAPI.dll?FindAnswers&requested=simplyunlucky&_trksid=p2545226.m2531.l4583&rt=nc';" id="contactbutton">Contact</button>
 	</div>
 </div>
 
 <div class="About" id="About">
-	<div id="header">
-		<p>About Us</p>
+	<div id="bannerimage">
+		<img style="width: 100%;" src="banner 1.png">
 	</div>
-	<div id="content">
-		<p>Write About Section</p>
+	<div class="text">
+		<h3>About Us</h3>
+		<p>At SimplyUnlucky, YuGiOh fans are at the heart of everything we do.</p>
+		<p>With them and our great partners, we help make the YuGiOh experience more extraordinary.</p>
 	</div>
 </div>
+
+<section id="shipping">
+	<div class="shipping">
+		<div class="banner">
+			<img id="bannerimage" src="Banner 1.png">
+		</div>
+		<div id="content">
+			<h3>Shipping Policy</h3>
+			<p>We will make sure every order get to its destination on time!</p>
+		</div>
+	</div>
+</section>
 
 </div>
 <div id="su-foot-wrap">
@@ -386,7 +394,7 @@ Before leaving a negative feedback please message us so we can help create a mor
 			</div>
 		</div>
 		<div id="su-foot-col4" class="su-foot-cols">
-			<div id="su-foot-whys" style="float: right;">
+			<div id="su-foot-whys">
 				<a href="https://feedback.ebay.com/ws/eBayISAPI.dll?ViewFeedback2&userid=simplyunlucky&ftab=AllFeedback&myworld=true&rt=nc"><h3>Feedback</h3></a>
 			</div>
 		</div>
@@ -424,7 +432,8 @@ Before leaving a negative feedback please message us so we can help create a mor
 		{link: "https://i.ebayimg.com/images/g/D68AAOSwR8pdqgBb/s-l1600.jpg"},
 		{link: "https://i.ebayimg.com/images/g/KoUAAOSw~bldqoYw/s-l1600.jpg"},
 		{link: "https://i.ebayimg.com/images/g/-f0AAOSwYBpdqfVp/s-l1600.jpg"},
-		{link: "https://i.ebayimg.com/images/g/4hgAAOSwm5NdqoQk/s-l1600.jpg"}
+		{link: "https://i.ebayimg.com/images/g/4hgAAOSwm5NdqoQk/s-l1600.jpg"},
+		{link: "https://i.ebayimg.com/images/g/fF8AAOSwKUZdsRxe/s-l1600.png"}
 	]
 
 	var listlinks = [
@@ -435,7 +444,8 @@ Before leaving a negative feedback please message us so we can help create a mor
 		{link: "https://www.ebay.com/itm/MAGIC-THE-GATHERING-WAR-OF-THE-SPARK-PRERELEASE-PACK/202805867566?hash=item2f382bf42e:g:D68AAOSwR8pdqgBb"},
 		{link: "https://www.ebay.com/itm/POKEMON-DETECTIVE-PIKACHU-COLLECTOR-CHEST/202805867522?epid=27030029938&hash=item2f382bf402:g:KoUAAOSw~bldqoYw"},
 		{link: "https://www.ebay.com/itm/ULTRA-PRO-MAT-MTG-WAR-ALT-SORIN-Playmat/202805867542?epid=16032814445&hash=item2f382bf416:g:-f0AAOSwYBpdqfVp"},
-		{link: "https://www.ebay.com/itm/YuGiOh-WCS-2019-HAT/202805867570?hash=item2f382bf432:g:4hgAAOSwm5NdqoQk"}
+		{link: "https://www.ebay.com/itm/YuGiOh-WCS-2019-HAT/202805867570?hash=item2f382bf432:g:4hgAAOSwm5NdqoQk"},
+		{link: "https://www.ebay.com/itm/Firewall-Dragon-Darkfluid-CHIM-EN037-Secret-Rare-1st-Edition-YuGiOh/202806024976?hash=item2f382e5b10:g:fF8AAOSwKUZdsRxe"}
 	]
 
 	img1.src = list[0].link;
