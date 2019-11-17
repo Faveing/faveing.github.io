@@ -1,0 +1,139 @@
+<html>
+    <head>
+        <title>SimplyUnlucky</title>
+    </head>
+    <style>
+        .su-main .su-title {
+            background: black;
+            text-align: center;
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+        .su-topnav {
+            display: inline-block;
+            background-color: black;
+            overflow: hidden;
+            width: 100%;
+        }
+        .su-topnav a {
+            font-family: Arial;
+            float:left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .su-topnav #su-1 {
+            padding-left: 13%;
+        }
+        .su-topnav #su-2 {
+            padding-left: 13%;
+        }
+        .su-topnav #su-3 {
+            padding-left: 13%;
+        }
+        .su-topnav #su-4 {
+            padding-left: 13%;
+        }
+        .su-topnav #su-5 {
+            padding-left: 13%;
+        }
+        /* The sidebar menu */
+        .su-sidenav {
+            float: left;
+            /* height: 100%; Full-height: remove this if you want "auto" height */
+            width: 160px; /* Set the width of the sidebar */
+            position: relative; /* Fixed Sidebar (stay in place on scroll) */
+            /* z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: black; 
+            overflow-x: hidden;
+            padding-top: 20px;
+            margin-left: 28%;
+            transform: translate(-10%, -10%); */
+            margin: 0 auto;
+        }
+
+        @media screen and (max-width:1840px) {
+            .su-sidenav {
+                float: left;
+                /* height: 100%; Full-height: remove this if you want "auto" height */
+                width: 160px; /* Set the width of the sidebar */
+                position: relative; /* Fixed Sidebar (stay in place on scroll) */
+                z-index: 1; /* Stay on top */
+                top: 0; /* Stay at the top */
+                left: 0;
+                background-color: black; /* Black */
+                overflow-x: hidden; /* Disable horizontal scroll */
+                padding-top: 20px;
+                margin-left: 0%;
+                transform: translate(-10%, -10%);
+            }
+        }
+
+        /* The navigation menu links */
+        .su-sidenav a {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+        }
+
+        /* When you mouse over the navigation links, change their color */
+        .su-sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        /* Style page content */
+        .su-main {
+            /* margin-left: 160px; Same as the width of the sidebar */
+            padding: 0px 10px;
+        }
+
+        /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+        @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+        }
+        .su-ad {
+            display: inline-block;
+            align-items: center;
+            justify-content: center;
+            background: white; 
+            margin: 0 auto;
+        }
+        #su-ad-photo {
+            width: 300;
+            height: 300;
+        }
+        .su-ad .su-main-ad {
+            width: 680px;
+            height: 480px;
+            background: black;
+        }
+    </style>
+    <body class="su-main">
+        <div class="su-title"><p><img src="test.png"></p></div>
+        <div class="su-topnav">
+            <a id="su-1">Home</a>
+            <a id="su-2">All Listings</a>
+            <a id="su-3">YuGiOh</a>
+            <a id="su-4">MTG</a>
+            <a id="su-5">Pokemon</a>
+        </div>
+        <div class="su-sidenav">
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Clients</a>
+                <a href="#">Contact</a>
+        </div>
+        <div class="su-ad">
+            <div class="su-main-ad">
+                <img id="su-ad-photo" src="https://i.ebayimg.com/images/g/snsAAOSwt6RduJRf/s-l1600.jpg">
+            </div>
+        </div>
+    </body>
+</html>

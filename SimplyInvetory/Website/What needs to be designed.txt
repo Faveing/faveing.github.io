@@ -1,0 +1,6 @@
+What needs to be designed:
+    A logo for the top of the site
+    A background for the website
+    A background for the advertisment section of the site, sidebar, and bar undow the logo
+    A background for the "SimplyUnlucky No one sells better" section at the bottom of the site.
+    
