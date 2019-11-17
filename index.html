@@ -1,6 +1,5 @@
 <html>
 	<title>eBay</title>
-	<table align="center" style="border-spacing: 0px; width: 100%;">
 
 	<style>
 		/* -------------------------------------------------- 
@@ -239,7 +238,7 @@
 		.su-bg .su-tbox, .su-bg .su-tbox p, 
 		.su-bg .su-tbox a, .su-bg .su-tbox li, 
 		.su-bg .su-pbox, .su-bg .su-pbox p,
-		.su-bg .su-pbox a, .su-bg .su-pbox li 						{ text-align:left; }
+		.su-bg .su-pbox a, .su-bg .su-pbox li 						{ text-align:left; padding-top: 2px; text-align: left;}
 		.su-bg #su-main ul														{ list-style-type:disc; margin-left:20px; padding-left:0px; list-style-position:outside; }
 		.su-bg #su-main ul li													{ padding:0 0 8px; }
 		.su-bg #su-main ol														{ margin-left:10px; margin-bottom:15px; padding-left:10px; }
@@ -307,7 +306,7 @@
 		#su-temp-gall img														{ margin:0 auto; display:block; border:0 none; width:auto; height:auto; }
 		#su-temp-gall #su-gall-main										{ background:#FFF none; margin-bottom:10px; position:relative; }
 		#su-temp-gall #su-gall-main img								{ width:auto; max-width:100%; height:auto; max-height:100%; margin:0 auto; }
-		#su-temp-gall #su-gall-thmb h5								{ font-size:12px; font-weight:normal; text-align:center; margin:0; padding:0 0 5px; width:100%; clear:both; }
+		#su-temp-gall #su-gall-thmb h5								{ font-size:12px; font-weight:normal; text-align:center; margin:0; padding:0 0 5px; width:100%; clear:both; padding-top: 5px;}
 		#su-temp-gall #su-gall-thmb h5 span						{ display:inline-block; width:18px; height:18px; background-color:transparent; background-position:left center; background-repeat:no-repeat; }
 		#su-temp-gall #su-gall-thmb .su-hold						{ width:100px; height:100px; background:#FFF none; margin:3px 2px; display:inline-block; }
 		#su-temp-gall #su-gall-thmb img								{ max-width:90px; max-height:90px; }
@@ -481,7 +480,7 @@
 		/* ---------------------------------------- 
 		eBay Global
 		---------------------------------------- */
-		.su-bg																			{ background:white fixed repeat top; }
+		.su-bg																			{ background:black fixed repeat top; }
 		.su-bg-02, .su-content, 
 		.su-bg .su-content-width, #su-head, #su-foot		{ max-width:1400px; }
 		.su-bg-02																	{ max-width:100% }
@@ -496,7 +495,7 @@
 		@media screen and (max-width:1020px) 					{ #LeftPanel { display:none !important; } }
 
 		#RightPanel																	{ width:100% !important; max-width:280px !important; }
-		#su-template #RightPanel											{ width:20% !important; padding-left: 30px;}
+		#su-template #RightPanel											{ width:25% !important; padding-left: 20px;}
 		#RightPanel .su-tbar, 
 		#RightPanel .su-main-ttop, #RightPanel .su-tmid, 
 		#RightPanel .su-tbtm									     		 	{ width:100%; max-width:280px !important; }
@@ -505,7 +504,7 @@
 		#CentralArea 															{ width:100%; max-width:1105px !important }
 		@media screen and (min-width:1440px) 					{ #CentralArea { min-width:1105px; } }
 		#CentralArea #su-main											{ width:100%;}
-		#su-template #su-main												{ width:60%; max-width:1105px !important; }
+		#su-template #su-main												{ width:50%; max-width:1105px !important; }
 
 		#LeftPanel																	{ margin:0 0 0 0px !important; }
 
@@ -518,7 +517,7 @@
 
 		.su-bg *                                     									{ font-family:"Ropa Sans", sans-serif; text-decoration:none; } /* fonts */
 		.su-bg, .su-bg p, .su-bg a, .su-bg li, .su-bg table,
-		.su-bg form select														{ font-size:15px; line-height:20px; color:black; word-wrap:break-word; }
+		.su-bg form select														{ font-size:12px; line-height:20px; color:black; word-wrap:break-word; }
 		/* .su-bg a:link, .su-bg a:visited, .su-bg a:active		{ color:#FFF; } */
 		.su-bg a:hover							            					{ color:#03C2B2; }
 		#CentralArea h1, #su-main h1								{ color:black; text-align:center; font-size:22px; line-height:26px; font-weight:bold; font-style:italic; margin:0; padding:0 0 15px; }
@@ -534,16 +533,13 @@
 		.su-bg .su-brdd															{ border:1px solid #2B2B2B; }
 
 		.su-bg #LeftPanel .su-bklt,
-		.su-bg #su-main .su-bklt											{ background: white 0 0 repeat fixed; } /* text boxes */ /*TEXT BOX BACKGROUND */
-
-		.su-bg #RightPanel .su-bklt,
-		.su-bg #su-main .su-bklt											{ background: white 0 0 repeat fixed; } /* text boxes */ /*TEXT BOX BACKGROUND */
-
+		.su-bg #su-main .su-bklt											{ background: white 0 0 repeat fixed; border: 1px red solid} /* text boxes */ /*TEXT BOX BACKGROUND */
+/* 
 		.su-bg #LeftPanel .su-brdm,
-		.su-bg #su-main .su-brdm											{ border:1px solid #2A2A2A; }
+		.su-bg #su-main .su-brdm											{ border:1px solid #2A2A2A; } */
 
-		.su-bg #RightPanel .su-brdm,
-		.su-bg #su-main .su-brdm											{ border:1px solid #2A2A2A; }
+		/* .su-bg #RightPanel .su-brdm,
+		.su-bg #su-main .su-brdm											{ border:0px solid red; } */
 
 		/* no border content box */
 		.su-bg .su-sbox, #su-deal, .su-bg .su-tbox,
@@ -561,10 +557,10 @@
 		.su-bg .su-fftb, .su-bg .su-fftb p, .su-bg .su-fftb a	{ color:black; font-size:22px; line-height:28px; font-weight:bold; font-style:italic; text-transform:uppercase; text-shadow:1px 1px #000; }
 		.su-bg #su-main .su-fftb											{ text-align:center;}
 		.su-bg #LeftPanel .su-bktt,
-		.su-bg #su-main .su-bktt											{ background:#000 url(http://toiletradio.us/wp-content/uploads/2017/10/wallpaper_800x600_1023.jpg) center top fixed repeat; } /* THE TOP TEXT AREA BACKGROUND IS HERE! */
+		.su-bg #su-main .su-bktt											{ background:white center top fixed repeat; border: red solid 3px; } /* THE TOP TEXT AREA BACKGROUND IS HERE! */
 
 		.su-bg #RightPanel .su-bktt,
-		.su-bg #su-main .su-bktt											{ background:white /* THE TOP TEXT AREA BACKGROUND IS HERE! */}
+		.su-bg #su-main .su-bktt											{ background:black; border-bottom: 1px red solid; color:white;}
 
 		.su-bg #su-main [type=radio] ~ label.su-bktt						{ background-image:url(images/nt-icon-plus.png); background-position:right 10px center; background-repeat:no-repeat; padding-right:28px !important; }
 		.su-bg #su-main [type=radio]:checked ~ label.su-bktt	{ background-image:url(images/nt-icon-mins.png); }
@@ -601,8 +597,8 @@
 		eBay Header
 		---------------------------------------- */
 		.su-bg #su-head-wrap-01										{ background:white 0 0 repeat; border:1px solid #444; border-width:2px 0; }
-		.su-bg #su-head-wrap-02										{ background:#b62121;}
-		.su-bg #su-head-wrap-03										{ background:#b62121 0 0 repeat; }
+		.su-bg #su-head-wrap-02										{ background:black;}
+		.su-bg #su-head-wrap-03										{ background:black 0 0 repeat;}
 		.su-bg #su-head-01													{ padding:5px 0; }
 				
 		.su-bg #su-head-logo												{ margin:15px auto; } /* logo */
@@ -741,13 +737,13 @@
 		.su-bg #RightPanel .lev2,
 		.su-bg #RightPanel .lev3												{ padding-bottom:5px; }
 		/* add dividers */
-		.su-bg #RightPanel .lev1 li											{ border:1px solid #3A3A3A; border-width:1px 0 0; }
+		.su-bg #RightPanel .lev1 li											{ border-width:1px 0 0; }
 		.su-bg #RightPanel .lev1 li:first-child,
 		.su-bg #RightPanel .lev2 li,
 		.su-bg #RightPanel .lev3 li											{ border-width:0; }
 		/* add bullets / icons */
 		.su-bg #RightPanel .lev1 li a,
-		.su-bg #RightPanel .lev1 li span				        			{ background:transparent url(images/nt-icon-lev1.png) 10px 10px no-repeat; padding:7px 10px 7px 24px; }
+		.su-bg #RightPanel .lev1 li span				        			{ background:transparent 10px 10px no-repeat; text-decoration: none; }
 		.su-bg #RightPanel .lev1 li a:hover,
 		.su-bg #RightPanel .lev1 li span				            		{ background-image:url(images/nt-icon-lev1h.png); }
 		.su-bg #RightPanel .lev2 li a,
@@ -834,14 +830,14 @@
 		/* ---------------------------------------- 
 		eBay Listing Template
 		---------------------------------------- */
-		#su-template.su-bg #su-main-gall h1						{ text-transform:uppercase; font-style:italic; border:1px solid #444; border-width:0 0 1px; padding:8px 0; margin-bottom:5px; }
+		#su-template.su-bg #su-main-gall h1						{ text-transform:uppercase; font-style:italic; border:1px solid #444; border-width:0 0 1px; padding:8px 0; margin-bottom:5px; text-decoration: none;}
 		#su-template #su-main-desc h5								{ display:none; }
-		.su-bg #su-main #su-gall-right									{ background-color:transparent; }
+		.su-bg #su-main #su-gall-right									{ background-color:transparent; text-align: left; }
 
 		#su-temp-gall.su-bttm #su-gall-main						{ border:1px solid #444; background-color:#111; } /* product photo gallery */
 		#su-temp-gall #su-gall-thmb h5								{ font-size:15px !important; text-transform:uppercase; font-style:italic; color:black; }
-		#su-temp-gall.su-bttm #su-gall-thmb .su-hold						{ border:1px solid #444; background-color:#111; }
-		#su-temp-gall.su-bttm #su-gall-thmb .su-hold:hover			{ border:1px solid #03C2B2; }
+		#su-temp-gall.su-bttm #su-gall-thmb .su-hold						{ border:1px solid red; background-color:#111; }
+		#su-temp-gall.su-bttm #su-gall-thmb .su-hold:hover			{ border:1px solid red; }
 		#su-temp-gall #su-gall-thmb h5 span						{ background-image:url(images/nt-icon-gall.png) }
 		#su-temp-gall.su-bttm .su-cntr								{ background-color:transparent; }
 
@@ -885,7 +881,7 @@
 		}
 		#su-foot-main .su-foot-cols h3									{ /*color:#03C2B2;*/ font:bold 16px/19px Exo, sans-serif; font-style:italic; margin:0 0 20px; padding:0; clear:both; }
 		#su-foot-main .su-foot-cols ul									{ list-style-type:none; margin:0; padding:0; }
-		#su-foot-main .su-foot-cols ul li								{ background:transparent url(images/nt-icon-lev1.png) 0 3px no-repeat; padding:0 0 10px 16px; }
+		#su-foot-main .su-foot-cols ul li								{ background:transparent 0 3px no-repeat; padding:0 0 10px 16px; }
 		#su-foot-main .su-foot-cols #su-foot-menu ul li:hover { background-image:url(images/nt-icon-lev1h.png); }
 		#su-foot-main .su-foot-cols ul li,
 		#su-foot-main .su-foot-cols ul li a,
@@ -1177,35 +1173,30 @@
 		height: 1100px;
 		}
 
-		.info_menu {
-		background: #b62121;
-		padding-top: 10px;
-		padding-bottom: 10px;
-		margin-top: 2px;
-		margin-bottom: 30px;
-		border: 2px solid black;
-		color: black;
-		/* margin-top: 1px; */
+		.infomenu {
+			width:140px;
+			background-color: black;
+			padding-top: 30px;
+			padding-bottom: 30px;
+			margin: 0 auto;
 		}
 
-		.info_menu #section1 a {
-		font-size: 20px;
-		text-decoration: none;
-		/* font-family:"Ropa Sans", sans-serif; 
-		text-decoration:none; */
+		.infomenu .contents {
+			width: 100%;
 		}
-		.info_menu #section2 a {
-		font-size: 20px;
-		text-decoration: none;
-		/* font-family:"Ropa Sans", sans-serif; 
-		text-decoration:none; */
+
+		.infomenu .contents .text {
+			margin: 0 auto;
+			color: white;
+			font-size: 30px;
+			margin-top: 10px;
 		}
-		.info_menu #section3 a {
-		font-size: 20px;
-		text-decoration: none;
-		/* font-family:"Ropa Sans", sans-serif; 
-		text-decoration:none; */
+
+		.infomenu .contents .text:hover {
+			margin-top: 9px;
+			border-bottom: red 1px solid;
 		}
+
 		.contactus {
 		background: url(https://www.designbolts.com/wp-content/uploads/2012/11/Dark-Geometric-Semi-Dark-Seamleass-Pattern-for-website-backgrounds.jpg);
 		height: 600px;
@@ -1288,8 +1279,8 @@
 		}
 
 		.shipping {
-		background: #b62121;
-		border: black 4px solid;
+		background: black;
+		/* border: red 4px solid; */
 		height: 600px;
 		width: 100%;
 		/* transform: translate(34%); */
@@ -1318,25 +1309,30 @@
 		}
 
 		.shipping #content {
-		padding-left: 30%;
+		/* padding-left: 30%; */
 		padding-top: 80px;
 		text-align: left;
 		font-family: "Ropa Sans", sans-serif;
 		}
 
 		.shipping #content p {
-		/* padding-left: 5px;
-		padding-top: 5px; */
-		/* padding-bottom: 5px; */
-		text-align: left;
-		font-size: 15px;
+			font-size: 30px;
+			text-align: center;
+			padding-top: 20px;
+			color: white;
+		}
+		.shipping #content h3 {
+			text-align: center;
+			font-size: 50px;
+			padding-bottom: 30px;
+			color: white;
 		}
 		.About {
-		background: #b62121;
-		border: 4px solid black;
+		background: black;
+		/* border: 4px solid red; */
 		height: 600px;
 		width: 100%;
-		padding-top: 20px;
+		/* padding-top: 20px; */
 		/* margin-bottom: 20px; */
 		height: 300px;
 		}
@@ -1347,8 +1343,20 @@
 
 		.About .text {
 		text-align: left;
-		padding-left: 30%;
+		/* padding-left: 30%; */
 		padding-top: 70px;
+		color: white;
+		}
+		.About .text p {
+		font-size: 30px;
+		text-align: center;
+		padding-top: 20px;
+		color: white;
+		}
+		.About .text h3 {
+		text-align: center;
+		font-size: 50px;
+		padding-bottom: 30px;
 		}
 		.About #header {
 		padding-top:20px;
@@ -1399,28 +1407,28 @@
 			z-index: 1;
 			position: relative;
 			background: white;
+			border: red 1px solid;
+			padding-top: 3px;
+			padding-left: 10px;
+			padding-right: 10px;
+			text-align: left;
 		}
 
 		.productexamples #section1 #description p {
 			padding-top: 310px;
 			/* padding-left: 0px; */
 			color: black;
+			font-size: 15px;
 		}
 
 		.productexamples #section1:hover #description{
+			transition: 0.5s ease-in-out;
 			visibility: visible;
-			border: black 3px solid;
 			border-radius: 3px;
 		}
 
 		.productexamples #section1 #description:hover {
 			visibility: visible;
-		}
-
-		.productexamples #section1 #description {
-			padding-top: 3px;
-			padding-left: 20px;
-			text-align: left;
 		}
 
 		.productexamples #section1 img {
@@ -1446,26 +1454,26 @@
 			z-index: 1;
 			position: relative;
 			background: white;
+			border: red 1px solid;
+			padding-top: 3px;
+			padding-left: 10px;
+			padding-right: 10px;
+			text-align: left;
 		}
 
 		.productexamples #section2 #description p {
 			padding-top: 310px;
+			font-size: 15px;
 		}
 
 		.productexamples #section2:hover #description{
+			transition: 0.5s ease-in-out;
 			visibility: visible;
-			border: black 3px solid;
 			border-radius: 3px;
 		}
 
 		.productexamples #section2 #description:hover {
 			visibility: visible;
-		}
-
-		.productexamples #section2 #description {
-			padding-top: 3px;
-			padding-left: 20px;
-			text-align: left;
 		}
 
 		.productexamples #section2 img {
@@ -1491,31 +1499,31 @@
 			z-index: 1;
 			position: relative;
 			background: white;
+			border: red 1px solid;
+			padding-top: 3px;
+			padding-left: 10px;
+			padding-right: 10px;
+			text-align: left;
 		}
 
 		.productexamples #section3 #description p {
 			padding-top: 310px;
+			font-size: 15px;
 		}
 
 		.productexamples #section3:hover #description{
 			visibility: visible;
-			border: black 3px solid;
 			border-radius: 3px;
+			transition: 0.5s ease-in-out;
 		}
 
 		.productexamples #section3 #description:hover {
 			visibility: visible;
 		}
 
-		.productexamples #section3 #description {
-			padding-top: 3px;
-			padding-left: 20px;
-			text-align: left;
-			
-		}
-
 		.productexamples #section3 #description p {
 			padding-top: 310px;
+			font-size: 15px;
 		}
 
 		.productexamples #section3 img {
@@ -1541,26 +1549,26 @@
 			z-index: 1;
 			position: relative;
 			background: white;
+			border: red 1px solid;
+			padding-top: 3px;
+			padding-left: 10px;
+			padding-right: 10px;
+			text-align: left;
 		}
 
 		.productexamples #section4 #description p {
 			padding-top: 310px;
+			font-size: 15px;
 		}
 
 		.productexamples #section4:hover #description{
 			visibility: visible;
-			border: black 3px solid;
 			border-radius: 3px;
 		}
 
 		.productexamples #section4 #description:hover {
 			visibility: visible;
-		}
-
-		.productexamples #section4 #description {
-			padding-top: 3px;
-			padding-left: 20px;
-			text-align: left;
+			transition: 0.5s ease-in-out;
 		}
 
 		.productexamples #section4 #description p {
@@ -1574,13 +1582,129 @@
 			position: relative;
 		}
 
+		.su-bg #RightPanel .lev1 li a p {
+			width: 100%;
+			text-align: left;
+			padding-bottom: 3px;
+		}
+
+		.su-bg #RightPanel .lev1 li a p:hover {
+			/* text-decoration: underline;
+			text-decoration-color: red; */
+			transition: 0.5s ease-in-out;
+			/* text-decoration: underline red; */
+			border-bottom: red solid 1px;
+		}
+
+		#su-template.su-bg #su-main-gall h1:hover {
+			color: red;
+			transition: 0.5s ease-in-out;
+		}
+
+		.su-bg #su-head-whys img:hover {
+			border-bottom: red 1px solid;
+		}
+
+		.menubar {
+			width: 70%;
+			/* max-width: 1000px; */
+			margin-top: 10px;
+			margin-bottom: 10px;
+			float: top;
+			max-width: 1330px;
+			margin: 0 auto;
+		}
+
+		.menubar #contents {
+			display: flex;
+			justify-content: space-evenly;
+		} 
+
+		.menubar #contents .buttons {
+			padding-bottom: 10px;
+			padding-top: 9px;
+			text-align: center;
+		}
+
+		.menubar #contents .buttons .text{
+			font-size: 30px;
+			color: white;
+			padding: 11px;
+			transition: 0.5s ease-in-out;
+		} 
+
+		.menubar #contents #link1 p:hover {
+			padding-bottom: 10px;
+			border-bottom: red 1px solid;
+		}
+
+		.menubar #contents #link2 p:hover {
+			padding-bottom: 10px;
+			border-bottom: red 1px solid;
+		}
+
+		.menubar #contents #link3 p:hover {
+			padding-bottom: 10px;
+			border-bottom: red 1px solid;
+		}
+
+		.menubar #contents #link4 p:hover {
+			padding-bottom: 10px;
+			border-bottom: red 1px solid;
+		}
+
+		.footer {
+			width: 100%;
+			height: 60px;
+			background-color: white;
+			display: flex;
+			justify-content: space-evenly;
+		}
+
+		.footer .contents {
+			padding-top:20px;
+		}
+		.footer .contents a {
+			color: black;
+			font-size: 20px;
+			text-decoration: none;
+		}
+
+		.footer .contents a:hover {
+			border-bottom: red 1px solid;
+			transition: 0.5s ease-in-out;
+		}
+
 		@media only screen and (width : 1024px) and (orientation : landscape) {    
     		.productexamples #section1 #description {
 				visibility: visible;
 			}
 		}
 
-		@media screen and (max-width: 1103px) {
+		@media screen and (max-width: 1226px) {
+
+			.shipping #content p {
+				font-size: 20px;
+				text-align: center;
+				padding-top: 20px;
+			}
+			.shipping #content h3 {
+				text-align: center;
+				font-size: 40px;
+				padding-bottom: 30px;
+			}
+
+			.About .text p {
+				font-size: 20px;
+				text-align: center;
+				padding-top: 20px;
+			}
+			.About .text h3 {
+				text-align: center;
+				font-size: 40px;
+				padding-bottom: 30px;
+			}
+
 			.productexamples #section1 img {
 				width:200px;
 			}
@@ -1643,21 +1767,200 @@
 			}
 		}
 
+		@media screen and (max-width: 820px) {
+
+			.shipping #content p {
+				font-size: 20px;
+				text-align: center;
+				padding-top: 20px;
+			}
+			.shipping #content h3 {
+				text-align: center;
+				font-size: 40px;
+				padding-bottom: 30px;
+			}
+
+			.About .text p {
+				font-size: 20px;
+				text-align: center;
+				padding-top: 20px;
+			}
+			.About .text h3 {
+				text-align: center;
+				font-size: 40px;
+				padding-bottom: 30px;
+			}
+
+			.productexamples #section1 img {
+				width:150px;
+			}
+			.productexamples #section1 #description {
+				width:170px;
+				height: 300px;
+				visibility: visible;
+				border: black 3px solid;
+				transform: translate(-10px, -160px);
+			}
+			.productexamples #section1 #description p {
+				padding-top: 160px;
+			}
+			.productexamples #section1 {
+				width:150px;
+				height: 280px;
+			}
+			.productexamples #section2 img {
+				width:150px;
+			}
+			.productexamples #section2 #description {
+				width:170px;
+				height: 300px;
+				visibility: visible;
+				border: black 3px solid;
+				transform: translate(-10px, -160px);
+			}
+			.productexamples #section2 #description p {
+				padding-top: 160px;
+			}
+			.productexamples #section2 {
+				width:150px;
+				height: 280px;
+			}
+			.productexamples #section3 img {
+				width:150px;
+			}
+			.productexamples #section3 #description {
+				width:170px;
+				height: 300px;
+				visibility: visible;
+				border: black 3px solid;
+				transform: translate(-10px, -160px);
+			}
+			.productexamples #section3 #description p {
+				padding-top: 160px;
+			}
+			.productexamples #section3 {
+				width:150px;
+				height: 280px;
+			}
+			.productexamples #section4 img {
+				width:150px;
+			}
+			.productexamples #section4 #description {
+				width:170px;
+				height: 300px;
+				visibility: visible;
+				border: black 3px solid;
+				transform: translate(-10px, -160px);
+			}
+			.productexamples #section4 #description p {
+				padding-top: 160px;
+			}
+			.productexamples #section4 {
+				width:150px;
+				height: 300px;
+			}
+		}
+
+		@media screen and (max-width: 690px) {
+
+		.shipping #content p {
+			font-size: 20px;
+			text-align: center;
+			padding-top: 20px;
+		}
+		.shipping #content h3 {
+			text-align: center;
+			font-size: 40px;
+			padding-bottom: 30px;
+		}
+
+		.About .text p {
+			font-size: 20px;
+			text-align: center;
+			padding-top: 20px;
+		}
+		.About .text h3 {
+			text-align: center;
+			font-size: 40px;
+			padding-bottom: 30px;
+		}
+
+		.productexamples #section1 img {
+			width:100px;
+		}
+		.productexamples #section1 #description {
+			width:120px;
+			height: 330px;
+			visibility: visible;
+			border: black 3px solid;
+			transform: translate(15px, -110px);
+		}
+		.productexamples #section1 #description p {
+			padding-top: 120px;
+		}
+		.productexamples #section1 {
+			width:150px;
+			height: 280px;
+		}
+		.productexamples #section2 img {
+			width:100px;
+		}
+		.productexamples #section2 #description {
+			width:120px;
+			height: 330px;
+			visibility: visible;
+			border: black 3px solid;
+			transform: translate(15px, -110px);
+		}
+		.productexamples #section2 #description p {
+			padding-top: 120px;
+		}
+		.productexamples #section2 {
+			width:150px;
+			height: 280px;
+		}
+		.productexamples #section3 img {
+			width:100px;
+		}
+		.productexamples #section3 #description {
+			width:120px;
+			height: 330px;
+			visibility: visible;
+			border: black 3px solid;
+			transform: translate(15px, -110px);
+		}
+		.productexamples #section3 #description p {
+			padding-top: 120px;
+		}
+		.productexamples #section3 {
+			width:150px;
+			height: 280px;
+		}
+		.productexamples #section4 img {
+			width:100px;
+		}
+		.productexamples #section4 #description {
+			width:120px;
+			height: 330px;
+			visibility: visible;
+			border: black 3px solid;
+			transform: translate(15px, -110px);
+		}
+		.productexamples #section4 #description p {
+			padding-top: 120px;
+		}
+		.productexamples #section4 {
+			width:150px;
+			height: 280px;
+		}
+}
+
 		@media screen and (max-width: 1264){
 		.contactus #content-right {
 			width: 30%;
 		}
 		.About .text {
 			padding-left: 20%;
-		}
-		}
-
-		@media screen and (max-width: 1225px) {
-		.product_carasel .controls #button1 {
-			height: 250px;
-		}
-		.product_carasel .controls #button2 {
-			height: 250px;
 		}
 		}
 		@media screen and (max-width: 1000px) {
@@ -1725,9 +2028,9 @@
 <meta name="viewport" cosuesu="width=device-width, initial-scale=1">
 <!-- <link href="https://raw.githubusercontent.com/Faveing/faveing.github.io/master/new.css" rel="stylesheet" type="text/css"> -->
 <!-- link href="https://raw.githubusercontent.com/Faveing/faveing.github.io/master/new.css" rel="stylesheet" type="text/css">< -->
-<link href="httpss://fonts.googleapis.com/css?family=Ropa+Sans:400,400i" rel="stylesheet">
-<link href="httpss://fonts.googleapis.com/css?family=Exo:400,400i,700,700i" rel="stylesheet">
-<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css">
+<link href="https://fonts.googleapis.com/css?family=Ropa+Sans:400,400i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Exo:400,400i,700,700i" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css">
 
 <div id="su-template" class="su-bg"><div class="su-bg-02 su-shao">
 
@@ -1737,25 +2040,27 @@
 	<div id="su-head-logo" class="su-proh su-prom"><a href="https://www.ebay.com/str/simplyunlucky?rt=nc&_oac=1" target="_blank"><img src="https://raw.githubusercontent.com/Faveing/faveing.github.io/master/Banner%201.png" alt="simplyunlucky Games eBay Store"></a></div>
 </div></div>
 
-<div id="su-head-wrap-03"><div id="su-head-03" class="su-content-width">
-	<div id="su-head-whys">
-		<a href="https://www.ebay.com/usr/simplyunlucky?_trksid=p2047675.l2559"><img style="filter: invert(100%);" id="su-head-whys-01" src="Banner1.png" alt="Home"></a>
-		<a href="https://www.ebay.com/sch/simplyunlucky/m.html?_nkw=&_armrs=1&_ipg=&_from="><img style="filter: invert(100%);" id="su-head-whys-02" src="Banner2.png" alt="All Listings"></a>
-		<a href="https://www.ebay.com/str/simplyunlucky/YUGIOH-SINGLES/_i.html?_storecat=26691736014"><img style="filter: invert(100%);" id="su-head-whys-03" src="Banner3.png" alt="YuGiOh"></a>
-		<a href="https://www.ebay.com/str/simplyunlucky/YUGIOH-SINGLES/_i.html?_storecat=26691736014"><img style="filter: invert(100%);" id="su-head-whys-04" src="Banner4.png" alt="MTG"></a>
-		<!-- <img id="su-head-whys-all" src="EbaySite/Banner5.png" alt="Why Shop With Us"> -->
+<div class="menubar">
+	<div id="contents">
+		<a class="buttons" id="link2" href="https://www.ebay.com/str/simplyunlucky?rt=nc&_oac=1" target="_blank"><p class="text">Store Home</p></a>
+		<a class="buttons" id="link2" href="https://www.ebay.com/str/simplyunlucky/Store-Inventory/_i.html?_storecat=30717081014" target="_blank"><p class="text">Inventory</p></a>
+		<a class="buttons" id="link3" href="https://www.ebay.com/str/simplyunlucky/YUGIOH-SINGLES/_i.html?_storecat=26691736014" target="_blank"><p class="text">Mixed Lots</p></a>
+		<a class="buttons" id="link4" href="https://www.ebay.com/str/simplyunlucky/YUGIOH-SINGLES/_i.html?_storecat=26691736014" target="_blank"><p class="text">Singles</p></a>
 	</div>
-</div></div>
+</div>
+
 <!-- end header -->
+
+
 
 <div class="su-content">
 
 <!-- beg left panel -->
 <div id="RightPanel">
 	<h4 id="su-side-tbar-cats" class="su-ttba su-fftb su-brdt su-bktt"><div class="su-tins su-ffac">YuGiOh Mixed Lots</div></h4>
-	<div id="su-side-cats" class="su-sbox su-brdm su-bklt"><div class="su-tins">
+	<div id="su-side-cats" class="su-sbox su-brdm su-bklt" style="padding-top: 20px;"><div class="su-tins">
 		<ul class="lev1">
-			<li><a target="_blank" href="https://www.ebay.com/itm/YUGIOH-50-CARD-ALL-HOLOGRAPHIC-HOLO-FOIL-COLLECTION-LOT-BONUS-10-FREE-FOILS/202810604138?hash=item2f38743a6a">50 Foil Card Lot + Bonus 10 Foils</a></li>
+			<li><a target="_blank" href="https://www.ebay.com/itm/YUGIOH-50-CARD-ALL-HOLOGRAPHIC-HOLO-FOIL-COLLECTION-LOT-BONUS-10-FREE-FOILS/202810604138?hash=item2f38743a6a"><p id = "redhover" style="color:white;font-size: 17px;font-family: 'Times New Roman', Times, serif;">50 Foil Card Lot + Bonus 10 Foils</p></a></li>
 					<!-- <li><a target="_blank" href="https://www.ebay.com/str/FTD-Games/YuGiOh-Card-Lots/_i.html?_storecat=9169804014">Dream Mirror</a></li> -->
 					<!-- <li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/YUGIOH-SINGLES/_i.html?_storecat=26691736014">Tenyi Deck CHIM RIRA</a></li> -->
 		</ul>
@@ -1763,7 +2068,7 @@
 	<h4 id="su-side-tbar-cats" class="su-ttba su-fftb su-brdt su-bktt"><div class="su-tins su-ffac">YuGiOh Deck Lots</div></h4>
 	<div id="su-side-cats" class="su-sbox su-brdm su-bklt"><div class="su-tins">
 		<ul class="lev1">
-			<li><a target="_blank" href="https://www.ebay.com/itm/DREAM-MIRROR-DECK-CHIM-RIRA-IKELOS-MORPHEUS-HYPNAGOGIA-ONEIROS-PHANTASOS-YuGiOh/202806528155?hash=item2f3836089b">Dream Mirror Deck CHIM RIRA: Ikelos Morpheus Hypnagogia Oneiros Phantasos YuGiOh</a></li>
+			<li><a target="_blank" href="https://www.ebay.com/itm/DREAM-MIRROR-DECK-CHIM-RIRA-IKELOS-MORPHEUS-HYPNAGOGIA-ONEIROS-PHANTASOS-YuGiOh/202806528155?hash=item2f3836089b"><p style="color:white;font-size: 17px;font-family: 'Times New Roman', Times, serif;">Dream Mirror Deck CHIM RIRA: Ikelos Morpheus Hypnagogia Oneiros Phantasos YuGiOh</p></a></li>
 					<!-- <li><a target="_blank" href="https://www.ebay.com/str/FTD-Games/YuGiOh-Card-Lots/_i.html?_storecat=9169804014">Dream Mirror</a></li> -->
 					<!-- <li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/YUGIOH-SINGLES/_i.html?_storecat=26691736014">Tenyi Deck CHIM RIRA</a></li> -->
 		</ul>
@@ -1785,29 +2090,29 @@
 
 <div id="RightPanel" style="float: left; padding-right: 30px">
 	<h4 id="su-side-tbar-cats" class="su-ttba su-fftb su-brdt su-bktt"><div class="su-tins su-ffac">YuGiOh Singles</div></h4>
-	<div id="su-side-cats" class="su-sbox su-brdm su-bklt"><div class="su-tins">
+	<div id="su-side-cats" class="su-sbox su-brdm su-bklt" style="padding-top: 20px;"><div class="su-tins">
 			<ul class="lev1">
-				<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/SAST-Savage-Strike/_i.html?_storecat=27491324014&_sop=12">SAST Savage Strike</a></li>
-						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/SOFU-Soul-Fusion/_i.html?_storecat=27311267014&_sop=12">SOFU Sour Fusion</a></li>
-						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/CYHO-Cybernetic-Horizon/_i.html?_storecat=27311265014&_sop=12">CYHO Cybernetic Horizon</a></li>
-						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/LED3-White-Dragon-Abyss/_i.html?_storecat=26691745014&_sop=12">LED3 White Dragon </a></li>
-						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/LED4-Sisters-of-the-Rose/_i.html?_storecat=27359263014&_sop=12">LED4 Sisters of the Rose</a></li>
-						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/SHVA-Shadows-in-Valhalla/_i.html?_storecat=26691746014&_sop=12">SHVA Shadows in Valhalla</a></li>
-						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/HISU-Hidden-Summoners/_i.html?_storecat=26936014014&_sop=12">HISU Hidden Summoners</a></li>
-						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/LEHD-Legendary-Hero-Decks/_i.html?_storecat=27684874014&_sop=12">LEHD Legendary Hero Decks</a></li>
-						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/EXFO-Extreme-Force/_i.html?_storecat=27744394014&_sop=12">EXFO Extreme Force</a></li>
-						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/SDSB-Structure-Deck-Soulburner/_i.html?_storecat=28072041014&_sop=12">SDSB Structure Deck:Soulburner</a></li>
-						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/INCH-The-Infinity-Chasers/_i.html?_storecat=28078222014&_sop=12">INCH The Infinity Chasers</a></li>
-						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/DUPO-Duel-Power/_i.html?_storecat=28280497014&_sop=12">DUPO Duel Power</a></li>
-						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/SR08-Order-of-the-Spellcasters/_i.html?_storecat=28477561014&_sop=12">SRO8 Order of the Spellcasters</a></li>
-						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/DANE-Dark-Neostorm/_i.html?_storecat=28603482014&_sop=12">DANE Dark Neostorm</a></li>
-						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/BLHR-Heros-Revenge/_i.html?_storecat=29633992014&_sop=12">BLHR Hero's Revenge</a></li>
-						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/FIGA-Fists-of-the-Gadgets/_i.html?_storecat=30164962014&_sop=12">FIGA Fists of the Gadgets</a></li>
-						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/SDRR-Rokket-Revolt/_i.html?_storecat=30206730014&_sop=12">SDRR Rokket Revolt</a></li>
-						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/MP19-Gold-Sarchophagus-Tin/_i.html?_storecat=30250539014&_sop=12">MP19 Gold Sarchophagus Tin</a></li>
-						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/LED5-Immortal-Destiny/_i.html?_storecat=30499030014&_sop=12">LED5 Immortal Destiny</a></li>
-						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/DUDE-Duel-Devastator/_i.html?_storecat=30568957014&_sop=12">DUDE Duel Devastator</a></li>
-						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/CHIM-Chaos-Impact/_i.html?_storecat=30583833014&_sop=12">CHIM Chaos Impact</a></li>
+				<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/SAST-Savage-Strike/_i.html?_storecat=27491324014&_sop=12"><p style="color:white;font-size: 17px; font-family: 'Times New Roman', Times, serif;width: 140px;">SAST Savage Strike</p></a></li>
+						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/SOFU-Soul-Fusion/_i.html?_storecat=27311267014&_sop=12"><p style="color:white;font-size: 17px; font-family: 'Times New Roman', Times, serif;width: 134px;">SOFU Sour Fusion</p></a></li>
+						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/CYHO-Cybernetic-Horizon/_i.html?_storecat=27311265014&_sop=12"><p style="color:white;font-size: 17px; font-family: 'Times New Roman', Times, serif;width: 190;">CYHO Cybernetic Horizon</p></a></li>
+						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/LED3-White-Dragon-Abyss/_i.html?_storecat=26691745014&_sop=12"><p style="color:white;font-size: 17px; font-family: 'Times New Roman', Times, serif;width: 145;">LED3 White Dragon</p></a></li>
+						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/LED4-Sisters-of-the-Rose/_i.html?_storecat=27359263014&_sop=12"><p style="color:white;font-size: 17px; font-family: 'Times New Roman', Times, serif;width: 175px;">LED4 Sisters of the Rose</p></a></li>
+						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/SHVA-Shadows-in-Valhalla/_i.html?_storecat=26691746014&_sop=12"><p style="color:white;font-size: 17px; font-family: 'Times New Roman', Times, serif;width: 190px;">SHVA Shadows in Valhalla</p></a></li>
+						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/HISU-Hidden-Summoners/_i.html?_storecat=26936014014&_sop=12"><p style="color:white;font-size: 17px; font-family: 'Times New Roman', Times, serif;width: 180px;">HISU Hidden Summoners</p></a></li>
+						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/LEHD-Legendary-Hero-Decks/_i.html?_storecat=27684874014&_sop=12"><p style="color:white;font-size: 17px; font-family: 'Times New Roman', Times, serif;width: 210px;">LEHD Legendary Hero Decks</p></a></li>
+						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/EXFO-Extreme-Force/_i.html?_storecat=27744394014&_sop=12"><p style="color:white;font-size: 17px; font-family: 'Times New Roman', Times, serif;width: 150px;">EXFO Extreme Force</p></a></li>
+						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/SDSB-Structure-Deck-Soulburner/_i.html?_storecat=28072041014&_sop=12"><p style="color:white;font-size: 17px; font-family: 'Times New Roman', Times, serif;">SDSB Structure Deck:Soulburner</p></a></li>
+						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/INCH-The-Infinity-Chasers/_i.html?_storecat=28078222014&_sop=12"><p style="color:white;font-size: 17px; font-family: 'Times New Roman', Times, serif;width: 190;">INCH The Infinity Chasers</p></a></li>
+						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/DUPO-Duel-Power/_i.html?_storecat=28280497014&_sop=12"><p style="color:white;font-size: 17px; font-family: 'Times New Roman', Times, serif;width: 135px;">DUPO Duel Power</p></a></li>
+						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/SR08-Order-of-the-Spellcasters/_i.html?_storecat=28477561014&_sop=12"><p style="color:white;font-size: 17px; font-family: 'Times New Roman', Times, serif;width: 215px;">SRO8 Order of the Spellcasters</p></a></li>
+						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/DANE-Dark-Neostorm/_i.html?_storecat=28603482014&_sop=12"><p style="color:white;font-size: 17px; font-family: 'Times New Roman', Times, serif;width: 170px;">DANE Dark Neostormv</p></a></li>
+						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/BLHR-Heros-Revenge/_i.html?_storecat=29633992014&_sop=12"><p style="color:white;font-size: 17px; font-family: 'Times New Roman', Times, serif;width: 160px;">BLHR Hero's Revenge</p></a></li>
+						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/FIGA-Fists-of-the-Gadgets/_i.html?_storecat=30164962014&_sop=12"><p style="color:white;font-size: 17px; font-family: 'Times New Roman', Times, serif;width: 180px;">FIGA Fists of the Gadgets</p></a></li>
+						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/SDRR-Rokket-Revolt/_i.html?_storecat=30206730014&_sop=12"><p style="color:white;font-size: 17px; font-family: 'Times New Roman', Times, serif;width: 149px;">SDRR Rokket Revolt</p></a></li>
+						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/MP19-Gold-Sarchophagus-Tin/_i.html?_storecat=30250539014&_sop=12"><p style="color:white;font-size: 17px; font-family: 'Times New Roman', Times, serif;width: 210px;">MP19 Gold Sarchophagus Tin</p></a></li>
+						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/LED5-Immortal-Destiny/_i.html?_storecat=30499030014&_sop=12"><p style="color:white;font-size: 17px;font-family: 'Times New Roman', Times, serif;width: 170px;">LED5 Immortal Destiny</p></a></li>
+						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/DUDE-Duel-Devastator/_i.html?_storecat=30568957014&_sop=12"><p style="color:white;font-size: 17px;font-family: 'Times New Roman', Times, serif;width: 165px;">DUDE Duel Devastator</p></a></li>
+						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/CHIM-Chaos-Impact/_i.html?_storecat=30583833014&_sop=12"><p style="color:white;font-size: 17px;font-family: 'Times New Roman', Times, serif;width: 144;">CHIM Chaos Impact</p></a></li>
 			</ul>
 		</div></div>
 
@@ -1832,12 +2137,11 @@
 
 	<div id="su-main-gall" class="su-pbox su-brdm su-bklt"><div class="su-tins">
 	
-		<!-- LISTING TITLE GOES HERE --><h1>YUGIOH 50 CARD ALL HOLOGRAPHIC HOLO FOIL COLLECTION LOT! +BONUS 10 FREE FOILS!!&amp; RARES!</h1>
+		<!-- LISTING TITLE GOES HERE --><a href="" target="_blank"><h1 id="MainHeader">YUGIOH 50 CARD ALL HOLOGRAPHIC HOLO FOIL COLLECTION LOT! +BONUS 10 FREE FOILS!!&amp; RARES!</h1></a>
 		
 		<!-- IMAGE GALLERY GOES HERE -->
 		<div id="su-temp-gall" class="su-bttm su-left">
 			<div id="su-gall-main">
-				
 				<div id="mimg01"><input type="radio" id="img01" name="gallery" checked=""><div class="su-cntr"><img src="https://i.ebayimg.com/images/g/snsAAOSwt6RduJRf/s-l1600.jpg" alt=""></div></div>
 				<div id="mimg02"><input type="radio" id="img02" name="gallery"><div class="su-cntr"><img src="https://i.ebayimg.com/images/g/39wAAOSw5LRduJRh/s-l1600.jpg" alt=""></div></div>
 				<div id="mimg03"><input type="radio" id="img03" name="gallery"><div class="su-cntr"><img src="https://i.ebayimg.com/images/g/YWAAAOSwevJdudc8/s-l1600.jpg" alt=""></div></div>
@@ -1954,15 +2258,12 @@ Before leaving a negative feedback please message us so we can help create a mor
 		</div>
 	</div> -->
 	
-	<div class="info_menu">
-		<div id="section2"><a href="#contactus" target="_top">Contact Us</a></div>
-	</div>
-	<div class="info_menu">
-		<div id="section3"><a href="#About"target="_top">About Us</a></div>
-	</div>
-	<div class="info_menu">
-			<div id="section1"><a href="#shipping" target="_top">Shipping Policy</a></div>
-	</div>
+	<!-- <div class="infomenu">
+		<div class="contents">
+			<a href="#About" target="_self"><p class="text" id="one">About Us!</p></a>
+			<a href="#content" target="_self"><p class="text" id="two">Shipping</p></a>
+		</div>
+	</div> -->
     <!-- <div id="su-main-shop" class="su-prom su-prot"><div class="su-tins">
 	 	<span class="su-left"><span class="su-font">simplyunlucky</span><br>No One Sells Better!</span>
 		<a target="_blank" class="su-brdb su-crns su-ffac su-ffbn" href="https://www.ebay.com/str/simplyunlucky/Store-Inventory/_i.html?_storecat=30717081014&_sop=12">Shop Our<br>eBay Store</a>
@@ -1984,25 +2285,25 @@ Before leaving a negative feedback please message us so we can help create a mor
 	<div id="section1">
 		<a target="_blank" href="https://www.ebay.com/itm/DREAM-MIRROR-DECK-CHIM-RIRA-IKELOS-MORPHEUS-HYPNAGOGIA-ONEIROS-PHANTASOS-YuGiOh/202806528155?hash=item2f3836089b:g:U9kAAOSwzxldsPPz"><img id="img1" src="https://i.ebayimg.com/images/g/U9kAAOSwzxldsPPz/s-l1600.jpg"></a>
 		<div id="description">
-			<a href="https://www.ebay.com/itm/DREAM-MIRROR-DECK-CHIM-RIRA-IKELOS-MORPHEUS-HYPNAGOGIA-ONEIROS-PHANTASOS-YuGiOh/202806528155?hash=item2f3836089b:g:U9kAAOSwzxldsPPz" target="_blank"><p>DREAM MIRROR DECK CHIM RIRA: IKELOS MORPHEUS HYPNAGOGIA ONEIROS PHANTASOS YuGiOh</p></a>
+			<a target="_blank" href="https://www.ebay.com/itm/DREAM-MIRROR-DECK-CHIM-RIRA-IKELOS-MORPHEUS-HYPNAGOGIA-ONEIROS-PHANTASOS-YuGiOh/202806528155?hash=item2f3836089b:g:U9kAAOSwzxldsPPz" target="_blank"><p>DREAM MIRROR DECK CHIM RIRA: IKELOS MORPHEUS HYPNAGOGIA ONEIROS PHANTASOS YuGiOh</p></a>
 		</div>
 	</div>
 	<div id="section2">
 		<img src="https://i.ebayimg.com/images/g/BOgAAOSwf2ZdsPjL/s-l1600.jpg">
 		<div id="description">
-			<a href="https://www.ebay.com/itm/TENYI-DECK-CHIM-RIRA-DRACO-BERSERKER-MASTERS-SHAMAN-ASHUNA-VISHUDA-YuGiOh/202806658430?hash=item2f3838057e:g:BOgAAOSwf2ZdsPjL"><p>TENYI DECK CHIM RIRA | DRACO BERSERKER MASTERS SHAMAN ASHUNA VISHUDA YuGiOh</p></a>
+			<a target="_blank" href="https://www.ebay.com/itm/TENYI-DECK-CHIM-RIRA-DRACO-BERSERKER-MASTERS-SHAMAN-ASHUNA-VISHUDA-YuGiOh/202806658430?hash=item2f3838057e:g:BOgAAOSwf2ZdsPjL"><p>TENYI DECK CHIM RIRA | DRACO BERSERKER MASTERS SHAMAN ASHUNA VISHUDA YuGiOh</p></a>
 		</div>
 	</div>
 	<div id="section3">
 		<img src="https://i.ebayimg.com/images/g/B6MAAOSwnDRdip9-/s-l1600.jpg">
 		<div id="description">
-			<a href="https://www.ebay.com/itm/EVIL-HERO-DECK-LOT-LED5-SUPREME-KING-MIND-DARK-FUSION-CALLING-MALICIOUS-YuGiOh/202786336410?hash=item2f3701ee9a:g:B6MAAOSwnDRdip9-"><p>EVIL HERO DECK LOT LED5 SUPREME KING MIND DARK FUSION CALLING MALICIOUS YuGiOh</p></a>
+			<a target="_blank" href="https://www.ebay.com/itm/EVIL-HERO-DECK-LOT-LED5-SUPREME-KING-MIND-DARK-FUSION-CALLING-MALICIOUS-YuGiOh/202786336410?hash=item2f3701ee9a:g:B6MAAOSwnDRdip9-"><p>EVIL HERO DECK LOT LED5 SUPREME KING MIND DARK FUSION CALLING MALICIOUS YuGiOh</p></a>
 		</div>
 	</div>
 	<div id="section4">
 		<img src="https://i.ebayimg.com/images/g/yxsAAOSwn~Jdir6m/s-l1600.jpg">
 		<div id="description">
-			<a href="https://www.ebay.com/itm/PREDAPLANT-DECK-LED5-Starving-Venom-Predaprime-Fusion-Predaplanning-YuGiOh/202786334375?hash=item2f3701e6a7:g:yxsAAOSwn~Jdir6m"><p>PREDAPLANT DECK LED5 | Starving Venom Predaprime Fusion Predaplanning YuGiOh</p></a>
+			<a target="_blank" href="https://www.ebay.com/itm/PREDAPLANT-DECK-LED5-Starving-Venom-Predaprime-Fusion-Predaplanning-YuGiOh/202786334375?hash=item2f3701e6a7:g:yxsAAOSwn~Jdir6m"><p>PREDAPLANT DECK LED5 | Starving Venom Predaprime Fusion Predaplanning YuGiOh</p></a>
 		</div>
 	</div>
 </div>
@@ -2011,25 +2312,25 @@ Before leaving a negative feedback please message us so we can help create a mor
 	<div id="section1">
 		<img id="img1" src="https://i.ebayimg.com/images/g/U9kAAOSwzxldsPPz/s-l1600.jpg">
 		<div id="description">
-			<a href="https://www.ebay.com/itm/DREAM-MIRROR-DECK-CHIM-RIRA-IKELOS-MORPHEUS-HYPNAGOGIA-ONEIROS-PHANTASOS-YuGiOh/202806528155?hash=item2f3836089b:g:U9kAAOSwzxldsPPz" target="_blank"><p>DREAM MIRROR DECK CHIM RIRA: IKELOS MORPHEUS HYPNAGOGIA ONEIROS PHANTASOS YuGiOh</p></a>
+			<a target="_blank" href="https://www.ebay.com/itm/DREAM-MIRROR-DECK-CHIM-RIRA-IKELOS-MORPHEUS-HYPNAGOGIA-ONEIROS-PHANTASOS-YuGiOh/202806528155?hash=item2f3836089b:g:U9kAAOSwzxldsPPz" target="_blank"><p>DREAM MIRROR DECK CHIM RIRA: IKELOS MORPHEUS HYPNAGOGIA ONEIROS PHANTASOS YuGiOh</p></a>
 		</div>
 	</div>
 	<div id="section2">
 		<img src="https://i.ebayimg.com/images/g/BOgAAOSwf2ZdsPjL/s-l1600.jpg">
 		<div id="description">
-			<a href="https://www.ebay.com/itm/TENYI-DECK-CHIM-RIRA-DRACO-BERSERKER-MASTERS-SHAMAN-ASHUNA-VISHUDA-YuGiOh/202806658430?hash=item2f3838057e:g:BOgAAOSwf2ZdsPjL"><p>TENYI DECK CHIM RIRA | DRACO BERSERKER MASTERS SHAMAN ASHUNA VISHUDA YuGiOh</p></a>
+			<a target="_blank" href="https://www.ebay.com/itm/TENYI-DECK-CHIM-RIRA-DRACO-BERSERKER-MASTERS-SHAMAN-ASHUNA-VISHUDA-YuGiOh/202806658430?hash=item2f3838057e:g:BOgAAOSwf2ZdsPjL"><p>TENYI DECK CHIM RIRA | DRACO BERSERKER MASTERS SHAMAN ASHUNA VISHUDA YuGiOh</p></a>
 		</div>
 	</div>
 	<div id="section3">
 		<img src="https://i.ebayimg.com/images/g/B6MAAOSwnDRdip9-/s-l1600.jpg">
 		<div id="description">
-			<a href="https://www.ebay.com/itm/EVIL-HERO-DECK-LOT-LED5-SUPREME-KING-MIND-DARK-FUSION-CALLING-MALICIOUS-YuGiOh/202786336410?hash=item2f3701ee9a:g:B6MAAOSwnDRdip9-"><p>EVIL HERO DECK LOT LED5 SUPREME KING MIND DARK FUSION CALLING MALICIOUS YuGiOh</p></a>
+			<a target="_blank" href="https://www.ebay.com/itm/EVIL-HERO-DECK-LOT-LED5-SUPREME-KING-MIND-DARK-FUSION-CALLING-MALICIOUS-YuGiOh/202786336410?hash=item2f3701ee9a:g:B6MAAOSwnDRdip9-"><p>EVIL HERO DECK LOT LED5 SUPREME KING MIND DARK FUSION CALLING MALICIOUS YuGiOh</p></a>
 		</div>
 	</div>
 	<div id="section4">
 		<img src="https://i.ebayimg.com/images/g/yxsAAOSwn~Jdir6m/s-l1600.jpg">
 		<div id="description">
-			<a href="https://www.ebay.com/itm/PREDAPLANT-DECK-LED5-Starving-Venom-Predaprime-Fusion-Predaplanning-YuGiOh/202786334375?hash=item2f3701e6a7:g:yxsAAOSwn~Jdir6m"><p>PREDAPLANT DECK LED5 | Starving Venom Predaprime Fusion Predaplanning YuGiOh</p></a>
+			<a target="_blank" href="https://www.ebay.com/itm/PREDAPLANT-DECK-LED5-Starving-Venom-Predaprime-Fusion-Predaplanning-YuGiOh/202786334375?hash=item2f3701e6a7:g:yxsAAOSwn~Jdir6m"><p>PREDAPLANT DECK LED5 | Starving Venom Predaprime Fusion Predaplanning YuGiOh</p></a>
 		</div>
 	</div>
 </div>
@@ -2058,30 +2359,43 @@ Before leaving a negative feedback please message us so we can help create a mor
 	</div>
 </section> 
 </div>
-<div id="su-foot-wrap">
+
+<div class="footer">
+	<div class="contents" id="col1">
+		<a id="link" href="https://www.ebay.com/usr/simplyunlucky?_trksid=p2047675.l2559#" style="text-decoration: none;">Save our store!</a>
+	</div>
+	<div class="contents" id="col2">
+		<a id="link" href="https://my.ebay.com/ws/eBayISAPI.dll?AcceptSavedSeller&_trksid=&linkname=includenewsletter&sellerid=simplyunlucky&guest=1">Subscribe</a>
+	</div>
+	<div class="contents" id="col3">
+		<a id="link" href="https://contact.ebay.com/ws/eBayISAPI.dll?FindAnswers&requested=simplyunlucky&_trksid=p2545226.m2531.l4583&rt=nc">Suppport</a>
+	</div>
+</div>
+
+<!-- <div id="su-foot-wrap">
 	<div id="su-foot-main"><div class="su-foot-tins">
 		<div id="su-foot-col1" class="su-foot-cols">
 			<div id="su-foot-whys">
-				<a href="https://www.ebay.com/usr/simplyunlucky?_trksid=p2047675.l2559#"><h3>Save our store!</h3></a>
+				<a target="_blank" href="https://www.ebay.com/usr/simplyunlucky?_trksid=p2047675.l2559#"><h3>Save our store!</h3></a>
 			</div>
 		</div>
 		<div id="su-foot-col2" class="su-foot-cols">
 			<div id="su-foot-whys">
-				<a href="https://my.ebay.com/ws/eBayISAPI.dll?AcceptSavedSeller&_trksid=&linkname=includenewsletter&sellerid=simplyunlucky&guest=1"><h3>Subscribe</h3></a>
+				<a target="_blank" href="https://my.ebay.com/ws/eBayISAPI.dll?AcceptSavedSeller&_trksid=&linkname=includenewsletter&sellerid=simplyunlucky&guest=1"><h3>Subscribe</h3></a>
 			</div>
 		</div>
 		<div id="su-foot-col3" class="su-foot-cols">
 			<div id="su-foot-whys">
-			<a href="https://contact.ebay.com/ws/eBayISAPI.dll?FindAnswers&requested=simplyunlucky&_trksid=p2545226.m2531.l4583&rt=nc"><h3>Support</h3></a>
+			<a target="_blank" href="https://contact.ebay.com/ws/eBayISAPI.dll?FindAnswers&requested=simplyunlucky&_trksid=p2545226.m2531.l4583&rt=nc"><h3>Support</h3></a>
 			</div>
 		</div>
 		<div id="su-foot-col4" class="su-foot-cols">
 			<div id="su-foot-whys">
-				<a href="https://feedback.ebay.com/ws/eBayISAPI.dll?ViewFeedback2&userid=simplyunlucky&ftab=AllFeedback&myworld=true&rt=nc"><h3>Feedback</h3></a>
+				<a target="_blank" href="https://feedback.ebay.com/ws/eBayISAPI.dll?ViewFeedback2&userid=simplyunlucky&ftab=AllFeedback&myworld=true&rt=nc"><h3>Feedback</h3></a>
 			</div>
 		</div>
 	</div></div>
-</div>
+</div> -->
 <!-- end footer extended -->
 </div></div></div><!-- end bg area -->
 </body>
