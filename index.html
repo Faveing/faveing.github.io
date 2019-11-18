@@ -440,7 +440,7 @@
 		/* ---------------------------------------- 
 		eBay Global
 		---------------------------------------- */
-		.su-bg																			{ background:black fixed repeat top; }
+		.su-bg																			{ background:url(background.png) fixed; background-size: cover; }
 		.su-bg-02, .su-content, 
 		.su-bg .su-content-width, #su-head, #su-foot		{ max-width:1400px; }
 		.su-bg-02																	{ max-width:100% }
@@ -507,7 +507,7 @@
 		.su-bg #LeftPanel .su-bktt,
 		.su-bg #su-main .su-bktt											{ background:white center top fixed repeat; border: red solid 3px; } /* THE TOP TEXT AREA BACKGROUND IS HERE! */
 		.su-bg #RightPanel .su-bktt,
-		.su-bg #su-main .su-bktt											{ background:black; border-bottom: 1px red solid; color:white;}
+		.su-bg #su-main .su-bktt											{ background:transparent; border-bottom: 1px red solid; color:white;}
 		.su-bg #su-main [type=radio] ~ label.su-bktt						{ background-image:url(images/nt-icon-plus.png); background-position:right 10px center; background-repeat:no-repeat; padding-right:28px !important; }
 		.su-bg #su-main [type=radio]:checked ~ label.su-bktt	{ background-image:url(images/nt-icon-mins.png); }
 		.su-bg #su-main [type=radio] ~ label.su-bktt						{ margin-bottom:1px; }
@@ -537,7 +537,7 @@
 		eBay Header
 		---------------------------------------- */
 		.su-bg #su-head-wrap-01										{ background:white 0 0 repeat; border:1px solid #444; border-width:2px 0; }
-		.su-bg #su-head-wrap-02										{ background:black;}
+		.su-bg #su-head-wrap-02										{ background:transparent;}
 		.su-bg #su-head-wrap-03										{ background:black 0 0 repeat;}
 		.su-bg #su-head-01													{ padding:5px 0; }
 				
@@ -1138,7 +1138,7 @@
 		font-size: 20px;
 		}
 		.shipping {
-		background: black;
+		background: transparent;
 		/* border: red 4px solid; */
 		height: 600px;
 		width: 100%;
@@ -1182,7 +1182,7 @@
 			color: white;
 		}
 		.About {
-		background: black;
+		background: transparent;
 		/* border: 4px solid red; */
 		height: 600px;
 		width: 100%;
@@ -1238,17 +1238,19 @@
 			justify-content: space-evenly;
 			width: 100%;
 			height:550px;
+			transition: 0.5s ease-in-out;
 			/* padding-top: 100px; */
 		}
 		.productexamples #section1 {
 			width: 500px;
 			height: 500px;
 			transition: 0.5s ease-in-out;
+			
 			/* background: black; */
 			/* background: url(https://www.designbolts.com/wp-content/uploads/2012/11/Dark-Geometric-Semi-Dark-Seamleass-Pattern-for-website-backgrounds.jpg); */
 		}
 		.productexamples #section1 #description {
-			visibility: hidden;
+			opacity: 0;
 			padding-bottom: 10px;
 			width: 500px;
 			height: 500px;
@@ -1260,6 +1262,7 @@
 			padding-top: 3px;
 			/* padding-left: 10px; */
 			padding-right: 10px;
+			transition: 0.5s ease-in-out;
 			text-align: left;
 			/* border-radius: 30px; */
 		}
@@ -1270,8 +1273,8 @@
 			font-size: 15px;
 		}
 		.productexamples #section1:hover #description{
-			transition: 1.5s ease-in-out;
-			visibility: visible;
+			transition: .75s ease-in-out;
+			opacity: 1;
 		}
 		.productexamples #section1 #description:hover {
 			visibility: visible;
@@ -1318,7 +1321,6 @@
 			border-bottom: red 1px solid;
 		}
 		.menubar {
-			width: 70%;
 			/* max-width: 1000px; */
 			margin-top: 10px;
 			margin-bottom: 10px;
@@ -1733,17 +1735,6 @@ OH BABY!!<br>&nbsp;
 </p>
 	</div>
 		<div id="su-gall-right" style="width: 100%;">
-			<!-- <div id="su-main-desc"><div 2%lass="su-tins">
-				<h5>PRODUCT DESCRIPTION</h5>
-				
-<strong><big><font color="aqua"><u>THE ULTIMATE YU-GI-OH LOT</u></font></big></strong><br>
-<br>
-<strong><big>You are guaranteed to get:</big></strong>
-<br>
-- 35 Supers and 15 Ultra/Secret/Presmatic/Gald/Ultimate/Cards! <br>&nbsp;
-- Bonus 10 Free Holo Foil Cards! <br>&nbsp;
-- Total 60 holo foil cards with no duplicates<br>&nbsp;
-<br> -->
 <strong><big><font color="black"><u>Customer Service</u></font></big></strong><br>
 -Purchasing an order over $20 will guarantee priority processing with expedited handling and tracked shipping.<br>&nbsp;
 -All cards are only guaranteed 1st Edition when stated in the title.<br>&nbsp;
@@ -1765,7 +1756,7 @@ Before leaving a negative feedback please message us so we can help create a mor
 	<div id="section1">
 		<a target="_blank" href="https://www.ebay.com/itm/DREAM-MIRROR-DECK-CHIM-RIRA-IKELOS-MORPHEUS-HYPNAGOGIA-ONEIROS-PHANTASOS-YuGiOh/202806528155?hash=item2f3836089b:g:U9kAAOSwzxldsPPz"><img id="img1" src="https://i.ebayimg.com/images/g/U9kAAOSwzxldsPPz/s-l1600.jpg"></a>
 		<div id="description">
-				<a href="https://www.ebay.com/itm/DREAM-MIRROR-DECK-CHIM-RIRA-IKELOS-MORPHEUS-HYPNAGOGIA-ONEIROS-PHANTASOS-YuGiOh/202806528155?hash=item2f3836089b"><h3 style="font-size: 20px;padding-top: 8px;padding-left: 40px;">DREAM MIRROR DECK CHIM RIRA: IKELOS MORPHEUS HYPNAGOGIA ONEIROS PHANTASOS YuGiOh</h3></a>
+				<a href="https://www.ebay.com/itm/DREAM-MIRROR-DECK-CHIM-RIRA-IKELOS-MORPHEUS-HYPNAGOGIA-ONEIROS-PHANTASOS-YuGiOh/202806528155?hash=item2f3836089b" target="_blank"><h3 style="font-size: 20px;padding-top: 8px;padding-left: 40px;">DREAM MIRROR DECK CHIM RIRA: IKELOS MORPHEUS HYPNAGOGIA ONEIROS PHANTASOS YuGiOh</h3></a>
 				<p style="padding-left: 40px;padding-top: 8px;">List of cards:
 						Dream Mirror Hypnagogia x3<br>
 						
@@ -1797,7 +1788,7 @@ Before leaving a negative feedback please message us so we can help create a mor
 	<div id="section1">
 		<img src="https://i.ebayimg.com/images/g/Ld0AAOSw~8ldyY8V/s-l1600.jpg">
 		<div id="description">
-				<a href="https://www.ebay.com/itm/GLADIATOR-BEAST-DECK-LOT-CHIM-Chaos-Impact-TEST-PANTHER-DOMITIANUS-YuGiOh/202805955335?hash=item2f382d4b07"><h3 style="font-size: 20px;padding-top: 8px;padding-left: 40px;">GLADIATOR BEAST DECK LOT | CHIM | Chaos Impact TEST PANTHER DOMITIANUS YuGiOh </h3></a>
+				<a href="https://www.ebay.com/itm/GLADIATOR-BEAST-DECK-LOT-CHIM-Chaos-Impact-TEST-PANTHER-DOMITIANUS-YuGiOh/202805955335?hash=item2f382d4b07" target="_blank"><h3 style="font-size: 20px;padding-top: 8px;padding-left: 40px;">GLADIATOR BEAST DECK LOT | CHIM | Chaos Impact TEST PANTHER DOMITIANUS YuGiOh </h3></a>
 				<p style="padding-left: 40px;padding-top: 8px;">List of cards:<br>
 					All of our singles are Mint/Near Mint! And SHIPPING is always FREE!!<br>
 					CARD LIST:<br>
@@ -1819,32 +1810,6 @@ Before leaving a negative feedback please message us so we can help create a mor
 		</div>
 	</div>
 </div>
-<!-- <div class="productexamples">
-	<div id="section1">
-		<img id="img1" src="https://i.ebayimg.com/images/g/U9kAAOSwzxldsPPz/s-l1600.jpg">
-		<div id="description">
-			<a target="_blank" href="https://www.ebay.com/itm/DREAM-MIRROR-DECK-CHIM-RIRA-IKELOS-MORPHEUS-HYPNAGOGIA-ONEIROS-PHANTASOS-YuGiOh/202806528155?hash=item2f3836089b:g:U9kAAOSwzxldsPPz" target="_blank"><p>DREAM MIRROR DECK CHIM RIRA: IKELOS MORPHEUS HYPNAGOGIA ONEIROS PHANTASOS YuGiOh</p></a>
-		</div>
-	</div>
-	<div id="section2">
-		<img src="https://i.ebayimg.com/images/g/BOgAAOSwf2ZdsPjL/s-l1600.jpg">
-		<div id="description">
-			<a target="_blank" href="https://www.ebay.com/itm/TENYI-DECK-CHIM-RIRA-DRACO-BERSERKER-MASTERS-SHAMAN-ASHUNA-VISHUDA-YuGiOh/202806658430?hash=item2f3838057e:g:BOgAAOSwf2ZdsPjL"><p>TENYI DECK CHIM RIRA | DRACO BERSERKER MASTERS SHAMAN ASHUNA VISHUDA YuGiOh</p></a>
-		</div>
-	</div>
-	<div id="section3">
-		<img src="https://i.ebayimg.com/images/g/B6MAAOSwnDRdip9-/s-l1600.jpg">
-		<div id="description">
-			<a target="_blank" href="https://www.ebay.com/itm/EVIL-HERO-DECK-LOT-LED5-SUPREME-KING-MIND-DARK-FUSION-CALLING-MALICIOUS-YuGiOh/202786336410?hash=item2f3701ee9a:g:B6MAAOSwnDRdip9-"><p>EVIL HERO DECK LOT LED5 SUPREME KING MIND DARK FUSION CALLING MALICIOUS YuGiOh</p></a>
-		</div>
-	</div>
-	<div id="section4">
-		<img src="https://i.ebayimg.com/images/g/yxsAAOSwn~Jdir6m/s-l1600.jpg">
-		<div id="description">
-			<a target="_blank" href="https://www.ebay.com/itm/PREDAPLANT-DECK-LED5-Starving-Venom-Predaprime-Fusion-Predaplanning-YuGiOh/202786334375?hash=item2f3701e6a7:g:yxsAAOSwn~Jdir6m"><p>PREDAPLANT DECK LED5 | Starving Venom Predaprime Fusion Predaplanning YuGiOh</p></a>
-		</div>
-	</div>
-</div> -->
 <div class="About" id="About">
 	<div id="bannerimage">
 	
@@ -1877,31 +1842,6 @@ Before leaving a negative feedback please message us so we can help create a mor
 		<a id="link" href="https://contact.ebay.com/ws/eBayISAPI.dll?FindAnswers&requested=simplyunlucky&_trksid=p2545226.m2531.l4583&rt=nc">Suppport</a>
 	</div>
 </div>
-<!-- <div id="su-foot-wrap">
-	<div id="su-foot-main"><div class="su-foot-tins">
-		<div id="su-foot-col1" class="su-foot-cols">
-			<div id="su-foot-whys">
-				<a target="_blank" href="https://www.ebay.com/usr/simplyunlucky?_trksid=p2047675.l2559#"><h3>Save our store!</h3></a>
-			</div>
-		</div>
-		<div id="su-foot-col2" class="su-foot-cols">
-			<div id="su-foot-whys">
-				<a target="_blank" href="https://my.ebay.com/ws/eBayISAPI.dll?AcceptSavedSeller&_trksid=&linkname=includenewsletter&sellerid=simplyunlucky&guest=1"><h3>Subscribe</h3></a>
-			</div>
-		</div>
-		<div id="su-foot-col3" class="su-foot-cols">
-			<div id="su-foot-whys">
-			<a target="_blank" href="https://contact.ebay.com/ws/eBayISAPI.dll?FindAnswers&requested=simplyunlucky&_trksid=p2545226.m2531.l4583&rt=nc"><h3>Support</h3></a>
-			</div>
-		</div>
-		<div id="su-foot-col4" class="su-foot-cols">
-			<div id="su-foot-whys">
-				<a target="_blank" href="https://feedback.ebay.com/ws/eBayISAPI.dll?ViewFeedback2&userid=simplyunlucky&ftab=AllFeedback&myworld=true&rt=nc"><h3>Feedback</h3></a>
-			</div>
-		</div>
-	</div></div>
-</div> -->
-<!-- end footer extended -->
 </div></div></div><!-- end bg area -->
 </body>
 </html>
