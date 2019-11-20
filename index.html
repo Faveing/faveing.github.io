@@ -1187,11 +1187,11 @@
 		.About {
 		background: transparent;
 		/* border: 4px solid red; */
-		height: 600px;
+		/* height: 600px; */
 		width: 100%;
-		padding-top: 70px;
+		/* padding-top: 70px; */
 		/* margin-bottom: 20px; */
-		height: 300px;
+		/* height: 300px; */
 		margin: 0 auto;
 		}
 		.About #bannerimage {
@@ -1209,13 +1209,18 @@
 		padding-top: 20px;
 		color: white;
 		}
-		.About .text h3 {
-		width: 200px;
+		.About .text #title {
+		width: fit-content;
 		margin: 0 auto;
 		text-align: center;
 		font-size: 50px;
 		padding-bottom: 30px;
 		border-bottom: red 1px solid;
+		font-family: Exo, sans-serif;
+		font-weight: bold;
+		font-style: italic;
+		text-transform: uppercase;
+		text-shadow: 1px 1px #000;
 		}
 		.About #header {
 		padding-top:20px;
@@ -1223,7 +1228,11 @@
 		color: #C5D5D4;
 		font-style: italic;
 		font-weight: bold;
-		font-family: "Ropa Sans", sans-serif;
+		font-family: Exo, sans-serif;
+		font-weight: bold;
+		font-style: italic;
+		text-transform: uppercase;
+		text-shadow: 1px 1px #000;
 		font-size: 20px;
 		}
 		/* .About #header p{
@@ -1341,34 +1350,42 @@
 		.menubar {
 			width: 70%;
 			/* max-width: 1000px; */
-			margin-top: 10px;
-			margin-bottom: 10px;
+			/* margin-top: 15px; */
+			margin-bottom: 5px;
+			padding-top: 10px;
 			float: top;
 			max-width: 1330px;
 			margin: 0 auto;
 		}
-		.menubar #contents {
+		.menubar .contents {
 			display: flex;
 			justify-content: space-evenly;
 		} 
-		.menubar #contents .buttons {
+		.menubar .contents .buttons {
 			/* padding-bottom: 10px; */
 			padding-top: 9px;
 			text-align: center;
 		}
-		.menubar #contents .buttons .text{
+
+		.menubar .contents .buttons .text {
 			font-size: 30px;
 			color: white;
 			padding-bottom: 10px;
 			transition: 0.5s ease-in-out;
-		} 
-/* 
-		.menubar #contents #link1 p:hover > .text{
+		}
+
+		.menubar .contents .buttons .text:hover{
+			font-size: 30px;
 			padding-bottom: 9px;
 			border-bottom: red 1px solid;
-		} */
-		.menubar #contents .buttons .text:hover {
-			padding-bottom: 9px;
+			/* transition: 0.5s ease-in-out; */
+			/* border-bottom: red 1px solid; */
+		} 
+
+		/* Cursed code that doesn't work so some reason -_- plz tell me why css gods */
+		.menubar .contents .buttons .text:hover {
+			/* padding-bottom: 9px; */
+			background: white;
 			border-bottom: red 1px solid;
 		}
 		
@@ -1699,7 +1716,7 @@
 	<div id="su-head-logo" class="su-proh su-prom"><a href="https://www.ebay.com/str/simplyunlucky?rt=nc&_oac=1" target="_blank"><img src="https://raw.githubusercontent.com/Faveing/faveing.github.io/master/Banner%201.png" alt="simplyunlucky Games eBay Store"></a></div>
 </div></div>
 <div class="menubar">
-	<div id="contents">
+	<div class="contents">
 		<a class="buttons" id="link2" href="https://www.ebay.com/str/simplyunlucky?rt=nc&_oac=1" target="_blank"><p class="text">Store Home</p></a>
 		<a class="buttons" id="link2" href="https://www.ebay.com/str/simplyunlucky/Store-Inventory/_i.html?_storecat=30717081014" target="_blank"><p class="text">Inventory</p></a>
 		<a class="buttons" id="link3" href="https://www.ebay.com/str/simplyunlucky/YUGIOH-SINGLES/_i.html?_storecat=26691736014" target="_blank"><p class="text">Mixed Lots</p></a>
@@ -1839,7 +1856,7 @@ Before leaving a negative feedback please message us so we can help create a mor
 			<a href="https://www.ebay.com/itm/DREAM-MIRROR-DECK-CHIM-RIRA-IKELOS-MORPHEUS-HYPNAGOGIA-ONEIROS-PHANTASOS-YuGiOh/202806528155?hash=item2f3836089b" target="_blank"><button >View</button></a>
 				<a href="https://www.ebay.com/itm/DREAM-MIRROR-DECK-CHIM-RIRA-IKELOS-MORPHEUS-HYPNAGOGIA-ONEIROS-PHANTASOS-YuGiOh/202806528155?hash=item2f3836089b" target="_blank"><h3 style="font-size: 20px;padding-top: 8px;padding-left: 40px;">DREAM MIRROR DECK CHIM RIRA: IKELOS MORPHEUS HYPNAGOGIA ONEIROS PHANTASOS YuGiOh</h3></a>
 				<p style="padding-left: 40px;padding-top: 8px;">List of cards:
-						Dream Mirror Hypnagogia x3<br>
+						Dream Mirror Hypnagogia x3
 						
 						Dream Mirror of Chaos x3<br>
 						
@@ -1871,7 +1888,7 @@ Before leaving a negative feedback please message us so we can help create a mor
 		<div id="description">
 			<a href="https://www.ebay.com/itm/GLADIATOR-BEAST-DECK-LOT-CHIM-Chaos-Impact-TEST-PANTHER-DOMITIANUS-YuGiOh/202805955335?hash=item2f382d4b07" target="_blank"><button >View</button></a>
 				<a href="https://www.ebay.com/itm/GLADIATOR-BEAST-DECK-LOT-CHIM-Chaos-Impact-TEST-PANTHER-DOMITIANUS-YuGiOh/202805955335?hash=item2f382d4b07" target="_blank"><h3 style="font-size: 20px;padding-top: 8px;padding-left: 40px;">GLADIATOR BEAST DECK LOT | CHIM | Chaos Impact TEST PANTHER DOMITIANUS YuGiOh </h3></a>
-				<p style="padding-left: 40px;padding-top: 8px;">List of cards:<br>
+				<p style="padding-left: 40px;padding-top: 8px;">List of cards:
 					All of our singles are Mint/Near Mint! And SHIPPING is always FREE!!<br>
 					CARD LIST:<br>
 					3x Gladiator Beast Dragases<br>
@@ -1927,7 +1944,7 @@ Before leaving a negative feedback please message us so we can help create a mor
 		<div id="description">
 			<a href="https://www.ebay.com/itm/VAMPIRE-DECK-LOT-MP19-SHERIDAN-SUCKER-FRAULEIN-AWAKENING-DOMINATION-YuGiOh/202769853612?hash=item2f36066cac:g:aM0AAOSwsvJdar3W" target="_blank"><button >View</button></a>
 				<a href="https://www.ebay.com/itm/VAMPIRE-DECK-LOT-MP19-SHERIDAN-SUCKER-FRAULEIN-AWAKENING-DOMINATION-YuGiOh/202769853612?hash=item2f36066cac:g:aM0AAOSwsvJdar3W" target="_blank"><h3 style="font-size: 20px;padding-top: 8px;padding-left: 40px;">VAMPIRE DECK LOT | MP19 SHERIDAN SUCKER FRAULEIN AWAKENING DOMINATION YuGiOh </h3></a>
-				<p style="padding-left: 40px;padding-top: 8px;">List of cards:<br>
+				<p style="padding-left: 40px;padding-top: 8px;">List of cards:
 					All of our singles are Mint/Near Mint! And SHIPPING is always FREE!!<br>
 					CARD LIST:<br>
 					3x Gladiator Beast Dragases<br>
@@ -1952,21 +1969,22 @@ Before leaving a negative feedback please message us so we can help create a mor
 	<div id="bannerimage">
 	</div>
 	<div class="text">
-		<h3>About Us</h3>
+		<p id="title">About Us</p>
 		<p>At SimplyUnlucky, YuGiOh fans are at the heart of everything we do.</p>
 		<p>With them and our great partners, we help make the YuGiOh experience more extraordinary.</p>
 	</div>
 </div>
-<section id="shipping">
-	<div class="shipping">
-		<div class="banner">
-		</div>
-		<div id="content">
-			<h3>Shipping Policy</h3>
-			<p>We will make sure every order get to its destination on time!</p>
-		</div>
+<div class="About" id="About">
+	<div id="bannerimage">
 	</div>
-</section> 
+	<div class="text">
+		<p id="title">Shipping Policy</p>
+		<p>We will make sure every order get to its destination on time!</p>
+	</div>
+</div>
+
+<div style="height:100px"></div>
+
 </div>
 <div class="footer">
 	<div class="contents" id="col1">
