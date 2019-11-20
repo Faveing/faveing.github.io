@@ -635,7 +635,7 @@ def Login():
 
 
 def main():
-    sp.create_order("SBAD-EN002", "11/15/2019", "awaiting_shippment", "MPearsonpear@protonmail.com", )
+    #sp.create_order("SBAD-EN002", "11/15/2019", "awaiting_shippment", "MPearsonpear@protonmail.com", )
     Login()
     home()
     ViewFormOrders()
