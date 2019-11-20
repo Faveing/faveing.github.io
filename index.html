@@ -234,7 +234,7 @@
 		.su-bg .su-prom.su-prot											{ width:100%; }
 		@media screen and (max-width:500px) 					{ .su-bg #su-main .su-prom { display:none; }  .su-bg #su-main .su-prom.su-prot { display:block; } }
 		#LeftPanel .su-ttba, #su-main .su-ttba					{ width:auto; text-align:left; margin:0; }
-		#RightPanel .su-ttba, #su-main .su-ttba					{ width:auto; text-align:left; margin:0; }
+		#RightPanel .su-ttba, #su-main .su-ttba					{ width:auto; text-align:center; margin:0; }
 		.su-bg .su-ttba .su-tins												{ padding:0 !important; }
 		.su-bg .su-ffbn, .su-bg a.su-ffbn								{  -webkit-border-radius:0; border-radius:0; -webkit-appearance:none; }
 		#su-main-feat #su-feat												{ padding:0; text-align:center; }
@@ -1318,7 +1318,7 @@
 		}
 		.su-bg #RightPanel .lev1 li a p {
 			width: 100%;
-			text-align: left;
+			text-align: left: ;;
 			padding-bottom: 3px;
 			border-bottom: transparent 1px solid;
 		}
@@ -1401,6 +1401,31 @@
 			color: red;
 		}
 
+		.header {
+			width: 100%;
+			height: 100px;
+			padding-top:30px;
+		}
+
+		.header .text {
+			width: fit-content;
+			margin: 0 auto;
+		}
+
+		.header .text p {
+			color: white;
+			font-size: 50px;
+			border-bottom: red 1px solid;
+			height: 43px;
+			padding-left: 30px;
+			padding-right: 30px;
+			font-family: Exo, sans-serif;
+			font-weight: bold;
+			font-style: italic;
+			text-transform: uppercase;
+			text-shadow: 1px 1px #000;
+		}
+
 
 		@media screen and (max-width : 1024px) {    
     		.productexamples #section1 #description {
@@ -1461,38 +1486,43 @@
 				font-size: 20px;
 			}
 		}
+
+
+
 		@media screen and (max-width: 1200px){
 			.productexamples #section1 #description button {
 				opacity: 1;
 			}
 			.productexamples {
-				height:550px;
+				height:520px;
 			}
 			.productexamples #section1 img {
-				width:550px;
+				width:520px;
 			}
 			.productexamples #section1 #description {
-				width: 550px;
-				height: 550px;
-				transform: translate(0px, -550px);
+				width: 520px;
+				height: 520px;
+				transform: translate(0px, -520px);
 			}
 			.productexamples #section1 #description a h3{
 				font-size: 15px;
 			}
 			.productexamples #section1 {
-				width: 550px;
-				height: 550px;
+				width: 520px;
+				height: 520px;
 			}
 			.productexamples #section1 #descriprion button{
 				float: right;
 				position: absolute;
-				margin-left: 60%;
+				margin-left: 57%;
 			}
 		}
 		
 		@media screen and (max-width: 1100px){
 			.productexamples #section1 #description button {
 				opacity: 1;
+				margin-top: 85%;
+				margin-left: 63%
 			}
 			.productexamples {
 				height:450px;
@@ -1511,11 +1541,6 @@
 			.productexamples #section1 {
 				width: 450px;
 				height: 450px;
-			}
-			.productexamples #section1 #descriprion button{
-				float: right;
-				position: absolute;
-				margin-top: 65%;
 			}
 		}
 		@media screen and (max-width: 900px){
@@ -1653,50 +1678,12 @@
 		}
 		@media screen and (max-width: 1344px) {
 		.spacer {
-			height: 1200px;
+			height: 1060px;
 		}
-		}
-		@media screen and (max-width: 1000px) {
-		.product_carasel img {
-			height: 150px;
-		}
-		}
-		@media screen and (max-width: 1125px) {
-		.spacer {
-			height: 0px;
-		}
-		}
-		@media screen and (max-width: 1125px) {
-		.About {
-			width: 100%;
-			transform: translate(0);
-		}
-		}
-		@media screen and (max-width: 1125px) {
-		.shipping {
-			width: 100%;
-			transform: translate(0);
-		}
-		}
-		@media screen and (max-width: 1125px) {
-		.contactus {
-			width: 100%;
-			transform: translate(0);
-		}
-		.contactus #content-right {
-			width: 44%;
-		}
-		}
-		@media screen and (max-width: 794px){
-		.About .text {
-			padding-left: 30px;
-		}
-		.shipping #content {
-			padding-left: 30px;
-		}
-		.contactus #content-left {
-			width: auto;
-			padding-left: 30px;
+		@media screen and (max-width: 1020px){
+			.spacer {
+				height: 50px;
+			}
 		}
 		}
 	</style>
@@ -1838,6 +1825,13 @@ Before leaving a negative feedback please message us so we can help create a mor
 			</div></div>
 		</div>
 </div>
+
+<div class="header">
+	<div class="text">
+		<p>CHECK OUT OUR OTHER PRODUCTS!</p>
+	</div>
+</div>
+
 <div class="productexamples">
 	<div id="section1">
 		<a target="_blank" href="https://www.ebay.com/itm/DREAM-MIRROR-DECK-CHIM-RIRA-IKELOS-MORPHEUS-HYPNAGOGIA-ONEIROS-PHANTASOS-YuGiOh/202806528155?hash=item2f3836089b:g:U9kAAOSwzxldsPPz"><img id="img1" src="https://i.ebayimg.com/images/g/U9kAAOSwzxldsPPz/s-l1600.jpg"></a>
@@ -1890,7 +1884,7 @@ Before leaving a negative feedback please message us so we can help create a mor
 					3x Gladiator Beast Charge<br>
 					3x Gladiator Naumachia<br>
 					3x Test Panther<br>
-					3x Gladiator Beast Domitianus<br>
+					3x Gladiator Beast Domitianus<br><br>
 					Deck CORES will be unlimited or a mix of both unlimited & 1st Edition<br>
 					Handling time for Deck Cores will be 2-5 Days, thank you for your patience!<br>
 						
