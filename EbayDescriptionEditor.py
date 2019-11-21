@@ -1,9 +1,16 @@
 import tkinter as tk
+import tkinter.filedialog
 from tkinter import ttk
+import json
+import xml.dom.minidom
+from html.parser import HTMLParser
+import re
 
 def main_screen():
 
     global root
+    global link_entry
+    global descirption
 
     root = tk.Tk()
     root.title("SimplyInventory")
@@ -32,14 +39,55 @@ def main_screen():
     filemenu.add_cascade(label="Quit", command=Logout)
     menubar.add_cascade(label="File", menu=filemenu)
 
+    product_frame = tk.Frame(root)
+
+    link_entry = tk.Entry(product_frame)
+    descirption = tk.Text(product_frame)
+    tk.Label(product_frame, text="Product Link:").grid(row=1, column=0)
+    tk.Label(product_frame, text="Product Description:").grid(row=2, column=0)
+
+    link_entry.grid(row=1, column=1)
+    descirption.grid(row=2, column=1)
+    product_frame.pack()
+
     root.config(menu=menubar)
 
     main_frame = tk.Frame()
 
     ask_file_botton = tk.Button(text="")
 
+def update_products(link, textdescription):
+    link_entry.insert("0", link)
+    descirption.insert("1.0", textdescription)
+
 def Open():
-    filename = tk.filedialog.askopenfilename(initialdiri = "C:\Users\Baby Carrot", title = "Select file", filetypes = (("html","*.html")))
+    filename = tk.filedialog.askopenfilename(title = "Select file", filetypes =(("Html Files", "*.html"),("All Files","*.*")))
+
+    print(filename)
+
+    textfile = open(filename, "r")
+
+    openedhtml = textfile.read()
+
+    product = openedhtml.split("<!-- Product -->")
+
+    link = product[1].split("<!-- Image link -->")
+
+    link = link[1].split("<!-- Link -->")
+
+    print(link[1])
+
+    link = link[1].split("'")
+
+    print(link[1])
+
+    textdescription = product[1].split("<!-- Description Text-->")
+
+    update_products(link[1], textdescription[1])
+
+    # print(openedhtml)
+
+    textfile.close()
 
 def Logout():
     quit()
