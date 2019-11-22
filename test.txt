@@ -1846,64 +1846,24 @@ Before leaving a negative feedback please message us so we can help create a mor
 <div class="productexamples">
 	<div id="section1">
         <!-- Image link -->
-        <!-- Link --> <a target="_blank" href='https://www.ebay.com/itm/DREAM-MIRROR-DECK-CHIM-RIRA-IKELOS-MORPHEUS-HYPNAGOGIA-ONEIROS-PHANTASOS-YuGiOh/202806528155?hash=item2f3836089b'><!-- Link --> <!-- Image --><img id="img1" src="https://i.ebayimg.com/images/g/U9kAAOSwzxldsPPz/s-l1600.jpg"><!-- Image --></a>
+        <!-- Link --> <a target="_blank" href='Some random card'><!-- Link --> <!-- Image --><img id="img1" src="https://i.ebayimg.com/images/g/U9kAAOSwzxldsPPz/s-l1600.jpg"><!-- Image --></a>
         <!-- Image link -->
 
 		<div id="description">
-			<!-- Link --><a href="https://www.ebay.com/itm/DREAM-MIRROR-DECK-CHIM-RIRA-IKELOS-MORPHEUS-HYPNAGOGIA-ONEIROS-PHANTASOS-YuGiOh/202806528155?hash=item2f3836089b" target="_blank"><!-- Link --><button >View</button></a>
-				<!-- Link --><a href="https://www.ebay.com/itm/DREAM-MIRROR-DECK-CHIM-RIRA-IKELOS-MORPHEUS-HYPNAGOGIA-ONEIROS-PHANTASOS-YuGiOh/202806528155?hash=item2f3836089b" target="_blank"><!-- Link --><h3 style="font-size: 20px;padding-top: 8px;padding-left: 40px;">DREAM MIRROR DECK CHIM RIRA: IKELOS MORPHEUS HYPNAGOGIA ONEIROS PHANTASOS YuGiOh</h3></a>
-				<p style="padding-left: 40px;padding-top: 8px;"><!-- Description Text-->List of cards:
-						Dream Mirror Hypnagogia x3
-						
-						Dream Mirror of Chaos x3<br>
-						
-						Dream Mirror of Joy x3<br>
-						
-						Dream Mirror of Terror x3<br>
-						
-						Dream Mirror Oneiromancy x3<br>
-						
-						Dream Mirror Phantasms x3<br>
-						
-						Ikelos, The Dream Mirror Mara x3<br>
-						
-						Morpheus, The Dream Mirror White Knight x3<br>
-						
-						Oneiros, The Dream Mirror Erlking x3<br>
-						
-						Phantasos, The Dream Mirror Foe x3<br>
-						
-						Phantasos, The Dream Mirror Friend x3<br>
-						
-						Dream Mirror Fantasy x3<br>
-                        
-                        <!-- Description Text-->
+			<a href= + produck1_link +  target="_blank"><button >View</button></a>
+				<a href= + produck1_link +  target="_blank"><h3 style="font-size: 20px;padding-top: 8px;padding-left: 40px;">DREAM MIRROR DECK CHIM RIRA: IKELOS MORPHEUS HYPNAGOGIA ONEIROS PHANTASOS YuGiOh</h3></a>
+				<p style="padding-left: 40px;padding-top: 8px;"><!-- Description Text-->With a cool des
                         </p>
         </div>
 	</div>
 	<div id="section1">
 		<!-- Image link -->
-		<!-- Link --> <a target="_blank" href='https://i.ebayimg.com/images/g/U9kAAOSwzxldsPPz/s-l1600.jpg'><!-- Link --> <!-- Image --><img src="https://i.ebayimg.com/images/g/Ld0AAOSw~8ldyY8V/s-l1600.jpg"><!-- Image --></a>
+		<!-- Link --> <a target="_blank" href='Some '><!-- Link --> <!-- Image --><img src="https://i.ebayimg.com/images/g/Ld0AAOSw~8ldyY8V/s-l1600.jpg"><!-- Image --></a>
 		<!-- Image link -->
 		<div id="description">
 			<a href="https://www.ebay.com/itm/GLADIATOR-BEAST-DECK-LOT-CHIM-Chaos-Impact-TEST-PANTHER-DOMITIANUS-YuGiOh/202805955335?hash=item2f382d4b07" target="_blank"><button >View</button></a>
 				<a href="https://www.ebay.com/itm/GLADIATOR-BEAST-DECK-LOT-CHIM-Chaos-Impact-TEST-PANTHER-DOMITIANUS-YuGiOh/202805955335?hash=item2f382d4b07" target="_blank"><h3 style="font-size: 20px;padding-top: 8px;padding-left: 40px;">GLADIATOR BEAST DECK LOT | CHIM | Chaos Impact TEST PANTHER DOMITIANUS YuGiOh </h3></a>
-				<p style="padding-left: 40px;padding-top: 8px;"><!-- Description Text-->List of cards:
-					All of our singles are Mint/Near Mint! And SHIPPING is always FREE!!<br>
-					CARD LIST:<br>
-					3x Gladiator Beast Dragases<br>
-					3x Gladiator Beast Sagittarii<br>
-					3x Gladiator Beast Attorix<br>
-					3x Gladiator Beast Vespasius<br>
-					3x Gladiator Beast's Comeback<br>
-					3x Gladiator Beast United<br>
-					3x Gladiator Rejection<br>
-					3x Gladiator Beast Charge<br>
-					3x Gladiator Naumachia<br>
-					3x Test Panther<br>
-					3x Gladiator Beast Domitianus<br><br>
-					Deck CORES will be unlimited or a mix of both unlimited & 1st Edition<br>
-					Handling time for Deck Cores will be 2-5 Days, thank you for your patience!<br>
+				<p style="padding-left: 40px;padding-top: 8px;"><!-- Description Text-->Some 
 					<!-- Description Text-->
 						</p>
 		</div>
@@ -1916,58 +1876,26 @@ Before leaving a negative feedback please message us so we can help create a mor
 <div class="productexamples">
 	<div id="section1">
 		<!-- Image link -->
-		<!-- Link --><a target="_blank" href="https://www.ebay.com/itm/THUNDER-DRAGON-DECK-LOT-MP19-COLOSSUS-TITAN-DRAGONHAWK-DRAGONDARK-FUSION-YuGiOh/202769853630?hash=item2f36066cbe:g:r1IAAOSwZEJdrm9A"><!-- Link --> <!-- Image --><img id="img1" src="https://i.ebayimg.com/images/g/r1IAAOSwZEJdrm9A/s-l1600.jpg"><!-- Image --></a>
+		<!-- Link --><a target="_blank" href='Stuff'><!-- Link --> <!-- Image --><img id="img1" src="https://i.ebayimg.com/images/g/r1IAAOSwZEJdrm9A/s-l1600.jpg"><!-- Image --></a>
 		<!-- Image link -->
 		<div id="description">
-			<a href="https://www.ebay.com/itm/THUNDER-DRAGON-DECK-LOT-MP19-COLOSSUS-TITAN-DRAGONHAWK-DRAGONDARK-FUSION-YuGiOh/202769853630?hash=item2f36066cbe:g:r1IAAOSwZEJdrm9A" target="_blank"><button >View</button></a>
-				<a href="https://www.ebay.com/itm/THUNDER-DRAGON-DECK-LOT-MP19-COLOSSUS-TITAN-DRAGONHAWK-DRAGONDARK-FUSION-YuGiOh/202769853630?hash=item2f36066cbe:g:r1IAAOSwZEJdrm9A" target="_blank"><h3 style="font-size: 20px;padding-top: 8px;padding-left: 40px;">THUNDER DRAGON DECK LOT MP19 COLOSSUS TITAN DRAGONHAWK DRAGONDARK FUSION YuGiOh
+			<a href='Stuff' target="_blank"><button >View</button></a>
+				<a href='Stuff' target="_blank"><h3 style="font-size: 20px;padding-top: 8px;padding-left: 40px;">THUNDER DRAGON DECK LOT MP19 COLOSSUS TITAN DRAGONHAWK DRAGONDARK FUSION YuGiOh
 				</h3></a>
 				<p style="padding-left: 40px;padding-top: 8px;">
-					<!-- Description Text-->All of our singles are Mint/Near Mint! And SHIPPING is always FREE!!<br>
-
-					CARD LIST:<br>
-
-
-					Dhampir Vampire Sheridan x3<br>
-					Vampire Sucker x3<br>
-					Vampire Fraulein x3<br>
-					Vampire Familiar x3<br>
-					Vampire Grimson x3<br>
-					Vampire Red Baron x3<br>
-					Vampire Retainer x3<br>
-					Vampire's Domain x3<br>
-					Vampire Scarlet Scourge x3<br>
-					Vampire's Desire  x3<br>
-					Vampire Awakening x3<br>
-					Vampire Domination x3<br>
+					<!-- Description Text-->With
 					<!-- Description Text-->
 					</p>
 		</div>
 	</div>
 	<div id="section1">
 		<!-- Image link -->
-		<!-- Link --><a target="_blank" href="https://www.ebay.com/itm/VAMPIRE-DECK-LOT-MP19-SHERIDAN-SUCKER-FRAULEIN-AWAKENING-DOMINATION-YuGiOh/202769853612?hash=item2f36066cac:g:aM0AAOSwsvJdar3W"><!-- Link --> <!-- Image --><img id="img1" src="https://i.ebayimg.com/images/g/aM0AAOSwsvJdar3W/s-l1600.jpg"><!-- Image --></a>
+		<!-- Link --><a target="_blank" href='The Cool'><!-- Link --> <!-- Image --><img id="img1" src="https://i.ebayimg.com/images/g/aM0AAOSwsvJdar3W/s-l1600.jpg"><!-- Image --></a>
 		<!-- Image link -->
 		<div id="description">
-			<a href="https://www.ebay.com/itm/VAMPIRE-DECK-LOT-MP19-SHERIDAN-SUCKER-FRAULEIN-AWAKENING-DOMINATION-YuGiOh/202769853612?hash=item2f36066cac:g:aM0AAOSwsvJdar3W" target="_blank"><button >View</button></a>
-				<a href="https://www.ebay.com/itm/VAMPIRE-DECK-LOT-MP19-SHERIDAN-SUCKER-FRAULEIN-AWAKENING-DOMINATION-YuGiOh/202769853612?hash=item2f36066cac:g:aM0AAOSwsvJdar3W" target="_blank"><h3 style="font-size: 20px;padding-top: 8px;padding-left: 40px;">VAMPIRE DECK LOT | MP19 SHERIDAN SUCKER FRAULEIN AWAKENING DOMINATION YuGiOh </h3></a>
-				<p style="padding-left: 40px;padding-top: 8px;">List of cards:
-					All of our singles are Mint/Near Mint! And SHIPPING is always FREE!!<br>
-					CARD LIST:<br>
-					3x Gladiator Beast Dragases<br>
-					3x Gladiator Beast Sagittarii<br>
-					3x Gladiator Beast Attorix<br>
-					3x Gladiator Beast Vespasius<br>
-					3x Gladiator Beast's Comeback<br>
-					3x Gladiator Beast United<br>
-					3x Gladiator Rejection<br>
-					3x Gladiator Beast Charge<br>
-					3x Gladiator Naumachia<br>
-					3x Test Panther<br>
-					3x Gladiator Beast Domitianus<br>
-					Deck CORES will be unlimited or a mix of both unlimited & 1st Edition<br>
-					Handling time for Deck Cores will be 2-5 Days, thank you for your patience!<br>
-						
+			<a href='The Cool' target="_blank"><button >View</button></a>
+				<a href='The Cool' target="_blank"><h3 style="font-size: 20px;padding-top: 8px;padding-left: 40px;">VAMPIRE DECK LOT | MP19 SHERIDAN SUCKER FRAULEIN AWAKENING DOMINATION YuGiOh </h3></a>
+				<p style="padding-left: 40px;padding-top: 8px;"> Stuff
 						</p>
 		</div>
 	</div>
