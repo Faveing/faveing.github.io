@@ -46,7 +46,7 @@ def main_screen():
     tk.Label(product_frame, text="Product Link:").grid(row=1, column=0)
     tk.Label(product_frame, text="Product Description:").grid(row=2, column=0)
 
-    link_entry.grid(row=1, column=1)
+    link_entry.grid(row=1, column=1)  
     descirption.grid(row=2, column=1)
     product_frame.pack()
 
