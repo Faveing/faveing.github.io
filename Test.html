@@ -1,368 +1,4 @@
-import tkinter as tk
-import tkinter.filedialog
-from tkinter import ttk
-import re
-import pyperclip
-import os
-
-forms = []
-tabs = []
-tabs_elements = []
-
-
-def main_screen():
-
-    global root
-    global product_frame
-
-    root = tk.Tk()
-    root.title("SimplyDescriptionMaker")
-
-    #root.geometry("900x600")
-    # root.resizable(0,0)
-
-    banner = tk.Frame(root)
-    banner.pack(pady=10)
-
-    #titleBanner = tk.Label(banner, text="Simply Inventory")
-    # titleBanner.pack()
-    menubar = tk.Menu(root)
-    filemenu = tk.Menu(menubar, tearoff=0)
-    htmlmenu = tk.Menu(menubar, tearoff=0)
-    filemenu.add_command(label="Save", command=Save)
-    filemenu.add_command(label="Copy", command=Copy)
-    filemenu.add_command(label="Quit", command=lambda: quit())
-
-    htmlmenu.add_command(label="Commit", command=edit_template)
-
-    menubar.add_cascade(label="File", menu=filemenu)
-    menubar.add_cascade(label="Html", menu=htmlmenu)
-
-    product_frame = tk.Frame(root)
-
-    tabControl = ttk.Notebook(root)
-
-    Tab1 = ttk.Frame(tabControl)
-    tabs.append(Tab1)
-    Tab2 = ttk.Frame(tabControl)
-    tabs.append(Tab2)
-    Tab3 = ttk.Frame(tabControl)
-    tabs.append(Tab3)
-    Tab4 = ttk.Frame(tabControl)
-    tabs.append(Tab4)
-    Tab5 = ttk.Frame(tabControl)
-    tabs.append(Tab5)
-
-    tabControl.add(Tab1, text="Product1")
-    tabControl.add(Tab2, text="Product2")
-    tabControl.add(Tab3, text="Product3")
-    tabControl.add(Tab4, text="Product4")
-    tabControl.add(Tab5, text="Main Description")
-    tabControl.pack(expand=True, fill="both")
-
-    root.config(menu=menubar)
-
-    make_product()
-    draw_main_description_forms()
-    # link_entry = tk.Entry(product_frame)
-    # descirption = tk.Text(product_frame)
-    # tk.Label(product_frame, text="Product Link:").grid(row=1, column=0)
-    # tk.Label(product_frame, text="Product Description:").grid(row=2, column=0)
-
-    # link_entry.grid(row=1, column=1)
-    # descirption.grid(row=2, column=1)
-
-    # main_frame = tk.Frame()
-
-    # ask_file_botton = tk.Button(text="")
-
-def make_template():
-    product1_link = tabs_elements[0][0].get()
-    product1_description = tabs_elements[0][1].get(1.0, tk.END)
-
-    product2_link = tabs_elements[1][0].get()
-    product2_description = tabs_elements[1][1].get(1.0, tk.END)
-
-    product3_link = tabs_elements[2][0].get()
-    product3_description = tabs_elements[2][1].get(1.0, tk.END)
-
-    product4_link = tabs_elements[3][0].get()
-    product4_description = tabs_elements[3][1].get(1.0, tk.END)
-
-    product1_name = tabs_elements[0][2].get()
-    product2_name = tabs_elements[1][2].get()
-    product3_name = tabs_elements[2][2].get()
-    product4_name = tabs_elements[3][2].get()
-
-    product1_image = tabs_elements[0][3].get()
-    product2_image = tabs_elements[1][3].get()
-    product3_image = tabs_elements[2][3].get()
-    product4_image = tabs_elements[3][3].get()
-
-    main_des = main_description.get(1.0, tk.END).split("\n")
-    main_image_link = main_image.get()
-
-    link = main_link.get()
-
-    main_title = main_title_form.get()
-
-    customer_support = main_customer.get(1.0, tk.END).split("\n")
-
-    buffer = ""
-
-    for i in range(len(customer_support)):
-        buffer = buffer + customer_support[i] + "<br>"
-
-    main_cus = buffer
-
-    descriptions = []
-
-    descriptions.append(product1_description.split("\n"))
-    descriptions.append(product2_description.split("\n"))
-    descriptions.append(product3_description.split("\n"))
-    descriptions.append(product4_description.split("\n"))
-
-    new_descriptions = []
-
-    buffer = ""
-
-    for i in range(len(main_des)):
-        buffer = buffer + main_des[i] + "<br>"
-
-    main_des = buffer
-
-
-    for i in range(len(descriptions)):
-            buffer = ""
-            for x in range(len(descriptions[i])):
-                buffer = buffer + descriptions[i][x] + "<br>"
-
-            new_descriptions.append(buffer)
-    
-    config = open("config", "r")
-
-    text2write = product1_link + "|" + product1_description + "|" + product2_link + "|" + product2_description + "|" + product3_link + "|" + product3_description + "|" + product4_link + "|" + product4_description + "|" + product1_name + "|" + product2_name + "|" + product3_name + "|" + product4_name + "|")
-
-    for i in range()
-
-def Copy():
-    try:
-        pyperclip.copy(newhtml)
-    except:
-        edit_template()
-        pyperclip.copy(newhtml)
-
-def make_product():
-
-    for i in range(4):
-
-        product_list = []
-
-        product1_link = tk.Entry(tabs[i], width=80)
-        product_list.append(product1_link)
-        product1_description = tk.Text(tabs[i], width=80)
-        product_list.append(product1_description)
-
-        tk.Label(tabs[i], text="Product Link:").grid(row=1, column=0)
-        tk.Label(tabs[i], text="Product Description:").grid(row=2, column=0)
-        tk.Label(tabs[i], text="Product Name:").grid(row=0, column=0)
-        tk.Label(tabs[i], text="Product Image:").grid(row=3, column=0)
-
-        product1_link.grid(row=1, column=1)
-        product1_description.grid(row=2, column=1)
-
-        product1_name = tk.Entry(tabs[i], width=80)
-        product_list.append(product1_name)
-        product1_name.grid(row=0, column=1)
-
-        product1_image_link = tk.Entry(tabs[i], width=80)
-        product_list.append(product1_image_link)
-        product1_image_link.grid(row=3, column=1)
-
-        # get_description = tk.Button(
-        #     tabs[i], text="Get Description", command=edit_template)
-        # product_list.append(get_description)
-
-        tabs_elements.append(product_list)
-
-def get_product_link(html, product_number, link_number):
-
-    print("get_product_link: product_number=" + str(product_number))
-    print("get_product_link: link_number=" + str(link_number))
-
-    product = html.split("<!-- Product -->")
-
-    # print(product)
-
-    link = product[1].split("<!-- Image link -->")
-
-    link = link[link_number].split("<!-- Link -->")
-
-    link = link[1].split("'")
-
-    return link[1]
-
-
-def get_product_description(html, product_number, description_number):
-    product = html.split("<!-- Product -->")
-
-    product_description = product[product_number].split(
-        "<!-- Description Text-->")
-
-    return product_description[description_number]
-
-
-def create_new_product_section():
-    link_entry = tk.Entry(product_frame)
-    descirption = tk.Text(product_frame)
-
-    combined = []
-
-    combined.append(link_entry)
-    combined.append(descirption)
-
-    forms.append(combined)
-
-def draw_main_description_forms():
-    tk.Label(tabs[4],text="Main Title:").grid(row=0, column=0)
-    tk.Label(tabs[4], text="Main Link:").grid(row=1, column=0)
-    tk.Label(tabs[4],text="Main Description:").grid(row=2, column=0)
-    tk.Label(tabs[4],text="Main Image:").grid(row=3, column=0)
-    tk.Label(tabs[4],text="Customer Support").grid(row=1, column=2)
-
-    global main_title_form
-    global main_description
-    global main_link
-    global main_image
-    global main_customer
-
-    main_title_form = tk.Entry(tabs[4], width=80)
-
-    main_title_form.grid(row=0,column=1)
-
-    main_link = tk.Entry(tabs[4], width=80)
-
-    main_link.grid(row=1, column=1)
-
-    main_description = tk.Text(tabs[4], width=80)
-    main_description.grid(row=2, column=1)
-
-    main_image = tk.Entry(tabs[4], width=80)
-    main_image.grid(row=3, column=1)
-
-    main_customer = tk.Text(tabs[4], width=80)
-    main_customer.grid(row=2, column=2)
-
-def draw_forms():
-
-    print(forms)
-
-    for i in range(len(forms)):
-        for x in range(len(forms[i])):
-            forms[i][x].grid(row=x, column=i)
-
-    # link_entry.grid(row=1, column=1)
-    # descirption.grid(row=2, column=1)
-
-
-def fill_forms(html):
-
-    for i in range(len(forms)):
-        for x in range(len(forms)):
-            print("fill_forms: forms[" + str(i) +
-                  "][" + str(x) + "]=" + str(forms[i][1]))
-
-    print("fill_forms: length if forms" + str(len(forms)))
-    print("fill_forms: length of forms[i] " + str(len(forms)))
-
-    for i in range(len(forms)):
-        for x in range(len(forms[i])):
-            link = get_product_link(html, i, x)
-            forms[i][x].insert("0", link)
-
-
-def Save():
-    name= tk.filedialog.asksaveasfile(mode='w',defaultextension=".html")
-    try:
-        try:
-            text2save=str(newhtml)
-            name.write(text2save)
-            name.close
-        except:
-            edit_template()
-            text2save=str(newhtml)
-            name.write(text2save)
-            name.close
-    except AttributeError:
-        pass
-
-def edit_template():
-
-    global newhtml
-
-    product1_link = tabs_elements[0][0].get()
-    product1_description = tabs_elements[0][1].get(1.0, tk.END)
-
-    product2_link = tabs_elements[1][0].get()
-    product2_description = tabs_elements[1][1].get(1.0, tk.END)
-
-    product3_link = tabs_elements[2][0].get()
-    product3_description = tabs_elements[2][1].get(1.0, tk.END)
-
-    product4_link = tabs_elements[3][0].get()
-    product4_description = tabs_elements[3][1].get(1.0, tk.END)
-
-    product1_name = tabs_elements[0][2].get()
-    product2_name = tabs_elements[1][2].get()
-    product3_name = tabs_elements[2][2].get()
-    product4_name = tabs_elements[3][2].get()
-
-    product1_image = tabs_elements[0][3].get()
-    product2_image = tabs_elements[1][3].get()
-    product3_image = tabs_elements[2][3].get()
-    product4_image = tabs_elements[3][3].get()
-
-    main_des = main_description.get(1.0, tk.END).split("\n")
-    main_image_link = main_image.get()
-
-    link = main_link.get()
-
-    main_title = main_title_form.get()
-
-    customer_support = main_customer.get(1.0, tk.END).split("\n")
-
-    buffer = ""
-
-    for i in range(len(customer_support)):
-        buffer = buffer + customer_support[i] + "<br>"
-
-    main_cus = buffer
-
-    descriptions = []
-
-    descriptions.append(product1_description.split("\n"))
-    descriptions.append(product2_description.split("\n"))
-    descriptions.append(product3_description.split("\n"))
-    descriptions.append(product4_description.split("\n"))
-
-    new_descriptions = []
-
-    buffer = ""
-
-    for i in range(len(main_des)):
-        buffer = buffer + main_des[i] + "<br>"
-
-    main_des = buffer
-
-
-    for i in range(len(descriptions)):
-            buffer = ""
-            for x in range(len(descriptions[i])):
-                buffer = buffer + descriptions[i][x] + "<br>"
-
-            new_descriptions.append(buffer)
-
-    newhtml = """  
+  
     <html>
         <title>eBay</title>
 
@@ -2145,11 +1781,11 @@ def edit_template():
     <div id="su-main">
         <div id="su-main-gall" class="su-pbox su-brdm su-bklt"><div class="su-tins">
         
-            <a href='""" + link + """' target="_blank" style="text-decoration: none; border: none;"><h1 id="MainHeader" style="border: none;">""" + main_title + """</h1></a>
+            <a href='https://www.ebay.com/itm/NOBLE-KNIGHT-DECK-LOT-MP19-MORGAN-KING-CUSTENNIN-UNTIL-ARMS-HERITAGE-YuGiOh/202769853627?_trkparms=aid%3D1110001%26algo%3DSPLICE.SIM%26ao%3D2%26asc%3D20160323102634%26meid%3D0ed393f7e9324bf6bee3a3bae65151a6%26pid%3D100623%26rk%3D3%26rkt%3D6%26sd%3D202769853614%26itm%3D202769853627%26pmt%3D1%26noa%3D1%26pg%3D2047675&_trksid=p2047675.c100623.m-1' target="_blank" style="text-decoration: none; border: none;"><h1 id="MainHeader" style="border: none;">NOBLE KNIGHT DECK LOT | MP19 MORGAN KING CUSTENNIN UNTIL ARMS HERITAGE YuGiOh </h1></a>
             
             <div id="su-temp-gall" class="su-bttm su-left">
                 <div id="su-gall-main">
-                    <div id="mimg01"><input type="radio" id="img01" name="gallery" checked=""><div class="su-cntr"><img src='""" + main_image_link + """' alt=""></div></div>
+                    <div id="mimg01"><input type="radio" id="img01" name="gallery" checked=""><div class="su-cntr"><img src='https://i.ebayimg.com/images/g/MYAAAOSwctxdaoxK/s-l1600.jpg' alt=""></div></div>
                     <div id="mimg02"><input type="radio" id="img02" name="gallery"><div class="su-cntr"><img src="https://i.ebayimg.com/images/g/39wAAOSw5LRduJRh/s-l1600.jpg" alt=""></div></div>
                     <div id="mimg03"><input type="radio" id="img03" name="gallery"><div class="su-cntr"><img src="https://i.ebayimg.com/images/g/YWAAAOSwevJdudc8/s-l1600.jpg" alt=""></div></div>
                     <div id="mimg04"><input type="radio" id="img04" name="gallery"><div class="su-cntr"><img src="https://i.ebayimg.com/images/g/YWAAAOSwevJdudc8/s-l1600.jpg" alt=""></div></div>
@@ -2164,12 +1800,12 @@ def edit_template():
                 </div>
             </div>
             <div id="su-gall-right">
-    <strong><big><font color="black"><u>Description</u></font></big></strong><br>""" + main_des + """
+    <strong><big><font color="black"><u>Description</u></font></big></strong><br>CARD LIST:<br><br>Morgan, the Enchantress of Avalon x3<br>Sacred Noble Knight of King Custennin x3<br>Noble Knight Iyvanne x3<br>Noble Knight Custennin x3<br>Heritage of the Chalice x3<br>Noble Knight Pellinore x3<br>Noble Arms - Clarent x3<br>Until Noble Arms are Needed Once Again x3<br><br>
     </p>
         </div>
             <div id="su-gall-right" style="width: 100%;">
     <strong><big><font color="black"><u>Customer Service</u></font></big></strong><br>
-    """ + main_cus + """
+    You guys will never get your cards :(<br><br>
     </p>
                 </div></div>
             </div>
@@ -2186,24 +1822,24 @@ def edit_template():
     <div class="productexamples">
         <div id="section1">
             <!-- Image link -->
-            <!-- Link --> <a target="_blank" href='""" + product1_link + """'><!-- Link --> <!-- Image --><img id="img1" src='""" + product1_image + """'><!-- Image --></a>
+            <!-- Link --> <a target="_blank" href=''><!-- Link --> <!-- Image --><img id="img1" src=''><!-- Image --></a>
             <!-- Image link -->
 
             <div id="description">
-                <a href='""" + product1_link + """' target="_blank"><button >View</button></a>
-                    <a href='""" + product1_link + """' target="_blank"><h3 style="font-size: 20px;padding-top: 8px;padding-left: 40px;">""" + product1_name + """</h3></a>
-                    <p style="padding-left: 40px;padding-top: 8px;"><!-- Description Text-->""" + new_descriptions[0] + """
+                <a href='' target="_blank"><button >View</button></a>
+                    <a href='' target="_blank"><h3 style="font-size: 20px;padding-top: 8px;padding-left: 40px;"></h3></a>
+                    <p style="padding-left: 40px;padding-top: 8px;"><!-- Description Text--><br><br>
                             </p>
             </div>
         </div>
         <div id="section1">
             <!-- Image link -->
-            <!-- Link --> <a target="_blank" href='""" + product2_link + """'><!-- Link --> <!-- Image --><img src='""" + product2_image + """'><!-- Image --></a>
+            <!-- Link --> <a target="_blank" href=''><!-- Link --> <!-- Image --><img src=''><!-- Image --></a>
             <!-- Image link -->
             <div id="description">
-                <a href='""" + product2_link + """' target="_blank"><button >View</button></a>
-                    <a href='""" + product2_link + """' target="_blank"><h3 style="font-size: 20px;padding-top: 8px;padding-left: 40px;">""" + product2_name + """</h3></a>
-                    <p style="padding-left: 40px;padding-top: 8px;"><!-- Description Text-->""" + new_descriptions[1] + """
+                <a href='' target="_blank"><button >View</button></a>
+                    <a href='' target="_blank"><h3 style="font-size: 20px;padding-top: 8px;padding-left: 40px;"></h3></a>
+                    <p style="padding-left: 40px;padding-top: 8px;"><!-- Description Text--><br><br>
                         <!-- Description Text-->
                             </p>
             </div>
@@ -2216,25 +1852,25 @@ def edit_template():
     <div class="productexamples">
         <div id="section1">
             <!-- Image link -->
-            <!-- Link --><a target="_blank" href='""" + product3_link + """'><!-- Link --> <!-- Image --><img id="img1" src='""" + product3_image + """'><!-- Image --></a>
+            <!-- Link --><a target="_blank" href=''><!-- Link --> <!-- Image --><img id="img1" src=''><!-- Image --></a>
             <!-- Image link -->
             <div id="description">
-                <a href='""" + product3_link + """' target="_blank"><button >View</button></a>
-                    <a href='""" + product3_link + """' target="_blank"><h3 style="font-size: 20px;padding-top: 8px;padding-left: 40px;">""" + product3_name + """</h3></a>
+                <a href='' target="_blank"><button >View</button></a>
+                    <a href='' target="_blank"><h3 style="font-size: 20px;padding-top: 8px;padding-left: 40px;"></h3></a>
                     <p style="padding-left: 40px;padding-top: 8px;">
-                        <!-- Description Text-->""" + new_descriptions[2] + """
+                        <!-- Description Text--><br><br>
                         <!-- Description Text-->
                         </p>
             </div>
         </div>
         <div id="section1">
             <!-- Image link -->
-            <!-- Link --><a target="_blank" href='""" + product4_link + """'><!-- Link --> <!-- Image --><img id="img1" src='""" + product4_image + """'><!-- Image --></a>
+            <!-- Link --><a target="_blank" href=''><!-- Link --> <!-- Image --><img id="img1" src=''><!-- Image --></a>
             <!-- Image link -->
             <div id="description">
-                <a href='""" + product4_link + """' target="_blank"><button >View</button></a>
-                    <a href='""" + product4_link + """' target="_blank"><h3 style="font-size: 20px;padding-top: 8px;padding-left: 40px;">""" + product4_name + """</h3></a>
-                    <p style="padding-left: 40px;padding-top: 8px;"> """ + new_descriptions[3] + """
+                <a href='' target="_blank"><button >View</button></a>
+                    <a href='' target="_blank"><h3 style="font-size: 20px;padding-top: 8px;padding-left: 40px;"></h3></a>
+                    <p style="padding-left: 40px;padding-top: 8px;"> <br><br>
                             </p>
             </div>
         </div>
@@ -2276,19 +1912,4 @@ def edit_template():
     </div>
     </div></div></div>
     </body>
-    </html>"""
-
-    # file = open("Newhtml.html", "w")
-
-    # file.write(newhtml)
-
-    # file.close()
-
-
-def Logout():
-    quit()
-
-
-main_screen()
-
-tk.mainloop()
+    </html>

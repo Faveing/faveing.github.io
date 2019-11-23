@@ -1,0 +1,40 @@
+.contents {
+    max-width: 1200px;
+    height: 100%;
+    background-color: gray;
+    margin: 0 auto;
+}
+
+.main {
+    width: 100%;
+    background-color: white;
+}
+
+.main .product_contents .product_example {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.main .product_contents .product_example img{
+    width: 40px;
+}
+
+#sidebar {
+    float: left;
+    width: 200px;
+    height: 100%;
+    background-color: teal;
+}
+
+#sidebar img {
+    width: 200px;
+}
+
+#sidebar p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    height: fit-content;
+    background-color: white;
+    opacity: .5;
+}
