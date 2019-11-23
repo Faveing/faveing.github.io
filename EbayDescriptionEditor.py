@@ -1,5 +1,6 @@
 import tkinter as tk
 import tkinter.filedialog
+from tkinter import messagebox
 from tkinter import ttk
 import re
 import pyperclip
@@ -34,6 +35,8 @@ def main_screen():
     filemenu.add_command(label="Quit", command=lambda: quit())
 
     htmlmenu.add_command(label="Commit", command=edit_template)
+    htmlmenu.add_command(label="Select Template", command=get_template)
+    htmlmenu.add_command(label="Save Template", command=make_template)
 
     menubar.add_cascade(label="File", menu=filemenu)
     menubar.add_cascade(label="Html", menu=htmlmenu)
@@ -102,8 +105,6 @@ def make_template():
     main_des = main_description.get(1.0, tk.END).split("\n")
     main_image_link = main_image.get()
 
-    link = main_link.get()
-
     main_title = main_title_form.get()
 
     customer_support = main_customer.get(1.0, tk.END).split("\n")
@@ -139,11 +140,50 @@ def make_template():
 
             new_descriptions.append(buffer)
     
-    config = open("config", "r")
+    filename = tk.filedialog.askopenfilename()
 
-    text2write = product1_link + "|" + product1_description + "|" + product2_link + "|" + product2_description + "|" + product3_link + "|" + product3_description + "|" + product4_link + "|" + product4_description + "|" + product1_name + "|" + product2_name + "|" + product3_name + "|" + product4_name + "|")
+    config = open(filename, "w")
 
-    for i in range()
+    text2write = product1_link + "|" + product1_description + "|" + product2_link + "|" + product2_description + "|" + product3_link + "|" + product3_description + "|" + product4_link + "|" + product4_description + "|" + product1_name + "|" + product2_name + "|" + product3_name + "|" + product4_name + "|" + product1_image + "|" + product2_image + "|" + product3_image + "|" + product4_image + "|" + main_des + "|" + main_image_link + "|" + main_title + "|" + main_cus
+
+    config.write(text2write)
+
+    #for i in range()
+
+def get_template():
+    
+    filename = tk.filedialog.askopenfilename()
+
+    config = open(filename, "r")
+
+    config_list = config.read().split("|")
+
+    config.close()
+
+    for i in range(len(config_list)):
+        print(config_list[i])
+    try:
+        tabs_elements[0][0].insert(0, config_list[0])
+        tabs_elements[0][1].insert("1.0", config_list[1])
+        tabs_elements[0][2].insert(0, config_list[8])
+        tabs_elements[0][3].insert(0, config_list[12])
+
+        tabs_elements[1][0].insert(0, config_list[2])
+        tabs_elements[1][1].insert("1.0", config_list[3])
+        tabs_elements[1][2].insert(0, config_list[9])
+        tabs_elements[1][3].insert(0, config_list[13])
+
+        tabs_elements[2][0].insert(0, config_list[4])
+        tabs_elements[2][1].insert("1.0", config_list[5])
+        tabs_elements[2][2].insert(0, config_list[10])
+        tabs_elements[2][3].insert(0, config_list[14])
+        
+        tabs_elements[3][0].insert(0, config_list[6])
+        tabs_elements[3][1].insert("1.0", config_list[7])
+        tabs_elements[3][2].insert(0, config_list[11])
+        tabs_elements[3][3].insert(0, config_list[15])
+    except:
+        tk.messagebox.showinfo("Error","Error in template file! " + filename)
 
 def Copy():
     try:
@@ -151,6 +191,9 @@ def Copy():
     except:
         edit_template()
         pyperclip.copy(newhtml)
+
+def clear(i):
+    tabs_elements[i][0].delete(0, tk.END)
 
 def make_product():
 
@@ -162,6 +205,7 @@ def make_product():
         product_list.append(product1_link)
         product1_description = tk.Text(tabs[i], width=80)
         product_list.append(product1_description)
+
 
         tk.Label(tabs[i], text="Product Link:").grid(row=1, column=0)
         tk.Label(tabs[i], text="Product Description:").grid(row=2, column=0)
@@ -179,11 +223,12 @@ def make_product():
         product_list.append(product1_image_link)
         product1_image_link.grid(row=3, column=1)
 
-        # get_description = tk.Button(
-        #     tabs[i], text="Get Description", command=edit_template)
-        # product_list.append(get_description)
-
         tabs_elements.append(product_list)
+
+    tk.Button(tabs[0], text="clear", command=lambda: clear(0)).grid(row=1, column=2)
+    tk.Button(tabs[1], text="clear", command=lambda: clear(1)).grid(row=1, column=2)
+    tk.Button(tabs[2], text="clear", command=lambda: clear(2)).grid(row=1, column=2)
+    tk.Button(tabs[3], text="clear", command=lambda: clear(3)).grid(row=1, column=2)
 
 def get_product_link(html, product_number, link_number):
 
@@ -225,14 +270,12 @@ def create_new_product_section():
 
 def draw_main_description_forms():
     tk.Label(tabs[4],text="Main Title:").grid(row=0, column=0)
-    tk.Label(tabs[4], text="Main Link:").grid(row=1, column=0)
-    tk.Label(tabs[4],text="Main Description:").grid(row=2, column=0)
-    tk.Label(tabs[4],text="Main Image:").grid(row=3, column=0)
-    tk.Label(tabs[4],text="Customer Support").grid(row=1, column=2)
+    tk.Label(tabs[4],text="Main Description:").grid(row=1, column=0)
+    tk.Label(tabs[4],text="Main Image:").grid(row=2, column=0)
+    tk.Label(tabs[4],text="Customer Support").grid(row=0, column=2)
 
     global main_title_form
     global main_description
-    global main_link
     global main_image
     global main_customer
 
@@ -240,18 +283,14 @@ def draw_main_description_forms():
 
     main_title_form.grid(row=0,column=1)
 
-    main_link = tk.Entry(tabs[4], width=80)
-
-    main_link.grid(row=1, column=1)
-
     main_description = tk.Text(tabs[4], width=80)
-    main_description.grid(row=2, column=1)
+    main_description.grid(row=1, column=1)
 
     main_image = tk.Entry(tabs[4], width=80)
-    main_image.grid(row=3, column=1)
+    main_image.grid(row=2, column=1)
 
     main_customer = tk.Text(tabs[4], width=80)
-    main_customer.grid(row=2, column=2)
+    main_customer.grid(row=1, column=2)
 
 def draw_forms():
 
@@ -263,23 +302,6 @@ def draw_forms():
 
     # link_entry.grid(row=1, column=1)
     # descirption.grid(row=2, column=1)
-
-
-def fill_forms(html):
-
-    for i in range(len(forms)):
-        for x in range(len(forms)):
-            print("fill_forms: forms[" + str(i) +
-                  "][" + str(x) + "]=" + str(forms[i][1]))
-
-    print("fill_forms: length if forms" + str(len(forms)))
-    print("fill_forms: length of forms[i] " + str(len(forms)))
-
-    for i in range(len(forms)):
-        for x in range(len(forms[i])):
-            link = get_product_link(html, i, x)
-            forms[i][x].insert("0", link)
-
 
 def Save():
     name= tk.filedialog.asksaveasfile(mode='w',defaultextension=".html")
@@ -293,7 +315,7 @@ def Save():
             text2save=str(newhtml)
             name.write(text2save)
             name.close
-    except AttributeError:
+    except:
         pass
 
 def edit_template():
@@ -324,8 +346,6 @@ def edit_template():
 
     main_des = main_description.get(1.0, tk.END).split("\n")
     main_image_link = main_image.get()
-
-    link = main_link.get()
 
     main_title = main_title_form.get()
 
@@ -2145,7 +2165,7 @@ def edit_template():
     <div id="su-main">
         <div id="su-main-gall" class="su-pbox su-brdm su-bklt"><div class="su-tins">
         
-            <a href='""" + link + """' target="_blank" style="text-decoration: none; border: none;"><h1 id="MainHeader" style="border: none;">""" + main_title + """</h1></a>
+            <a href='' target="_blank" style="text-decoration: none; border: none;"><h1 id="MainHeader" style="border: none;">""" + main_title + """</h1></a>
             
             <div id="su-temp-gall" class="su-bttm su-left">
                 <div id="su-gall-main">
@@ -2284,11 +2304,11 @@ def edit_template():
 
     # file.close()
 
-
 def Logout():
     quit()
 
-
-main_screen()
-
-tk.mainloop()
+try:
+    main_screen()
+    tk.mainloop()
+except:
+    messagebox.showinfo("ERROR!", "Fatal Error If This Keeps Continues Contact Me.")
