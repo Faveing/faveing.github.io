@@ -7,20 +7,77 @@
 
 .main {
     width: 100%;
+    padding-left: 200px;
     background-color: white;
 }
 
-.main .product_contents .product_example {
+.main #main_contents #product_example {
     display: flex;
     justify-content: space-evenly;
+    padding: 10px;
 }
 
-.main .product_contents .product_example img{
-    width: 40px;
+.main #main_contents #product_example img{
+    width: 200px;
+    transition: 1s ease-in-out;
+    animation-name: test;
+    animation-duration: 2s;
+}
+
+@keyframes test {
+    0% {transform: translate(-200px);}
+    25% {transform: translate(-150px);}
+    50% {transform: translate(-100px);}
+    75% {transform: translate(-50px);}
+    100% {transform: translate(0px);}
+}
+
+.main #main_contents #product_section {
+    display: flex;
+    justify-content: space-evenly;
+    height: 500px;
+    padding-bottom: 30px;
+}
+.main #main_contents #product_section #section img{
+    width: 500px;
+}
+.main #main_contents #product_section #section #description {
+    background-color: white;
+    opacity: 0;
+    width: 500px;
+    height: 500px;
+    /* padding-left: 20px; */
+    transform: translate(0, -500px);
+    border: 1px solid red;
+}
+
+.main #main_contents #product_section #section #description #text {
+    padding-left: 20px;
+}
+
+.main #main_contents #title_header {
+    width: -moz-fit-content;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+.main #main_contents #title_header h3 {
+    font-size: 33px;
+    margin: 0 auto;
+    border-bottom: red 1px solid;
+
+}
+
+.main #main_contents #product_section #section #description h3{
+    font-size: 30px;
+}
+.main #main_contents #product_section #section #description:hover {
+    opacity: 1;
+    border: 1px solid red;
 }
 
 #sidebar {
     float: left;
+    position: fixed;
     width: 200px;
     height: 100%;
     background-color: teal;
@@ -28,6 +85,10 @@
 
 #sidebar img {
     width: 200px;
+}
+
+#sidebar p:hover {
+    opacity: 1;
 }
 
 #sidebar p {

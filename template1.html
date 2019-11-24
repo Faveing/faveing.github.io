@@ -8,23 +8,169 @@
         <div class="contents">
             <div id="sidebar">
                 <img src="SimplyInvetory/Website/logo/SU_Small_Fulllogo_500x500_02.png">
-                <p>Test</p>
-                <p>Test2</p>
+                <p>Deck Core's</p>
+                <p>Lots</p>
+                <p>Sid says it's five</p>
+                <p>Hi daddy</p>
+
             </div>
 
         <div class="main">
-            <div class="main_contents">
-                <div class="product_example">
-                    <!-- <button>Test</button>
-                    <img src="https://i.ebayimg.com/images/g/JRoAAOSw99ddapua/s-l1600.jpg">
-                    <img src="https://i.ebayimg.com/images/g/JRoAAOSw99ddapua/s-l1600.jpg">
-                    <img src="https://i.ebayimg.com/images/g/JRoAAOSw99ddapua/s-l1600.jpg">
-                    <img src="https://i.ebayimg.com/images/g/JRoAAOSw99ddapua/s-l1600.jpg">
-                    <button>Test2</button> -->
-                    <p>Test</p>
+            <div id="main_contents">
+                <div id="title_header">
+                    <h3>Deck Cores</h3>
+                </div>
+
+                <div id="product_section">
+                    <div id="section">
+                        <img src="https://i.ebayimg.com/images/g/JRoAAOSw99ddapua/s-l1600.jpg">
+                        <div id="description">
+                            <h3 id="text">Title</h3>
+                            <p id="text">This is an example of a description</p>
+                        </div>
+                    </div>
+                    <div id="section">
+                        <img src="https://i.ebayimg.com/images/g/JRoAAOSw99ddapua/s-l1600.jpg">
+                        <div id="description">
+                            <h3 id="text">Title</h3>
+                            <p id="text">description</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="product_example">
+                    <button onclick="changephotosdown(1)"><</button>
+                    <img id="image1" src="https://i.ebayimg.com/images/g/JRoAAOSw99ddapua/s-l1600.jpg">
+                    <img id="image2" src="https://i.ebayimg.com/images/g/JRoAAOSw99ddapua/s-l1600.jpg">
+                    <img id="image3" src="https://i.ebayimg.com/images/g/JRoAAOSw99ddapua/s-l1600.jpg">
+                    <img id="image4" src="https://i.ebayimg.com/images/g/JRoAAOSw99ddapua/s-l1600.jpg">
+                    <button onclick=changephotos(1)>></button>
+                </div>
+                <div id="product_example">
+                    <button onclick="changephotosdown(2)"><</button>
+                    <img id="image5" src="https://i.ebayimg.com/images/g/JRoAAOSw99ddapua/s-l1600.jpg">
+                    <img id="image6" src="https://i.ebayimg.com/images/g/JRoAAOSw99ddapua/s-l1600.jpg">
+                    <img id="image7" src="https://i.ebayimg.com/images/g/JRoAAOSw99ddapua/s-l1600.jpg">
+                    <img id="image8" src="https://i.ebayimg.com/images/g/JRoAAOSw99ddapua/s-l1600.jpg">
+                    <button onclick=changephotos(2)>></button>
+                </div>
+                <div id="product_example">
+                    <button onclick="changephotosdown(3)"><</button>
+                    <img id="image9" src="https://i.ebayimg.com/images/g/JRoAAOSw99ddapua/s-l1600.jpg">
+                    <img id="image10" src="https://i.ebayimg.com/images/g/JRoAAOSw99ddapua/s-l1600.jpg">
+                    <img id="image11" src="https://i.ebayimg.com/images/g/JRoAAOSw99ddapua/s-l1600.jpg">
+                    <img id="image12" src="https://i.ebayimg.com/images/g/JRoAAOSw99ddapua/s-l1600.jpg">
+                    <button onclick="changephotos(3)">></button>
+                </div>
+                <div id="product_example">
+                    <button onclick="changephotosdown(4)"><</button>
+                    <img id="image13" src="https://i.ebayimg.com/images/g/JRoAAOSw99ddapua/s-l1600.jpg">
+                    <img id="image14" src="https://i.ebayimg.com/images/g/JRoAAOSw99ddapua/s-l1600.jpg">
+                    <img id="image15" src="https://i.ebayimg.com/images/g/JRoAAOSw99ddapua/s-l1600.jpg">
+                    <img id="image16" src="https://i.ebayimg.com/images/g/JRoAAOSw99ddapua/s-l1600.jpg">
+                    <button onclick="changephotos(4)">></button>
                 </div>
             </div>
         </div>
         </div>
     </body>
+    <script>
+
+        images = [
+            "https://i.ebayimg.com/images/g/MYAAAOSwctxdaoxK/s-l1600.jpg",
+            "https://i.ebayimg.com/images/g/Ld0AAOSw~8ldyY8V/s-l1600.jpg",
+            "https://i.ebayimg.com/images/g/D68AAOSwR8pdqgBb/s-l1600.jpg",
+            "https://i.ebayimg.com/images/g/r1IAAOSwZEJdrm9A/s-l1600.jpg",
+            "https://i.ebayimg.com/images/g/JRoAAOSw99ddapua/s-l1600.jpg",
+            "https://i.ebayimg.com/images/g/r1IAAOSwZEJdrm9A/s-l1600.jpg",
+            "https://i.ebayimg.com/images/g/Ld0AAOSw~8ldyY8V/s-l1600.jpg",
+            "https://i.ebayimg.com/images/g/JRoAAOSw99ddapua/s-l1600.jpg",
+        ]
+
+        count = 0
+        count2 = 0
+        count3 = 0
+        count4 = 0
+        count5 = 0
+
+        function changephotosdown(number){
+
+            if(number == 1){
+                count = count - 1
+                document.getElementById("image1").src = images[count+1]
+                document.getElementById("image2").src = images[count+2]
+                document.getElementById("image3").src = images[count+3]
+                document.getElementById("image4").src = images[count+4]
+            }
+            if(number == 2){
+                count2 -= 1
+                document.getElementById("image5").src = images[count2+1]
+                document.getElementById("image6").src = images[count2+2]
+                document.getElementById("image7").src = images[count2+3]
+                document.getElementById("image8").src = images[count2+4]
+            }
+            if(number == 3){
+                count3 -= 1
+                document.getElementById("image9").src = images[count3+1]
+                document.getElementById("image10").src = images[count3+2]
+                document.getElementById("image11").src = images[count3+3]
+                document.getElementById("image12").src = images[count3+4]
+            }
+            if(number == 4){
+                count4 -= 1
+                document.getElementById("image13").src = images[count4+1]
+                document.getElementById("image14").src = images[count4+2]
+                document.getElementById("image15").src = images[count4+3]
+                document.getElementById("image16").src = images[count4+4]
+            }
+            if(number == 5){
+                count5 -= 1
+                document.getElementById("image17").src = images[count5+1]
+                document.getElementById("image18").src = images[count5+2]
+                document.getElementById("image19").src = images[count5+3]
+                document.getElementById("image20").src = images[count5+4]
+            }
+            // image1.src(images[0])
+            }
+
+        function changephotos(number){
+
+            if(number == 1){
+                count = count + 1
+                document.getElementById("image1").src = images[count+1]
+                document.getElementById("image2").src = images[count+2]
+                document.getElementById("image3").src = images[count+3]
+                document.getElementById("image4").src = images[count+4]
+            }
+            if(number == 2){
+                count2 += 1
+                document.getElementById("image5").src = images[count2+1]
+                document.getElementById("image6").src = images[count2+2]
+                document.getElementById("image7").src = images[count2+3]
+                document.getElementById("image8").src = images[count2+4]
+            }
+            if(number == 3){
+                count3 += 1
+                document.getElementById("image9").src = images[count3+1]
+                document.getElementById("image10").src = images[count3+2]
+                document.getElementById("image11").src = images[count3+3]
+                document.getElementById("image12").src = images[count3+4]
+            }
+            if(number == 4){
+                count4 += 1
+                document.getElementById("image13").src = images[count4+1]
+                document.getElementById("image14").src = images[count4+2]
+                document.getElementById("image15").src = images[count4+3]
+                document.getElementById("image16").src = images[count4+4]
+            }
+            if(number == 5){
+                count5 += 1
+                document.getElementById("image17").src = images[count5+1]
+                document.getElementById("image18").src = images[count5+2]
+                document.getElementById("image19").src = images[count5+3]
+                document.getElementById("image20").src = images[count6+4]
+            }
+            // image1.src(images[0])
+        }
+    </script>
 </html>

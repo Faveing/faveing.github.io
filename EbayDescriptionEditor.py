@@ -112,7 +112,7 @@ def make_template():
     buffer = ""
 
     for i in range(len(customer_support)):
-        buffer = buffer + customer_support[i] + "<br>"
+        buffer = buffer + customer_support[i]
 
     main_cus = buffer
 
@@ -128,7 +128,7 @@ def make_template():
     buffer = ""
 
     for i in range(len(main_des)):
-        buffer = buffer + main_des[i] + "<br>"
+        buffer = buffer + main_des[i]
 
     main_des = buffer
 
@@ -136,15 +136,15 @@ def make_template():
     for i in range(len(descriptions)):
             buffer = ""
             for x in range(len(descriptions[i])):
-                buffer = buffer + descriptions[i][x] + "<br>"
+                buffer = buffer + descriptions[i][x]
 
             new_descriptions.append(buffer)
     
-    filename = tk.filedialog.askopenfilename()
+    filename = tk.filedialog.asksaveasfilename()
 
     config = open(filename, "w")
 
-    text2write = product1_link + "|" + product1_description + "|" + product2_link + "|" + product2_description + "|" + product3_link + "|" + product3_description + "|" + product4_link + "|" + product4_description + "|" + product1_name + "|" + product2_name + "|" + product3_name + "|" + product4_name + "|" + product1_image + "|" + product2_image + "|" + product3_image + "|" + product4_image + "|" + main_des + "|" + main_image_link + "|" + main_title + "|" + main_cus
+    text2write = product1_link + "|" + product1_description + "|" + product2_link + "|" + product2_description + "|" + product3_link + "|" + product3_description + "|" + product4_link + "|" + product4_description + "|" + product1_name + "|" + product2_name + "|" + product3_name + "|" + product4_name + "|" + product1_image + "|" + product2_image + "|" + product3_image + "|" + product4_image + "|" + main_title + "|" + main_image_link + "|" + main_des + "|" + main_cus
 
     config.write(text2write)
 
@@ -161,7 +161,7 @@ def get_template():
     config.close()
 
     for i in range(len(config_list)):
-        print(config_list[i])
+        print(config_list[i] + " " + str(i))
     try:
         tabs_elements[0][0].insert(0, config_list[0])
         tabs_elements[0][1].insert("1.0", config_list[1])
@@ -182,6 +182,12 @@ def get_template():
         tabs_elements[3][1].insert("1.0", config_list[7])
         tabs_elements[3][2].insert(0, config_list[11])
         tabs_elements[3][3].insert(0, config_list[15])
+
+        main_title_form.insert(0, config_list[16])
+        main_image.insert(0, config_list[17])
+        main_description.insert("1.0", config_list[17])
+        main_customer.insert("1.0", config_list[19])
+
     except:
         tk.messagebox.showinfo("Error","Error in template file! " + filename)
 
@@ -2307,8 +2313,5 @@ def edit_template():
 def Logout():
     quit()
 
-try:
-    main_screen()
-    tk.mainloop()
-except:
-    messagebox.showinfo("ERROR!", "Fatal Error If This Keeps Continues Contact Me.")
+main_screen()
+tk.mainloop()
