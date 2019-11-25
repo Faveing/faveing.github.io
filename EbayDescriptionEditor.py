@@ -192,6 +192,11 @@ def get_template():
         tk.messagebox.showinfo("Error","Error in template file! " + filename)
 
 def Copy():
+
+    for line in newhtml:
+        line.replace("  ","\t")
+        print(line)
+
     try:
         pyperclip.copy(newhtml)
     except:
