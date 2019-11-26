@@ -10,6 +10,7 @@ forms = []
 tabs = []
 tabs_elements = []
 
+specialcharacter = "" #Character 0127
 
 def main_screen():
 
@@ -144,7 +145,7 @@ def make_template():
 
     config = open(filename, "w")
 
-    text2write = product1_link + "|" + product1_description + "|" + product2_link + "|" + product2_description + "|" + product3_link + "|" + product3_description + "|" + product4_link + "|" + product4_description + "|" + product1_name + "|" + product2_name + "|" + product3_name + "|" + product4_name + "|" + product1_image + "|" + product2_image + "|" + product3_image + "|" + product4_image + "|" + main_title + "|" + main_image_link + "|" + main_des + "|" + main_cus
+    text2write = product1_link + specialcharacter + product1_description + specialcharacter + product2_link + specialcharacter + product2_description + specialcharacter + product3_link + specialcharacter + product3_description + specialcharacter + product4_link + specialcharacter + product4_description + specialcharacter + product1_name + specialcharacter + product2_name + specialcharacter + product3_name + specialcharacter + product4_name + specialcharacter + product1_image + specialcharacter + product2_image + specialcharacter + product3_image + specialcharacter + product4_image + specialcharacter + main_title + specialcharacter + main_image_link + specialcharacter + main_des + specialcharacter + main_cus
 
     config.write(text2write)
 
@@ -156,7 +157,7 @@ def get_template():
 
     config = open(filename, "r")
 
-    config_list = config.read().split("|")
+    config_list = config.read().split(specialcharacter)
 
     config.close()
 
