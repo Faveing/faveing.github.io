@@ -1,0 +1,213 @@
+<html>
+    <head>
+        <title>SimplyUnlucky</title>
+        <link rel="stylesheet" type="text/css" href="styles2.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="content">
+            <div class="topbar">
+                <img id="logo" src="SimplyInvetory/Website/logo/SU_Small_Fulllogo_500x500_02.png">
+                <div class="col">
+                    <p id="first">Whats New!</p>
+                    <p id="after">New releases</p>
+                    <p id="after">New decl cores</p>
+                    <p id="after">New lots</p>
+                </div>
+                <div class="col">
+                    <p id="first">Cards!</p>
+                    <p id="after">Singles</p>
+                    <p id="after">Deck Cores</p>
+                    <p id="after">New lots</p>
+                </div>
+                <div class="menu">
+                    <i class="fa fa-shopping-cart fa-3x"></i>
+                </div>
+            </div>
+            <div class="main">
+                <div id="main_contents">
+                    <div id="product_section">
+                        <div id="section"">
+                            <img id="moveimage" src="https://i.ebayimg.com/images/g/JRoAAOSw99ddapua/s-l1600.jpg">
+                            <div id="product_description">
+                                <button>View</button>
+                                <h3 id="text">Title</h3>
+                                <p id="text">This is an example of a description</p>
+                            </div>
+                        </div>
+                        <div id="section">
+                            <img src="https://i.ebayimg.com/images/g/JRoAAOSw99ddapua/s-l1600.jpg">
+                            <div id="product_description">
+                                <button>View</button>
+                                <h3 id="text">Title</h3>
+                                <p id="text">description</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="product_example">
+                            <button class="animate" id="btn" onclick="changephotosdown(1)"><</button>
+                            <div class="images">
+                                <img id="image0" src="https://i.ebayimg.com/images/g/JRoAAOSw99ddapua/s-l1600.jpg">
+                                <img id="image1" src="https://i.ebayimg.com/images/g/JRoAAOSw99ddapua/s-l1600.jpg">
+                                <img id="image2" src="https://i.ebayimg.com/images/g/JRoAAOSw99ddapua/s-l1600.jpg">
+                                <img id="image3" src="https://i.ebayimg.com/images/g/JRoAAOSw99ddapua/s-l1600.jpg">
+                        </div>
+                        <button onclick=changephotos(1)>></button>
+                    </div>
+                    <div class="photo_zoom_window">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        images = [
+            "https://i.ebayimg.com/images/g/MYAAAOSwctxdaoxK/s-l1600.jpg",
+            "https://i.ebayimg.com/images/g/Ld0AAOSw~8ldyY8V/s-l1600.jpg",
+            "https://i.ebayimg.com/images/g/D68AAOSwR8pdqgBb/s-l1600.jpg",
+            "https://i.ebayimg.com/images/g/r1IAAOSwZEJdrm9A/s-l1600.jpg",
+            "https://i.ebayimg.com/images/g/JRoAAOSw99ddapua/s-l1600.jpg",
+            "https://i.ebayimg.com/images/g/r1IAAOSwZEJdrm9A/s-l1600.jpg",
+            "https://i.ebayimg.com/images/g/Ld0AAOSw~8ldyY8V/s-l1600.jpg",
+            "https://i.ebayimg.com/images/g/JRoAAOSw99ddapua/s-l1600.jpg",
+        ]
+
+        count = 0
+        count2 = 0
+        count3 = 0
+        count4 = 0
+        count5 = 0
+
+        // var element = document.getElementById("image1")
+
+
+        document.getElementById("image1").addEventListener("animationend", stopanimation)
+        document.getElementById("image5").addEventListener("animationend", stopanimation)
+
+        // function moveDivs(event)
+        // {
+        //     x=event.screenX-1000;
+        //     y=event.screenY-1000;
+            
+        //     document.getElementById("moveimage").style.marginLeft=x*2+"px";
+        //     document.getElementById("moveimage").style.marginTop=y*2+"px";
+        // }
+
+        function stopanimation(){
+            document.getElementById("image0").classList.remove("slideleft");
+            document.getElementById("image1").classList.remove("slideleft");
+            document.getElementById("image2").classList.remove("slideleft");
+            document.getElementById("image3").classList.remove("slideleft");
+            document.getElementById("image4").classList.remove("slideleft");
+            document.getElementById("image0").classList.remove("slideright");
+            document.getElementById("image1").classList.remove("slideright");
+            document.getElementById("image2").classList.remove("slideright");
+            document.getElementById("image3").classList.remove("slideright");
+            document.getElementById("image4").classList.remove("slideright");
+            // document.getElementById("image5").classList.remove("slide")
+            // document.getElementById("image6").classList.remove("slide")
+            // document.getElementById("image7").classList.remove("slide")
+            // document.getElementById("image8").classList.remove("slide")
+            console.log('Animation ended');
+        }
+
+        function changephotosdown(number){
+
+            if(number == 1){
+                count = count - 1
+                document.getElementById("image0").classList.add("slideleft")
+                document.getElementById("image1").classList.add("slideleft")
+                document.getElementById("image2").classList.add("slideleft")
+                document.getElementById("image3").classList.add("slideleft")
+                document.getElementById("image4").classList.add("slideleft")
+                document.getElementById("image0").src = images[count+1]
+                document.getElementById("image1").src = images[count+2]
+                document.getElementById("image2").src = images[count+3]
+                document.getElementById("image3").src = images[count+4]
+                document.getElementById("image3").src = images[count+4]
+            }
+            if(number == 2){
+                count2 -= 1
+                document.getElementById("image5").src = images[count2+1]
+                document.getElementById("image6").src = images[count2+2]
+                document.getElementById("image7").src = images[count2+3]
+                document.getElementById("image8").src = images[count2+4]
+                document.getElementById("image5").classList.add("slide")
+                document.getElementById("image6").classList.add("slide")
+                document.getElementById("image7").classList.add("slide")
+                document.getElementById("image8").classList.add("slide")
+            }
+            if(number == 3){
+                count3 -= 1
+                document.getElementById("image9").src = images[count3+1]
+                document.getElementById("image10").src = images[count3+2]
+                document.getElementById("image11").src = images[count3+3]
+                document.getElementById("image12").src = images[count3+4]
+            }
+            if(number == 4){
+                count4 -= 1
+                document.getElementById("image13").src = images[count4+1]
+                document.getElementById("image14").src = images[count4+2]
+                document.getElementById("image15").src = images[count4+3]
+                document.getElementById("image16").src = images[count4+4]
+            }
+            if(number == 5){
+                count5 -= 1
+                document.getElementById("image17").src = images[count5+1]
+                document.getElementById("image18").src = images[count5+2]
+                document.getElementById("image19").src = images[count5+3]
+                document.getElementById("image20").src = images[count5+4]
+            }
+            // image1.src(images[0])
+            }
+
+        function changephotos(number){
+
+            if(number == 1){
+                count = count + 1
+                document.getElementById("image0").classList.add("slideright")
+                document.getElementById("image1").classList.add("slideright")
+                document.getElementById("image2").classList.add("slideright")
+                document.getElementById("image3").classList.add("slideright")
+                document.getElementById("image4").classList.add("slideright")
+                document.getElementById("image1").src = images[count+1]
+                document.getElementById("image2").src = images[count+2]
+                document.getElementById("image3").src = images[count+3]
+                document.getElementById("image4").src = images[count+4]
+            }
+            if(number == 2){
+                count2 += 1
+                document.getElementById("image5").src = images[count2+1]
+                document.getElementById("image6").src = images[count2+2]
+                document.getElementById("image7").src = images[count2+3]
+                document.getElementById("image8").src = images[count2+4]
+                document.getElementById("image5").classList.add("slide")
+                document.getElementById("image6").classList.add("slide")
+                document.getElementById("image7").classList.add("slide")
+                document.getElementById("image8").classList.add("slide")
+            }
+            if(number == 3){
+                count3 += 1
+                document.getElementById("image9").src = images[count3+1]
+                document.getElementById("image10").src = images[count3+2]
+                document.getElementById("image11").src = images[count3+3]
+                document.getElementById("image12").src = images[count3+4]
+            }
+            if(number == 4){
+                count4 += 1
+                document.getElementById("image13").src = images[count4+1]
+                document.getElementById("image14").src = images[count4+2]
+                document.getElementById("image15").src = images[count4+3]
+                document.getElementById("image16").src = images[count4+4]
+            }
+            if(number == 5){
+                count5 += 1
+                document.getElementById("image17").src = images[count5+1]
+                document.getElementById("image18").src = images[count5+2]
+                document.getElementById("image19").src = images[count5+3]
+                document.getElementById("image20").src = images[count6+4]
+            }
+            // image1.src(images[0])
+        }
+    </script>
+</html>

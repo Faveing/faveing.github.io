@@ -1,7 +1,10 @@
+body {
+    background-color: white;
+}
+
 .contents {
     max-width: 1200px;
     height: 100%;
-    background-color: gray;
     margin: 0 auto;
 }
 
@@ -19,17 +22,24 @@
 
 .main #main_contents #product_example img{
     width: 200px;
+}
+
+.main #main_contents #product_example button:checked + img {
     transition: 1s ease-in-out;
     animation-name: test;
     animation-duration: 2s;
 }
 
+.main #main_contents #product_example .slide {
+    transition: 1s ease-in-out;
+    animation-name: test;
+    animation-duration: .5s;
+}
+
 @keyframes test {
-    0% {transform: translate(-200px);}
-    25% {transform: translate(-150px);}
-    50% {transform: translate(-100px);}
-    75% {transform: translate(-50px);}
-    100% {transform: translate(0px);}
+    0% {opacity: 1;}
+    50% {opacity: .3;}
+    100% {opacity: 1;}
 }
 
 .main #main_contents #product_section {
@@ -77,10 +87,11 @@
 
 #sidebar {
     float: left;
-    position: fixed;
     width: 200px;
     height: 100%;
-    background-color: teal;
+    position: fixed;
+    background-color: black;
+    transform: translate(0px, -10px);
 }
 
 #sidebar img {
@@ -88,7 +99,13 @@
 }
 
 #sidebar p:hover {
+    border: 1px solid red;
     opacity: 1;
+}
+
+#sidebar a {
+    text-decoration: none;
+    color: black;
 }
 
 #sidebar p {
@@ -98,4 +115,11 @@
     height: fit-content;
     background-color: white;
     opacity: .5;
+    border: 1px solid transparent;
+}
+
+@keyframes test {
+    0% {opacity: 1;}
+    50% {opacity: .3;}
+    100% {opacity: 1;}
 }

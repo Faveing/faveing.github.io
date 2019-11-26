@@ -8,8 +8,8 @@
         <div class="contents">
             <div id="sidebar">
                 <img src="SimplyInvetory/Website/logo/SU_Small_Fulllogo_500x500_02.png">
-                <p>Deck Core's</p>
-                <p>Lots</p>
+                <a href="/product.html"><p>Deck Core's</p></a>
+                <a href="#titlelots"><p>Lots</p></a>
                 <p>Sid says it's five</p>
                 <p>Hi daddy</p>
 
@@ -18,7 +18,7 @@
         <div class="main">
             <div id="main_contents">
                 <div id="title_header">
-                    <h3>Deck Cores</h3>
+                    <h3 id="titledeck">Deck Cores</h3>
                 </div>
 
                 <div id="product_section">
@@ -39,7 +39,7 @@
                 </div>
 
                 <div id="product_example">
-                    <button onclick="changephotosdown(1)"><</button>
+                    <button class="animate" id="btn" onclick="changephotosdown(1)"><</button>
                     <img id="image1" src="https://i.ebayimg.com/images/g/JRoAAOSw99ddapua/s-l1600.jpg">
                     <img id="image2" src="https://i.ebayimg.com/images/g/JRoAAOSw99ddapua/s-l1600.jpg">
                     <img id="image3" src="https://i.ebayimg.com/images/g/JRoAAOSw99ddapua/s-l1600.jpg">
@@ -70,6 +70,59 @@
                     <img id="image16" src="https://i.ebayimg.com/images/g/JRoAAOSw99ddapua/s-l1600.jpg">
                     <button onclick="changephotos(4)">></button>
                 </div>
+                <div id="title_header">
+                        <h3 id="titlelots">Lots</h3>
+                    </div>
+    
+                    <div id="product_section">
+                        <div id="section">
+                            <img src="https://i.ebayimg.com/images/g/JRoAAOSw99ddapua/s-l1600.jpg">
+                            <div id="description">
+                                <h3 id="text">Title</h3>
+                                <p id="text">This is an example of a description</p>
+                            </div>
+                        </div>
+                        <div id="section">
+                            <img src="https://i.ebayimg.com/images/g/JRoAAOSw99ddapua/s-l1600.jpg">
+                            <div id="description">
+                                <h3 id="text">Title</h3>
+                                <p id="text">description</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div id="product_example">
+                        <button class="animate" id="btn" onclick="changephotosdown(1)"><</button>
+                        <img id="image1" src="https://i.ebayimg.com/images/g/JRoAAOSw99ddapua/s-l1600.jpg">
+                        <img id="image2" src="https://i.ebayimg.com/images/g/JRoAAOSw99ddapua/s-l1600.jpg">
+                        <img id="image3" src="https://i.ebayimg.com/images/g/JRoAAOSw99ddapua/s-l1600.jpg">
+                        <img id="image4" src="https://i.ebayimg.com/images/g/JRoAAOSw99ddapua/s-l1600.jpg">
+                        <button onclick=changephotos(1)>></button>
+                    </div>
+                    <div id="product_example">
+                        <button onclick="changephotosdown(2)"><</button>
+                        <img id="image5" src="https://i.ebayimg.com/images/g/JRoAAOSw99ddapua/s-l1600.jpg">
+                        <img id="image6" src="https://i.ebayimg.com/images/g/JRoAAOSw99ddapua/s-l1600.jpg">
+                        <img id="image7" src="https://i.ebayimg.com/images/g/JRoAAOSw99ddapua/s-l1600.jpg">
+                        <img id="image8" src="https://i.ebayimg.com/images/g/JRoAAOSw99ddapua/s-l1600.jpg">
+                        <button onclick=changephotos(2)>></button>
+                    </div>
+                    <div id="product_example">
+                        <button onclick="changephotosdown(3)"><</button>
+                        <img id="image9" src="https://i.ebayimg.com/images/g/JRoAAOSw99ddapua/s-l1600.jpg">
+                        <img id="image10" src="https://i.ebayimg.com/images/g/JRoAAOSw99ddapua/s-l1600.jpg">
+                        <img id="image11" src="https://i.ebayimg.com/images/g/JRoAAOSw99ddapua/s-l1600.jpg">
+                        <img id="image12" src="https://i.ebayimg.com/images/g/JRoAAOSw99ddapua/s-l1600.jpg">
+                        <button onclick="changephotos(3)">></button>
+                    </div>
+                    <div id="product_example">
+                        <button onclick="changephotosdown(4)"><</button>
+                        <img id="image13" src="https://i.ebayimg.com/images/g/JRoAAOSw99ddapua/s-l1600.jpg">
+                        <img id="image14" src="https://i.ebayimg.com/images/g/JRoAAOSw99ddapua/s-l1600.jpg">
+                        <img id="image15" src="https://i.ebayimg.com/images/g/JRoAAOSw99ddapua/s-l1600.jpg">
+                        <img id="image16" src="https://i.ebayimg.com/images/g/JRoAAOSw99ddapua/s-l1600.jpg">
+                        <button onclick="changephotos(4)">></button>
+                    </div>
             </div>
         </div>
         </div>
@@ -93,10 +146,32 @@
         count4 = 0
         count5 = 0
 
+        // var element = document.getElementById("image1")
+
+
+        document.getElementById("image1").addEventListener("animationend", stopanimation)
+        document.getElementById("image5").addEventListener("animationend", stopanimation)
+
+        function stopanimation(){
+            document.getElementById("image1").classList.remove("slide");
+            document.getElementById("image2").classList.remove("slide");
+            document.getElementById("image3").classList.remove("slide");
+            document.getElementById("image4").classList.remove("slide");
+            document.getElementById("image5").classList.remove("slide")
+            document.getElementById("image6").classList.remove("slide")
+            document.getElementById("image7").classList.remove("slide")
+            document.getElementById("image8").classList.remove("slide")
+            console.log('Animation ended');
+        }
+
         function changephotosdown(number){
 
             if(number == 1){
                 count = count - 1
+                document.getElementById("image1").classList.add("slide")
+                document.getElementById("image2").classList.add("slide")
+                document.getElementById("image3").classList.add("slide")
+                document.getElementById("image4").classList.add("slide")
                 document.getElementById("image1").src = images[count+1]
                 document.getElementById("image2").src = images[count+2]
                 document.getElementById("image3").src = images[count+3]
@@ -108,6 +183,10 @@
                 document.getElementById("image6").src = images[count2+2]
                 document.getElementById("image7").src = images[count2+3]
                 document.getElementById("image8").src = images[count2+4]
+                document.getElementById("image5").classList.add("slide")
+                document.getElementById("image6").classList.add("slide")
+                document.getElementById("image7").classList.add("slide")
+                document.getElementById("image8").classList.add("slide")
             }
             if(number == 3){
                 count3 -= 1
@@ -141,6 +220,10 @@
                 document.getElementById("image2").src = images[count+2]
                 document.getElementById("image3").src = images[count+3]
                 document.getElementById("image4").src = images[count+4]
+                document.getElementById("image1").classList.add("slide")
+                document.getElementById("image2").classList.add("slide")
+                document.getElementById("image3").classList.add("slide")
+                document.getElementById("image4").classList.add("slide")
             }
             if(number == 2){
                 count2 += 1
@@ -148,6 +231,10 @@
                 document.getElementById("image6").src = images[count2+2]
                 document.getElementById("image7").src = images[count2+3]
                 document.getElementById("image8").src = images[count2+4]
+                document.getElementById("image5").classList.add("slide")
+                document.getElementById("image6").classList.add("slide")
+                document.getElementById("image7").classList.add("slide")
+                document.getElementById("image8").classList.add("slide")
             }
             if(number == 3){
                 count3 += 1

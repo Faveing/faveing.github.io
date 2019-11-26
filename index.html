@@ -1697,11 +1697,46 @@
 		.spacer {
 			height: 1060px;
 		}
+		}
 		@media screen and (max-width: 1020px){
 			.spacer {
 				height: 50px;
 			}
 		}
+		.topbar {
+			position: fixed;
+			/* float: top; */
+			display: flex;
+			justify-content: space-evenly;
+			background-color: black;
+			/* width: 1200px; */
+			width: 100%;
+			max-width: 1200px;
+			color: white;
+			height: 150px;
+			overflow: hidden;
+			transition: .75s;
+			z-index: 1;
+		}
+
+		.topbar:hover{
+			height: 300px;
+		}
+
+		.topbar #logo {
+			width: 200px;
+			height: 150px;
+		}
+
+		.topbar .col #first {
+			padding-top: 30px;
+			padding-bottom: 30px;
+			font-size: 30px;
+		}
+
+		.topbar .menu {
+			margin-top: 50px;
+			/* float: right; */
 		}
 	</style>
 <body>
@@ -1712,15 +1747,25 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css">
 <div id="su-template" class="su-bg"><div class="su-bg-02 su-shao">
 		
-<div id="su-head-wrap-02"><div id="su-head-02" class="su-content-width">
+<!-- <div id="su-head-wrap-02"><div id="su-head-02" class="su-content-width">
 	<div id="su-head-logo" class="su-proh su-prom"><a href="https://www.ebay.com/str/simplyunlucky?rt=nc&_oac=1" target="_blank"><img src="https://raw.githubusercontent.com/Faveing/faveing.github.io/master/Banner%201.png" alt="simplyunlucky Games eBay Store"></a></div>
-</div></div>
-<div class="menubar">
-	<div class="contents">
-		<a class="buttons" id="link2" href="https://www.ebay.com/str/simplyunlucky?rt=nc&_oac=1" target="_blank"><p class="text">Store Home</p></a>
-		<a class="buttons" id="link2" href="https://www.ebay.com/str/simplyunlucky/Store-Inventory/_i.html?_storecat=30717081014" target="_blank"><p class="text">Inventory</p></a>
-		<a class="buttons" id="link3" href="https://www.ebay.com/str/simplyunlucky/YUGIOH-SINGLES/_i.html?_storecat=26691736014" target="_blank"><p class="text">Mixed Lots</p></a>
-		<a class="buttons" id="link4" href="https://www.ebay.com/str/simplyunlucky/YUGIOH-SINGLES/_i.html?_storecat=26691736014" target="_blank"><p class="text">Singles</p></a>
+</div></div> -->
+<div class="topbar">
+	<img id="logo" src="SimplyInvetory/Website/logo/SU_Small_Fulllogo_500x500_02.png">
+	<div class="col">
+		<p id="first">Whats New!</p>
+		<p id="after">New releases</p>
+		<p id="after">New decl cores</p>
+		<p id="after">New lots</p>
+	</div>
+	<div class="col">
+		<p id="first">Cards!</p>
+		<p id="after">Singles</p>
+		<p id="after">Deck Cores</p>
+		<p id="after">New lots</p>
+	</div>
+	<div class="menu">
+		<i class="fa fa-shopping-cart fa-3x"></i>
 	</div>
 </div>
 <div class="su-content">
