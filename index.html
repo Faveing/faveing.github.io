@@ -1736,8 +1736,46 @@
 
 		.topbar .menu {
 			margin-top: 50px;
-			/* float: right; */
 		}
+
+		#RightPanel ul .hidden {
+			height: 0px;
+			opacity: 0;
+			transition: .5s;
+		}
+
+		#RightPanel ul .hidden:hover {
+			height: 300px;
+			opacity: 1;
+		}
+
+		#RightPanel ul .hidden:hover + .view {
+			visibility: hidden;
+		}
+
+		@keyframes slowfadeout {
+			50% {opacity: .5;}
+			100% {opacity: 0;}
+		}
+
+		#RightPanel ul .view {
+			/* background-color: white; */
+			transition: 1;
+		}
+
+		/* #RightPanel ul .view:hover + .hidden{
+			height: 100px;
+			opacity: 1;
+		} */
+
+		/* #RightPanel ul .hidden .view {
+			transition: .5s ease-in-out;
+		} */
+
+		/* #RightPanel ul .hidden:hover .view {
+			opacity: 0;
+			height: 0px;
+		} */
 	</style>
 <body>
 			<div id="ds_div">
@@ -1747,10 +1785,10 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css">
 <div id="su-template" class="su-bg"><div class="su-bg-02 su-shao">
 		
-<!-- <div id="su-head-wrap-02"><div id="su-head-02" class="su-content-width">
+<div id="su-head-wrap-02"><div id="su-head-02" class="su-content-width">
 	<div id="su-head-logo" class="su-proh su-prom"><a href="https://www.ebay.com/str/simplyunlucky?rt=nc&_oac=1" target="_blank"><img src="https://raw.githubusercontent.com/Faveing/faveing.github.io/master/Banner%201.png" alt="simplyunlucky Games eBay Store"></a></div>
-</div></div> -->
-<div class="topbar">
+</div></div>
+<!-- <div class="topbar">
 	<img id="logo" src="SimplyInvetory/Website/logo/SU_Small_Fulllogo_500x500_02.png">
 	<div class="col">
 		<p id="first">Whats New!</p>
@@ -1767,7 +1805,7 @@
 	<div class="menu">
 		<i class="fa fa-shopping-cart fa-3x"></i>
 	</div>
-</div>
+</div> -->
 <div class="su-content">
 <div id="RightPanel">
 	<h4 id="su-side-tbar-cats" class="su-ttba su-fftb su-brdt su-bktt"><div class="su-tins su-ffac">YuGiOh Mixed Lots</div></h4>
@@ -1797,17 +1835,21 @@
 						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/LEHD-Legendary-Hero-Decks/_i.html?_storecat=27684874014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">LEHD Legendary Hero Decks</p></a></li>
 						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/EXFO-Extreme-Force/_i.html?_storecat=27744394014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">EXFO Extreme Force</p></a></li>
 						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/SDSB-Structure-Deck-Soulburner/_i.html?_storecat=28072041014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">SDSB Structure Deck:Soulburner</p></a></li>
-						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/INCH-The-Infinity-Chasers/_i.html?_storecat=28078222014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">INCH The Infinity Chasers</p></a></li>
-						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/DUPO-Duel-Power/_i.html?_storecat=28280497014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">DUPO Duel Power</p></a></li>
-						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/SR08-Order-of-the-Spellcasters/_i.html?_storecat=28477561014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">SRO8 Order of the Spellcasters</p></a></li>
-						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/DANE-Dark-Neostorm/_i.html?_storecat=28603482014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">DANE Dark Neostormv</p></a></li>
-						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/BLHR-Heros-Revenge/_i.html?_storecat=29633992014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">BLHR Hero's Revenge</p></a></li>
-						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/FIGA-Fists-of-the-Gadgets/_i.html?_storecat=30164962014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">FIGA Fists of the Gadgets</p></a></li>
-						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/SDRR-Rokket-Revolt/_i.html?_storecat=30206730014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">SDRR Rokket Revolt</p></a></li>
-						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/MP19-Gold-Sarchophagus-Tin/_i.html?_storecat=30250539014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">MP19 Gold Sarchophagus Tin</p></a></li>
-						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/LED5-Immortal-Destiny/_i.html?_storecat=30499030014&_sop=12"><p style="color:white;font-size: 16px;font-family: 'Times New Roman', Times, serif;">LED5 Immortal Destiny</p></a></li>
-						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/DUDE-Duel-Devastator/_i.html?_storecat=30568957014&_sop=12"><p style="color:white;font-size: 16px;font-family: 'Times New Roman', Times, serif;">DUDE Duel Devastator</p></a></li>
-						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/CHIM-Chaos-Impact/_i.html?_storecat=30583833014&_sop=12"><p style="color:white;font-size: 16px;font-family: 'Times New Roman', Times, serif;">CHIM Chaos Impact</p></a></li>
+						<div class="hidden">
+							<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/DUPO-Duel-Power/_i.html?_storecat=28280497014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">DUPO Duel Power</p></a></li>
+							<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/SR08-Order-of-the-Spellcasters/_i.html?_storecat=28477561014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">SRO8 Order of the Spellcasters</p></a></li>
+							<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/DANE-Dark-Neostorm/_i.html?_storecat=28603482014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">DANE Dark Neostormv</p></a></li>
+							<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/BLHR-Heros-Revenge/_i.html?_storecat=29633992014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">BLHR Hero's Revenge</p></a></li>
+							<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/FIGA-Fists-of-the-Gadgets/_i.html?_storecat=30164962014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">FIGA Fists of the Gadgets</p></a></li>
+							<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/SDRR-Rokket-Revolt/_i.html?_storecat=30206730014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">SDRR Rokket Revolt</p></a></li>
+							<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/MP19-Gold-Sarchophagus-Tin/_i.html?_storecat=30250539014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">MP19 Gold Sarchophagus Tin</p></a></li>
+							<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/LED5-Immortal-Destiny/_i.html?_storecat=30499030014&_sop=12"><p style="color:white;font-size: 16px;font-family: 'Times New Roman', Times, serif;">LED5 Immortal Destiny</p></a></li>
+							<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/DUDE-Duel-Devastator/_i.html?_storecat=30568957014&_sop=12"><p style="color:white;font-size: 16px;font-family: 'Times New Roman', Times, serif;">DUDE Duel Devastator</p></a></li>
+							<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/CHIM-Chaos-Impact/_i.html?_storecat=30583833014&_sop=12"><p style="color:white;font-size: 16px;font-family: 'Times New Roman', Times, serif;">CHIM Chaos Impact</p></a></li>
+						</div>
+						<div class="view">
+							<li><a target="_blank" href=""><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">See More!</p></a></li>
+						</div>
 			</ul>
 		</div></div>
 	<!-- <div id="su-side-sati" class="su-prom su-prot"><div class="su-tins">
