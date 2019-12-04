@@ -1327,7 +1327,7 @@
 		}
 		.su-bg #RightPanel .lev1 li a p {
 			width: 100%;
-			text-align: left: ;;
+			/* text-align: left: ;; */
 			padding-bottom: 3px;
 			border-bottom: transparent 1px solid;
 		}
@@ -1372,6 +1372,7 @@
 			color: white;
 			padding-bottom: 10px;
 			transition: 0.5s ease-in-out;
+			border-bottom: transparent 1px solid;
 		}
 
 		.menubar .contents .buttons .text:hover{
@@ -1385,7 +1386,6 @@
 		/* Cursed code that doesn't work so some reason -_- plz tell me why css gods */
 		.menubar .contents .buttons .text:hover {
 			/* padding-bottom: 9px; */
-			background: white;
 			border-bottom: red 1px solid;
 		}
 		
@@ -1744,23 +1744,18 @@
 			transition: .5s;
 		}
 
+		#RightPanel ul .hidden:hover + .view li a p{
+			visibility:hidden;
+		}
+
 		#RightPanel ul .hidden:hover {
 			height: 300px;
 			opacity: 1;
 		}
 
-		#RightPanel ul .hidden:hover + .view {
-			visibility: hidden;
-		}
-
 		@keyframes slowfadeout {
 			50% {opacity: .5;}
 			100% {opacity: 0;}
-		}
-
-		#RightPanel ul .view {
-			/* background-color: white; */
-			transition: 1;
 		}
 
 		/* #RightPanel ul .view:hover + .hidden{
@@ -1786,7 +1781,7 @@
 <div id="su-template" class="su-bg"><div class="su-bg-02 su-shao">
 		
 <div id="su-head-wrap-02"><div id="su-head-02" class="su-content-width">
-	<div id="su-head-logo" class="su-proh su-prom"><a href="https://www.ebay.com/str/simplyunlucky?rt=nc&_oac=1" target="_blank"><img src="https://raw.githubusercontent.com/Faveing/faveing.github.io/master/Banner%201.png" alt="simplyunlucky Games eBay Store"></a></div>
+	<div id="su-head-logo" class="su-proh su-prom"><a href="https://www.ebay.com/str/simplyunlucky?rt=nc&_oac=1" target="_blank"><img src="https://ksr-ugc.imgix.net/assets/025/873/375/361d8bc3f070b65a757acac15bf49858_original.png?ixlib=rb-2.1.0&crop=faces&w=1552&h=873&fit=crop&v=1563661526&auto=format&frame=1&q=92&s=d3d0afc2c79046f814d9ddac52aa17c9" alt="simplyunlucky Games eBay Store"></a></div>
 </div></div>
 <!-- <div class="topbar">
 	<img id="logo" src="SimplyInvetory/Website/logo/SU_Small_Fulllogo_500x500_02.png">
@@ -1806,23 +1801,17 @@
 		<i class="fa fa-shopping-cart fa-3x"></i>
 	</div>
 </div> -->
+
+<div class="menubar">
+	<div class="contents">
+		<a class="buttons" id="link2" href="https://www.ebay.com/str/simplyunlucky?rt=nc&amp;_oac=1" target="_blank"><p class="text">Store Home</p></a>
+		<a class="buttons" id="link2" href="" target="_blank"><p class="text">FAQ</p></a>
+	</div>
+</div>
+
 <div class="su-content">
 <div id="RightPanel">
-	<h4 id="su-side-tbar-cats" class="su-ttba su-fftb su-brdt su-bktt"><div class="su-tins su-ffac">YuGiOh Mixed Lots</div></h4>
-	<div id="su-side-cats" class="su-sbox su-brdm su-bklt"><div class="su-tins">
-		<ul class="lev1">
-			<li><a target="_blank" href="https://www.ebay.com/itm/YUGIOH-50-CARD-ALL-HOLOGRAPHIC-HOLO-FOIL-COLLECTION-LOT-BONUS-10-FREE-FOILS/202810604138?hash=item2f38743a6a"><p id = "redhover" style="color:white;font-size: 17px;font-family: 'Times New Roman', Times, serif;">50 Foil Card Lot + Bonus 10 Foils</p></a></li>
-		</ul>
-	</div></div>
-	<h4 id="su-side-tbar-cats" class="su-ttba su-fftb su-brdt su-bktt"><div class="su-tins su-ffac">YuGiOh Deck Lots</div></h4>
-	<div id="su-side-cats" class="su-sbox su-brdm su-bklt"><div class="su-tins">
-		<ul class="lev1">
-			<li><a target="_blank" href="https://www.ebay.com/itm/DREAM-MIRROR-DECK-CHIM-RIRA-IKELOS-MORPHEUS-HYPNAGOGIA-ONEIROS-PHANTASOS-YuGiOh/202806528155?hash=item2f3836089b"><p style="color:white;font-size: 17px;font-family: 'Times New Roman', Times, serif;">Dream Mirror Deck CHIM RIRA: Ikelos Morpheus Hypnagogia Oneiros Phantasos YuGiOh</p></a></li>
-		</ul>
-	</div></div>
-</div>
-<div id="RightPanel" style="float: left; padding-right: 30px">
-	<h4 id="su-side-tbar-cats" class="su-ttba su-fftb su-brdt su-bktt"><div class="su-tins su-ffac">YuGiOh Singles</div></h4>
+	<h4 id="su-side-tbar-cats" class="su-ttba su-fftb su-brdt su-bktt"><div class="su-tins su-ffac">Mixed Lots</div></h4>
 	<div id="su-side-cats" class="su-sbox su-brdm su-bklt"><div class="su-tins">
 			<ul class="lev1">
 				<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/SAST-Savage-Strike/_i.html?_storecat=27491324014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">SAST Savage Strike</p></a></li>
@@ -1852,6 +1841,158 @@
 						</div>
 			</ul>
 		</div></div>
+		<h4 id="su-side-tbar-cats" class="su-ttba su-fftb su-brdt su-bktt"><div class="su-tins su-ffac">Deck Lots</div></h4>
+		<div id="su-side-cats" class="su-sbox su-brdm su-bklt"><div class="su-tins">
+				<ul class="lev1">
+					<li><a target="_blank" href="https://www.ebay.com/itm/DINOWRESTLER-DECK-LOT-DANE-COELASILAT-DINO-FUSION-TERRA-GIGA-CHIMERA-YuGiOh/202670104256"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">DINOWRESTLER DECK LOT DANE</p></a></li>
+							<li><a target="_blank" href="https://www.ebay.com/itm/GLADIATOR-BEAST-DECK-LOT-CHIM-Chaos-Impact-TEST-PANTHER-DOMITIANUS-YuGiOh/202805955335?hash=item2f382d4b07"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">GLADIATOR BEAST DECK LOT</p></a></li>
+							<li><a target="_blank" href="https://www.ebay.com/itm/DRAGONMAID-DECK-LOT-HOUSE-NURSE-KITCHEN-LORPAR-ERNUS-WELCOME-MYFI-39-YuGiOh/202828224112?hash=item2f39811670:g:88gAAOSwXq5dyfn9"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">DRAGONMAID DECK LOT</p></a></li>
+							<li><a target="_blank" href="https://www.ebay.com/itm/DRAGONMAID-BUDGET-DECK-HOUSE-HOSPITALITY-LORPAR-ERNUS-PARLOR-MYFI-30-YuGiOh/202829628415?hash=item2f399683ff:g:4EMAAOSwgeZd4DUP"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">DRAGONMAID BUDGET DECK</p></a></li>
+							<li><a target="_blank" href="https://www.ebay.com/itm/MATHMECH-BUDGET-DECK-ADDITION-FINAL-SIGMA-NABLA-MAGMA-EQUATION-MYFI-39-YuGiOh/202829628939?hash=item2f3996860b:g:9HwAAOSwPbdd2YJY"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">MATHMECH BUDGET DECK</p></a></li>
+							<li><a target="_blank" href="https://www.ebay.com/itm/MATHMECH-DECK-ALEMBERTIAN-LAPLACIAN-ADDITION-FINAL-SIGMA-NABLA-MYFI-38-YuGiO/202828278344?hash=item2f3981ea48:g:BeMAAOSwXzBd2KCE"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">MATHMECH DECK</p></a></li>
+							<li><a target="_blank" href="https://www.ebay.com/itm/GENERAIDER-DECK-BOSS-STAGE-MARDEL-DOLVEGUS-JORMUNGANDR-HELA-MYFI-39-YuGiOh/202828229227?hash=item2f39812a6b:g:EGkAAOSwsQJdyfk1"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">GENERAIDER DECK</p></a></li>
+							<li><a target="_blank" href="https://www.ebay.com/itm/GENERAIDER-BUDGET-DECK-DOLVEGUS-JORMUNGANDR-HELA-NIDHOGG-MYFI-32-YuGiOh/202829629196?hash=item2f3996870c:g:uU0AAOSwNcRd4DVS"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">GENERAIDER BUDGET DECK</p></a></li>
+							<li><a target="_blank" href="https://www.ebay.com/itm/THUNDER-DRAGON-DECK-LOT-MP19-COLOSSUS-TITAN-DRAGONHAWK-DRAGONDARK-FUSION-YuGiOh/202769853630?hash=item2f36066cbe:g:r1IAAOSwZEJdrm9A"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">THUNDER DRAGON DECK LOT</p></a></li>
+							<li><a target="_blank" href="https://www.ebay.com/itm/ROKKET-NEW-DECK-LOT-SDRR-SILVERROKET-BORRELOAD-TRACER-RECHARGER-YuGiOh/202772698831?hash=item2f3631d6cf:g:I9gAAOSwKeldXyiQ"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">ROKKET NEW DECK LOT</p></a></li>
+							<div class="hidden">
+								<li><a target="_blank" href="https://www.ebay.com/itm/EVIL-HERO-DECK-LOT-LED5-SUPREME-KING-MIND-DARK-FUSION-CALLING-MALICIOUS-YuGiOh/202786336410?hash=item2f3701ee9a:g:B6MAAOSwnDRdip9-"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">EVIL HERO DECK LOT</p></a></li>
+								<li><a target="_blank" href="https://www.ebay.com/itm/TENYI-DECK-LOT-RIRA-VISHUDA-MONK-SHAMAN-BERSERKER-FISTS-NAHATA-YuGiOh/202741460382?hash=item2f34552d9e:g:PWgAAOSwSA9dyY0a"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">TENYI DECK LOT</p></a></li>
+								<li><a target="_blank" href="https://www.ebay.com/itm/IMPCANTATION-DECK-LOT-MP19-CANDOLL-BOOKSTONE-PENCIPLUME-TALISMANDRA-YuGiOh/202769853614?hash=item2f36066cae:g:JRoAAOSw99ddapua"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">IMPCANTATION DECK LOT</p></a></li>
+								<li><a target="_blank" href="https://www.ebay.com/itm/CRUSADIA-DECK-LOT-MP19-MAGIUS-EQUIMAX-MAXIMUS-RECLUSIA-ARBORIA-DRACO-YuGiOh/202769853629?hash=item2f36066cbd:g:13QAAOSwgjddarUe"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">CRUSADIA DECK LOT</p></a></li>
+								<li><a target="_blank" href="https://www.ebay.com/itm/BLACKWING-DECK-LOT-LED3-FULL-ARMOR-MASTER-AUSTER-SOUTH-BLACK-WHIRLWIND-YuGiOh/202795489939?hash=item2f378d9a93:g:DHAAAOSwJ4Fdg63m"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">BLACKWING DECK LOT</p></a></li>
+								<li><a target="_blank" href="https://www.ebay.com/itm/PREDAPLANT-DECK-LED5-Starving-Venom-Predaprime-Fusion-Predaplanning-YuGiOh/202786334375?hash=item2f3701e6a7:g:yxsAAOSwn~Jdir6m"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">PREDAPLANT DECK LOT</p></a></li>
+								<li><a target="_blank" href="https://www.ebay.com/itm/VAMPIRE-DECK-LOT-MP19-SHERIDAN-SUCKER-FRAULEIN-AWAKENING-DOMINATION-YuGiOh/202769853612?hash=item2f36066cac:g:aM0AAOSwsvJdar3W"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">VAMPIRE DECK LOT</p></a></li>
+								<li><a target="_blank" href="https://www.ebay.com/itm/BATTLEWASP-DECK-LOT-BLHR-HAMA-AZUSA-HALBERD-STING-DART-NEST-PIN-YuGiOh/202731220376?hash=item2f33b8ed98:g:lD0AAOSwE0tdJ3z~"><p style="color:white;font-size: 16px;font-family: 'Times New Roman', Times, serif;">BATTLEWASP DECK LOT</p></a></li>
+								<li><a target="_blank" href="https://www.ebay.com/itm/GRAVEKEEPERS-DECK-LOT-MP19-Supernaturalist-Headman-Temple-YuGiOh/202769853613?hash=item2f36066cad:g:w28AAOSwm5Zdappa"><p style="color:white;font-size: 16px;font-family: 'Times New Roman', Times, serif;">GRAVEKEEPER'S DECK LOT</p></a></li>
+								<li><a target="_blank" href="https://www.ebay.com/itm/CYBER-DRAGON-DECK-LOT-MP19-SIEGER-HERZ-VIER-REVSYSTEM-OVERFLOW-YuGiOh/202769853626?hash=item2f36066cba:g:5TAAAOSw-0ddae9k"><p style="color:white;font-size: 16px;font-family: 'Times New Roman', Times, serif;">CYBER DRAGON DECK LOT</p></a></li>
+							</div>
+							<div class="view">
+								<li><a target="_blank" href=""><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">See More!</p></a></li>
+							</div>
+				</ul>
+			</div></div>
+		<h4 id="su-side-tbar-cats" class="su-ttba su-fftb su-brdt su-bktt"><div class="su-tins su-ffac">Pack Lots</div></h4>
+		<div id="su-side-cats" class="su-sbox su-brdm su-bklt"><div class="su-tins">
+			<ul class="lev1">
+				<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/SAST-Savage-Strike/_i.html?_storecat=27491324014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">SAST Savage Strike</p></a></li>
+						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/SOFU-Soul-Fusion/_i.html?_storecat=27311267014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">SOFU Sour Fusion</p></a></li>
+						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/CYHO-Cybernetic-Horizon/_i.html?_storecat=27311265014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">CYHO Cybernetic Horizon</p></a></li>
+						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/LED3-White-Dragon-Abyss/_i.html?_storecat=26691745014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">LED3 White Dragon</p></a></li>
+						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/LED4-Sisters-of-the-Rose/_i.html?_storecat=27359263014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">LED4 Sisters of the Rose</p></a></li>
+						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/SHVA-Shadows-in-Valhalla/_i.html?_storecat=26691746014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">SHVA Shadows in Valhalla</p></a></li>
+						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/HISU-Hidden-Summoners/_i.html?_storecat=26936014014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">HISU Hidden Summoners</p></a></li>
+						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/LEHD-Legendary-Hero-Decks/_i.html?_storecat=27684874014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">LEHD Legendary Hero Decks</p></a></li>
+						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/EXFO-Extreme-Force/_i.html?_storecat=27744394014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">EXFO Extreme Force</p></a></li>
+						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/SDSB-Structure-Deck-Soulburner/_i.html?_storecat=28072041014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">SDSB Structure Deck:Soulburner</p></a></li>
+						<div class="hidden">
+							<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/DUPO-Duel-Power/_i.html?_storecat=28280497014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">DUPO Duel Power</p></a></li>
+							<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/SR08-Order-of-the-Spellcasters/_i.html?_storecat=28477561014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">SRO8 Order of the Spellcasters</p></a></li>
+							<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/DANE-Dark-Neostorm/_i.html?_storecat=28603482014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">DANE Dark Neostormv</p></a></li>
+							<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/BLHR-Heros-Revenge/_i.html?_storecat=29633992014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">BLHR Hero's Revenge</p></a></li>
+							<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/FIGA-Fists-of-the-Gadgets/_i.html?_storecat=30164962014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">FIGA Fists of the Gadgets</p></a></li>
+							<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/SDRR-Rokket-Revolt/_i.html?_storecat=30206730014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">SDRR Rokket Revolt</p></a></li>
+							<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/MP19-Gold-Sarchophagus-Tin/_i.html?_storecat=30250539014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">MP19 Gold Sarchophagus Tin</p></a></li>
+							<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/LED5-Immortal-Destiny/_i.html?_storecat=30499030014&_sop=12"><p style="color:white;font-size: 16px;font-family: 'Times New Roman', Times, serif;">LED5 Immortal Destiny</p></a></li>
+							<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/DUDE-Duel-Devastator/_i.html?_storecat=30568957014&_sop=12"><p style="color:white;font-size: 16px;font-family: 'Times New Roman', Times, serif;">DUDE Duel Devastator</p></a></li>
+							<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/CHIM-Chaos-Impact/_i.html?_storecat=30583833014&_sop=12"><p style="color:white;font-size: 16px;font-family: 'Times New Roman', Times, serif;">CHIM Chaos Impact</p></a></li>
+						</div>
+						<div class="view">
+							<li><a target="_blank" href=""><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">See More!</p></a></li>
+						</div>
+			</ul>
+		</div></div>
+</div>
+<div id="RightPanel" style="float: left; padding-right: 30px">
+	<h4 id="su-side-tbar-cats" class="su-ttba su-fftb su-brdt su-bktt"><div class="su-tins su-ffac">Singles</div></h4>
+	<div id="su-side-cats" class="su-sbox su-brdm su-bklt"><div class="su-tins">
+			<ul class="lev1">
+				<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/SAST-Savage-Strike/_i.html?_storecat=27491324014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">SAST Savage Strike</p></a></li>
+						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/SOFU-Soul-Fusion/_i.html?_storecat=27311267014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">SOFU Sour Fusion</p></a></li>
+						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/CYHO-Cybernetic-Horizon/_i.html?_storecat=27311265014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">CYHO Cybernetic Horizon</p></a></li>
+						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/LED3-White-Dragon-Abyss/_i.html?_storecat=26691745014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">LED3 White Dragon</p></a></li>
+						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/LED4-Sisters-of-the-Rose/_i.html?_storecat=27359263014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">LED4 Sisters of the Rose</p></a></li>
+						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/SHVA-Shadows-in-Valhalla/_i.html?_storecat=26691746014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">SHVA Shadows in Valhalla</p></a></li>
+						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/HISU-Hidden-Summoners/_i.html?_storecat=26936014014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">HISU Hidden Summoners</p></a></li>
+						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/LEHD-Legendary-Hero-Decks/_i.html?_storecat=27684874014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">LEHD Legendary Hero Decks</p></a></li>
+						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/EXFO-Extreme-Force/_i.html?_storecat=27744394014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">EXFO Extreme Force</p></a></li>
+						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/SDSB-Structure-Deck-Soulburner/_i.html?_storecat=28072041014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">SDSB Structure Deck:Soulburner</p></a></li>
+						<div class="hidden">
+							<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/DUPO-Duel-Power/_i.html?_storecat=28280497014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">DUPO Duel Power</p></a></li>
+							<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/SR08-Order-of-the-Spellcasters/_i.html?_storecat=28477561014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">SRO8 Order of the Spellcasters</p></a></li>
+							<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/DANE-Dark-Neostorm/_i.html?_storecat=28603482014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">DANE Dark Neostormv</p></a></li>
+							<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/BLHR-Heros-Revenge/_i.html?_storecat=29633992014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">BLHR Hero's Revenge</p></a></li>
+							<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/FIGA-Fists-of-the-Gadgets/_i.html?_storecat=30164962014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">FIGA Fists of the Gadgets</p></a></li>
+							<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/SDRR-Rokket-Revolt/_i.html?_storecat=30206730014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">SDRR Rokket Revolt</p></a></li>
+							<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/MP19-Gold-Sarchophagus-Tin/_i.html?_storecat=30250539014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">MP19 Gold Sarchophagus Tin</p></a></li>
+							<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/LED5-Immortal-Destiny/_i.html?_storecat=30499030014&_sop=12"><p style="color:white;font-size: 16px;font-family: 'Times New Roman', Times, serif;">LED5 Immortal Destiny</p></a></li>
+							<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/DUDE-Duel-Devastator/_i.html?_storecat=30568957014&_sop=12"><p style="color:white;font-size: 16px;font-family: 'Times New Roman', Times, serif;">DUDE Duel Devastator</p></a></li>
+							<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/CHIM-Chaos-Impact/_i.html?_storecat=30583833014&_sop=12"><p style="color:white;font-size: 16px;font-family: 'Times New Roman', Times, serif;">CHIM Chaos Impact</p></a></li>
+						</div>
+						<div class="view">
+							<li><a target="_blank" href=""><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">See More!</p></a></li>
+						</div>
+			</ul>
+		</div></div>
+	<h4 id="su-side-tbar-cats" class="su-ttba su-fftb su-brdt su-bktt"><div class="su-tins su-ffac">Deck Cores</div></h4>
+	<div id="su-side-cats" class="su-sbox su-brdm su-bklt"><div class="su-tins">
+		<ul class="lev1">
+			<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/SAST-Savage-Strike/_i.html?_storecat=27491324014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">SAST Savage Strike</p></a></li>
+					<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/SOFU-Soul-Fusion/_i.html?_storecat=27311267014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">SOFU Sour Fusion</p></a></li>
+					<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/CYHO-Cybernetic-Horizon/_i.html?_storecat=27311265014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">CYHO Cybernetic Horizon</p></a></li>
+					<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/LED3-White-Dragon-Abyss/_i.html?_storecat=26691745014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">LED3 White Dragon</p></a></li>
+					<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/LED4-Sisters-of-the-Rose/_i.html?_storecat=27359263014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">LED4 Sisters of the Rose</p></a></li>
+					<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/SHVA-Shadows-in-Valhalla/_i.html?_storecat=26691746014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">SHVA Shadows in Valhalla</p></a></li>
+					<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/HISU-Hidden-Summoners/_i.html?_storecat=26936014014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">HISU Hidden Summoners</p></a></li>
+					<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/LEHD-Legendary-Hero-Decks/_i.html?_storecat=27684874014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">LEHD Legendary Hero Decks</p></a></li>
+					<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/EXFO-Extreme-Force/_i.html?_storecat=27744394014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">EXFO Extreme Force</p></a></li>
+					<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/SDSB-Structure-Deck-Soulburner/_i.html?_storecat=28072041014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">SDSB Structure Deck:Soulburner</p></a></li>
+					<div class="hidden">
+						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/DUPO-Duel-Power/_i.html?_storecat=28280497014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">DUPO Duel Power</p></a></li>
+						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/SR08-Order-of-the-Spellcasters/_i.html?_storecat=28477561014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">SRO8 Order of the Spellcasters</p></a></li>
+						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/DANE-Dark-Neostorm/_i.html?_storecat=28603482014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">DANE Dark Neostormv</p></a></li>
+						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/BLHR-Heros-Revenge/_i.html?_storecat=29633992014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">BLHR Hero's Revenge</p></a></li>
+						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/FIGA-Fists-of-the-Gadgets/_i.html?_storecat=30164962014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">FIGA Fists of the Gadgets</p></a></li>
+						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/SDRR-Rokket-Revolt/_i.html?_storecat=30206730014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">SDRR Rokket Revolt</p></a></li>
+						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/MP19-Gold-Sarchophagus-Tin/_i.html?_storecat=30250539014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">MP19 Gold Sarchophagus Tin</p></a></li>
+						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/LED5-Immortal-Destiny/_i.html?_storecat=30499030014&_sop=12"><p style="color:white;font-size: 16px;font-family: 'Times New Roman', Times, serif;">LED5 Immortal Destiny</p></a></li>
+						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/DUDE-Duel-Devastator/_i.html?_storecat=30568957014&_sop=12"><p style="color:white;font-size: 16px;font-family: 'Times New Roman', Times, serif;">DUDE Duel Devastator</p></a></li>
+						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/CHIM-Chaos-Impact/_i.html?_storecat=30583833014&_sop=12"><p style="color:white;font-size: 16px;font-family: 'Times New Roman', Times, serif;">CHIM Chaos Impact</p></a></li>
+					</div>
+					<div class="view">
+						<li><a target="_blank" href=""><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">See More!</p></a></li>
+					</div>
+		</ul>
+	</div></div>
+	<h4 id="su-side-tbar-cats" class="su-ttba su-fftb su-brdt su-bktt"><div class="su-tins su-ffac">Store Inventory</div></h4>
+	<div id="su-side-cats" class="su-sbox su-brdm su-bklt"><div class="su-tins">
+		<ul class="lev1">
+			<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/SAST-Savage-Strike/_i.html?_storecat=27491324014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">SAST Savage Strike</p></a></li>
+					<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/SOFU-Soul-Fusion/_i.html?_storecat=27311267014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">SOFU Sour Fusion</p></a></li>
+					<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/CYHO-Cybernetic-Horizon/_i.html?_storecat=27311265014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">CYHO Cybernetic Horizon</p></a></li>
+					<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/LED3-White-Dragon-Abyss/_i.html?_storecat=26691745014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">LED3 White Dragon</p></a></li>
+					<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/LED4-Sisters-of-the-Rose/_i.html?_storecat=27359263014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">LED4 Sisters of the Rose</p></a></li>
+					<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/SHVA-Shadows-in-Valhalla/_i.html?_storecat=26691746014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">SHVA Shadows in Valhalla</p></a></li>
+					<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/HISU-Hidden-Summoners/_i.html?_storecat=26936014014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">HISU Hidden Summoners</p></a></li>
+					<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/LEHD-Legendary-Hero-Decks/_i.html?_storecat=27684874014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">LEHD Legendary Hero Decks</p></a></li>
+					<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/EXFO-Extreme-Force/_i.html?_storecat=27744394014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">EXFO Extreme Force</p></a></li>
+					<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/SDSB-Structure-Deck-Soulburner/_i.html?_storecat=28072041014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">SDSB Structure Deck:Soulburner</p></a></li>
+					<div class="hidden">
+						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/DUPO-Duel-Power/_i.html?_storecat=28280497014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">DUPO Duel Power</p></a></li>
+						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/SR08-Order-of-the-Spellcasters/_i.html?_storecat=28477561014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">SRO8 Order of the Spellcasters</p></a></li>
+						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/DANE-Dark-Neostorm/_i.html?_storecat=28603482014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">DANE Dark Neostormv</p></a></li>
+						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/BLHR-Heros-Revenge/_i.html?_storecat=29633992014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">BLHR Hero's Revenge</p></a></li>
+						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/FIGA-Fists-of-the-Gadgets/_i.html?_storecat=30164962014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">FIGA Fists of the Gadgets</p></a></li>
+						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/SDRR-Rokket-Revolt/_i.html?_storecat=30206730014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">SDRR Rokket Revolt</p></a></li>
+						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/MP19-Gold-Sarchophagus-Tin/_i.html?_storecat=30250539014&_sop=12"><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">MP19 Gold Sarchophagus Tin</p></a></li>
+						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/LED5-Immortal-Destiny/_i.html?_storecat=30499030014&_sop=12"><p style="color:white;font-size: 16px;font-family: 'Times New Roman', Times, serif;">LED5 Immortal Destiny</p></a></li>
+						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/DUDE-Duel-Devastator/_i.html?_storecat=30568957014&_sop=12"><p style="color:white;font-size: 16px;font-family: 'Times New Roman', Times, serif;">DUDE Duel Devastator</p></a></li>
+						<li><a target="_blank" href="https://www.ebay.com/str/simplyunlucky/CHIM-Chaos-Impact/_i.html?_storecat=30583833014&_sop=12"><p style="color:white;font-size: 16px;font-family: 'Times New Roman', Times, serif;">CHIM Chaos Impact</p></a></li>
+					</div>
+					<div class="view">
+						<li><a target="_blank" href=""><p style="color:white;font-size: 16px; font-family: 'Times New Roman', Times, serif;">See More!</p></a></li>
+					</div>
+		</ul>
+	</div></div>
 	<!-- <div id="su-side-sati" class="su-prom su-prot"><div class="su-tins">
 		<img class="su-icon" src="su-icon-sati.png" alt="Satisfaction Guarasueed">
 		<span>Satisfaction<span>100% Guarasueed</span></span>
