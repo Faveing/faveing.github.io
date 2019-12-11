@@ -111,7 +111,7 @@
 		#su-main-feat, #su-main .su-tbar,
 		#su-main .su-ttop, #su-main .su-tmid,
 		#su-main .su-tbtm, #su-main-tabs			       	 		{ display:block; overflow:hidden; background:transparent none; }
-		#CentralArea, #su-main                       					{ margin:0 !important; vertical-align:top; }
+		#CentralArea, #su-main                       					{vertical-align:top; }
 		#CentralArea #su-main											{ padding:0 !important; }
 		#LeftPanel																	{ margin:0 !important; float:left; vertical-align:top !important; background-color:transparent; }
 		#RightPanel																	{ margin:0 !important; float:right; vertical-align:top !important; background-color:transparent; }
@@ -462,10 +462,9 @@
 		#CentralArea 															{ width:100%; max-width:1105px !important }
 		@media screen and (min-width:1440px) 					{ #CentralArea { min-width:1105px; } }
 		#CentralArea #su-main											{ width:100%;}
-		#su-template #su-main												{ width:50%; max-width:1105px !important; }
+		#su-template #su-main												{ width:50%; max-width:1105px !important; margin:0 auto; }
 		#LeftPanel																	{ margin:0 0 0 0px !important; }
 		#RightPanel																	{ margin:0 0 0 0px !important; }
-		#CentralArea, #su-main                       					{ margin:0 0px 0 0 !important; }
 		#CentralArea #su-main											{ margin:0 !important; }
 		@media screen and (max-width:1440px)					{ #CentralArea { padding-left:15px; } }
 		@media screen and (max-width:1020px)					{ #CentralArea, #su-template #su-main { width:98%; max-width:1000px !important; margin:0 auto !important; padding:0 5px !important; float:none; } #CentralArea #su-main { width:100%; } }
@@ -500,7 +499,7 @@
 		.su-bg .su-pbox .su-tins											{ padding:10px 12px; } /* spacings */
 		.su-bg .su-prom															{ margin:0 auto 15px; }
 		#LeftPanel .su-ttba													{ padding:8px 12px; } /* title bars with bg */
-		#RightPanel .su-ttba													{padding-bottom: 12px;} /* title bars with bg */
+		#RightPanel .su-ttba													{padding-bottom: 3px;} /* title bars with bg */
 		#su-main .su-ttba														{ padding:8px 12px; }
 		.su-bg .su-ffac, .su-bg .su-ffac p, .su-bg .su-ffac a { font-family:Exo, sans-serif; text-decoration:none; }
 		.su-bg .su-fftb, .su-bg .su-fftb p, .su-bg .su-fftb a	{ color:black; font-size:22px; line-height:28px; font-weight:bold; font-style:italic; text-transform:uppercase; text-shadow:1px 1px #000; }
@@ -1769,7 +1768,7 @@
 		.newproductsection .row1 .section {
 			background-color: white;
 			width: 600px;
-			height: 600px;
+			height: 620px;
 			display: grid;
 			justify-content: space-evenly;
 		}
@@ -1796,7 +1795,8 @@
 			padding-top: 5px;
 		}
 		.newproductsection .row1 .section .item img{
-			height: 290px;
+			height: 300px;
+			width: 290px;
 			border: 2px solid transparent;
 			transition: .5s ease-in-out;
 		}
@@ -1804,6 +1804,50 @@
 			border:2px red solid; 
 		}
 
+		/* .newproductsection .row1 .section #item1 {
+			z-index: 1;
+		} */
+
+		.newproductsection .row1 .section .description:hover{
+			opacity: 1;
+			width: 600px;
+			height: 620px;
+		}
+
+		/* This works for some reason! */
+		.newproductsection .row1 .section #items2description:hover {
+			transform: translate(-0px);
+		}
+		.newproductsection .row1 .section #items3description:hover {
+			transform: translate(0px, -0px);
+		}
+		.newproductsection .row1 .section #items4description:hover {
+			transform: translate(-0px, -0px);
+		}
+
+		.newproductsection .row1 .section .description{
+			width: 290px;
+			height: 300px;
+			padding-top: 10px;
+			position: absolute;
+			background:gray;
+			opacity: 0;
+			transition: .5s ease-in-out;
+		}
+
+		/* .newproductsection .row1 .section #items1description {
+			grid-column: 1;
+			grid-row: 1;
+		} */
+		.newproductsection .row1 .section #items2description {
+			transform: translate(+300px);
+		}
+		.newproductsection .row1 .section #items3description {
+			transform: translate(0px, +300px);
+		}
+		.newproductsection .row1 .section #items4description {
+			transform: translate(300px, 300px);
+		}
 
 		.newproductsection .row1 #title1 {
 			color: white;
@@ -1849,10 +1893,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css">
 <div id="su-template" class="su-bg"><div class="su-bg-02 su-shao">
 
-<div id="su-head-wrap-02"><div id="su-head-02" class="su-content-width">
-	<div id="su-head-logo" class="su-proh su-prom"><a href="https://www.ebay.com/str/simplyunlucky?rt=nc&_oac=1" target="_blank"><img src="https://ksr-ugc.imgix.net/assets/025/873/375/361d8bc3f070b65a757acac15bf49858_original.png?ixlib=rb-2.1.0&crop=faces&w=1552&h=873&fit=crop&v=1563661526&auto=format&frame=1&q=92&s=d3d0afc2c79046f814d9ddac52aa17c9" alt="simplyunlucky Games eBay Store"></a></div>
-</div></div>
-
 <div class="menubar">
 	<div class="contents">
 		<a class="buttons" id="link2" href="https://www.ebay.com/str/simplyunlucky?rt=nc&amp;_oac=1" target="_blank"><p class="text">Store Home!</p></a>
@@ -1861,6 +1901,10 @@
 		<a class="buttons" id="link2" href="#FAQ" target="_blank"><p class="text">Bookmark Us!</p></a>
 	</div>
 </div>
+
+<div id="su-head-wrap-02"><div id="su-head-02" class="su-content-width">
+	<div id="su-head-logo" class="su-proh su-prom"><a href="https://www.ebay.com/str/simplyunlucky?rt=nc&_oac=1" target="_blank"><img src="https://ksr-ugc.imgix.net/assets/025/873/375/361d8bc3f070b65a757acac15bf49858_original.png?ixlib=rb-2.1.0&crop=faces&w=1552&h=873&fit=crop&v=1563661526&auto=format&frame=1&q=92&s=d3d0afc2c79046f814d9ddac52aa17c9" alt="simplyunlucky Games eBay Store"></a></div>
+</div></div>
 
 <div class="su-content">
 <div id="RightPanel">
@@ -2102,6 +2146,119 @@ Before leaving a negative feedback please message us so we can help create a mor
 		<div class="section" id="section1">
 				<div class="item" id="item1">
 					<a target="_top" href="https://www.ebay.com/itm/CYBER-DRAGON-DECK-LOT-MP19-SIEGER-HERZ-VIER-REVSYSTEM-OVERFLOW-YuGiOh/202769853626?_trkparms=aid%3D111001%26algo%3DREC.SEED%26ao%3D1%26asc%3D40719%26meid%3D66a3bc357f4a446bacba84fb2d30baa5%26pid%3D100675%26rk%3D4%26rkt%3D15%26mehot%3Dpp%26sd%3D202670104256%26itm%3D202769853626%26pmt%3D1%26noa%3D1%26pg%3D2380057&_trksid=p2380057.c100675.m4236&_trkparms=pageci%3A00b82cdc-187d-11ea-8435-74dbd180d18a%7Cparentrq%3Add76b63f16e0a4d2769c9848ffc791ad%7Ciid%3A1"><img src="https://i.ebayimg.com/images/g/5TAAAOSw-0ddae9k/s-l1600.jpg"></a>
+				</div>
+				<div class="description" id="items1description">
+					<div class="text">
+						<p>Sample Text!</p>
+					</div>
+				</div>
+				<div class="item" id="item2">
+					<a target="_top" href="https://www.ebay.com/itm/GIMMICK-PUPPET-DOLL-DECK-LOT-LED5-BISQUE-GIGANTES-CHIMERA-BABY-PARADE-YuGiOh/202785784912?_trkparms=aid%3D111001%26algo%3DREC.SEED%26ao%3D1%26asc%3D40719%26meid%3D66a3bc357f4a446bacba84fb2d30baa5%26pid%3D100675%26rk%3D3%26rkt%3D15%26sd%3D202670104256%26itm%3D202785784912%26pmt%3D1%26noa%3D1%26pg%3D2380057&_trksid=p2380057.c100675.m4236&_trkparms=pageci%3A00b82cdc-187d-11ea-8435-74dbd180d18a%7Cparentrq%3Add76b63f16e0a4d2769c9848ffc791ad%7Ciid%3A1"><img src="https://i.ebayimg.com/images/g/mjYAAOSwIM5drd03/s-l1600.jpg"></a>
+				</div>
+				<div class="description" id="items2description">
+					<div class="text">
+						<p>Sample Text!</p>
+					</div>
+				</div>
+				<div class="item" id="item3">
+					<a target="_top" href="https://www.ebay.com/itm/GRAVEKEEPERS-DECK-LOT-MP19-Supernaturalist-Headman-Temple-YuGiOh/202769853613?_trkparms=aid%3D111001%26algo%3DREC.SEED%26ao%3D1%26asc%3D40719%26meid%3D66a3bc357f4a446bacba84fb2d30baa5%26pid%3D100675%26rk%3D5%26rkt%3D15%26sd%3D202670104256%26itm%3D202769853613%26pmt%3D1%26noa%3D1%26pg%3D2380057&_trksid=p2380057.c100675.m4236&_trkparms=pageci%3A00b82cdc-187d-11ea-8435-74dbd180d18a%7Cparentrq%3Add76b63f16e0a4d2769c9848ffc791ad%7Ciid%3A1"><img src="https://i.ebayimg.com/images/g/w28AAOSwm5Zdappa/s-l1600.jpg"></a>
+				</div>
+				<div class="description" id="items3description">
+					<div class="text">
+						<p>Sample Text!</p>
+					</div>
+				</div>
+				<div class="item" id="item4">
+					<a target="_top" href="https://www.ebay.com/itm/BATTLEWASP-DECK-LOT-BLHR-HAMA-AZUSA-HALBERD-STING-DART-NEST-PIN-YuGiOh/202731220376?_trkparms=aid%3D111001%26algo%3DREC.SEED%26ao%3D1%26asc%3D40719%26meid%3D66a3bc357f4a446bacba84fb2d30baa5%26pid%3D100675%26rk%3D6%26rkt%3D15%26mehot%3Dag%26sd%3D202670104256%26itm%3D202731220376%26pmt%3D1%26noa%3D1%26pg%3D2380057&_trksid=p2380057.c100675.m4236&_trkparms=pageci%3A00b82cdc-187d-11ea-8435-74dbd180d18a%7Cparentrq%3Add76b63f16e0a4d2769c9848ffc791ad%7Ciid%3A1"><img src="https://i.ebayimg.com/images/g/lD0AAOSwE0tdJ3z~/s-l1600.jpg"></a>
+				</div>
+				<div class="description" id="items4description">
+					<div class="text">
+						<p>Sample Text!</p>
+					</div>
+				</div>
+		</div>
+		<div class="title"><div id="text"><p id="title2">Singles</p></div></div>
+		<div class="section" id="section2">
+			<div class="item" id="item1">
+				<a target="_top" href="https://www.ebay.com/itm/STRUCTURE-DECK-HERO-STRIKE-SDHS-CHOOSE-YOUR-CARD-SUPER-ULTRA-COMMON/202845987819?hash=item2f3a9023eb:m:mRlEjLsJr8mhmpq0JR-22Mw&var=503014882819"><img src="https://i.ebayimg.com/images/g/7CsAAOSwUvhd4DlK/s-l1600.jpg"></a>
+			</div>
+			<div class="description" id="items1description">
+				<div class="text">
+					<p>Sample Text!</p>
+				</div>
+			</div>
+			<div class="item" id="item2">
+				<a target="_top" href="https://www.ebay.com/itm/STRUCTURE-DECK-ORDER-OF-THE-SPELLCASTERS-SR08-CHOOSE-YOUR-CARD-SUPER-ULTRA/202846232826?hash=item2f3a93e0fa:m:mopNVUEkxlceMK0QMZcrMzg&var=503014903867"><img src="https://i.ebayimg.com/images/g/bL4AAOSwtgxd5R5H/s-l1600.jpg"></a>
+			</div>
+			<div class="description" id="items2description">
+				<div class="text">
+					<p>Sample Text!</p>
+				</div>
+			</div>
+			<div class="item" id="item3">
+				<a target="_top" href="https://www.ebay.com/itm/MYSTIC-FIGHTERS-CHOOSE-YOUR-CARD-MYFI-SUPER-SECRET-COMPETE-COLLECTION-YuGiOh/202833667373?hash=item2f39d4252d:m:muX1s9a7AUKaleE9WSPu3OA&var=503006051592"><img src="https://i.ebayimg.com/images/g/KnQAAOSwuuVd4t9d/s-l1600.jpg"></a>
+			</div>
+			<div class="description" id="items3description">
+				<div class="text">
+					<p>Sample Text!</p>
+				</div>
+			</div>
+			<div class="item" id="item4">
+				<a target="_top" href="https://www.ebay.com/itm/MYSTIC-FIGHTERS-CHOOSE-YOUR-CARD-MYFI-SUPER-SECRET-COMPETE-COLLECTION-YuGiOh/202833667373?hash=item2f39d4252d:m:muX1s9a7AUKaleE9WSPu3OA&var=503006051592"><img src="https://i.ebayimg.com/images/g/KnQAAOSwuuVd4t9d/s-l1600.jpg"></a>
+			</div>
+			<div class="description" id="items4description">
+				<div class="text">
+					<p>Sample Text!</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="newproductsection">
+	<div class="row1">
+		<div class="title"><div id="text"><p id="title1">Deck Cores</p></div></div>
+		<div class="section" id="section1">
+				<div class="item" id="item1">
+					<a target="_top" href="https://www.ebay.com/itm/CYBER-DRAGON-DECK-LOT-MP19-SIEGER-HERZ-VIER-REVSYSTEM-OVERFLOW-YuGiOh/202769853626?_trkparms=aid%3D111001%26algo%3DREC.SEED%26ao%3D1%26asc%3D40719%26meid%3D66a3bc357f4a446bacba84fb2d30baa5%26pid%3D100675%26rk%3D4%26rkt%3D15%26mehot%3Dpp%26sd%3D202670104256%26itm%3D202769853626%26pmt%3D1%26noa%3D1%26pg%3D2380057&_trksid=p2380057.c100675.m4236&_trkparms=pageci%3A00b82cdc-187d-11ea-8435-74dbd180d18a%7Cparentrq%3Add76b63f16e0a4d2769c9848ffc791ad%7Ciid%3A1"><img src="https://i.ebayimg.com/images/g/5TAAAOSw-0ddae9k/s-l1600.jpg"></a>
+				</div>
+				<div class="item" id="item2">
+					<a target="_top" href="https://www.ebay.com/itm/GIMMICK-PUPPET-DOLL-DECK-LOT-LED5-BISQUE-GIGANTES-CHIMERA-BABY-PARADE-YuGiOh/202785784912?_trkparms=aid%3D111001%26algo%3DREC.SEED%26ao%3D1%26asc%3D40719%26meid%3D66a3bc357f4a446bacba84fb2d30baa5%26pid%3D100675%26rk%3D3%26rkt%3D15%26sd%3D202670104256%26itm%3D202785784912%26pmt%3D1%26noa%3D1%26pg%3D2380057&_trksid=p2380057.c100675.m4236&_trkparms=pageci%3A00b82cdc-187d-11ea-8435-74dbd180d18a%7Cparentrq%3Add76b63f16e0a4d2769c9848ffc791ad%7Ciid%3A1"><img src="https://i.ebayimg.com/images/g/mjYAAOSwIM5drd03/s-l1600.jpg"></a>
+				</div>
+				<div class="item" id="item3">
+					<a target="_top" href="https://www.ebay.com/itm/GRAVEKEEPERS-DECK-LOT-MP19-Supernaturalist-Headman-Temple-YuGiOh/202769853613?_trkparms=aid%3D111001%26algo%3DREC.SEED%26ao%3D1%26asc%3D40719%26meid%3D66a3bc357f4a446bacba84fb2d30baa5%26pid%3D100675%26rk%3D5%26rkt%3D15%26sd%3D202670104256%26itm%3D202769853613%26pmt%3D1%26noa%3D1%26pg%3D2380057&_trksid=p2380057.c100675.m4236&_trkparms=pageci%3A00b82cdc-187d-11ea-8435-74dbd180d18a%7Cparentrq%3Add76b63f16e0a4d2769c9848ffc791ad%7Ciid%3A1"><img src="https://i.ebayimg.com/images/g/w28AAOSwm5Zdappa/s-l1600.jpg"></a>
+				</div>
+				<div class="item" id="item4">
+					<a target="_top" href="https://www.ebay.com/itm/BATTLEWASP-DECK-LOT-BLHR-HAMA-AZUSA-HALBERD-STING-DART-NEST-PIN-YuGiOh/202731220376?_trkparms=aid%3D111001%26algo%3DREC.SEED%26ao%3D1%26asc%3D40719%26meid%3D66a3bc357f4a446bacba84fb2d30baa5%26pid%3D100675%26rk%3D6%26rkt%3D15%26mehot%3Dag%26sd%3D202670104256%26itm%3D202731220376%26pmt%3D1%26noa%3D1%26pg%3D2380057&_trksid=p2380057.c100675.m4236&_trkparms=pageci%3A00b82cdc-187d-11ea-8435-74dbd180d18a%7Cparentrq%3Add76b63f16e0a4d2769c9848ffc791ad%7Ciid%3A1"><img src="https://i.ebayimg.com/images/g/lD0AAOSwE0tdJ3z~/s-l1600.jpg"></a>
+				</div>
+		</div>
+		<div class="title"><div id="text"><p id="title2">Singles</p></div></div>
+		<div class="section" id="section2">
+			<div class="item" id="item1">
+				<a target="_top" href="https://www.ebay.com/itm/STRUCTURE-DECK-HERO-STRIKE-SDHS-CHOOSE-YOUR-CARD-SUPER-ULTRA-COMMON/202845987819?hash=item2f3a9023eb:m:mRlEjLsJr8mhmpq0JR-22Mw&var=503014882819"><img src="https://i.ebayimg.com/images/g/7CsAAOSwUvhd4DlK/s-l1600.jpg"></a>
+			</div>
+			<div class="item" id="item2">
+				<a target="_top" href="https://www.ebay.com/itm/STRUCTURE-DECK-ORDER-OF-THE-SPELLCASTERS-SR08-CHOOSE-YOUR-CARD-SUPER-ULTRA/202846232826?hash=item2f3a93e0fa:m:mopNVUEkxlceMK0QMZcrMzg&var=503014903867"><img src="https://i.ebayimg.com/images/g/bL4AAOSwtgxd5R5H/s-l1600.jpg"></a>
+			</div>
+			<div class="item" id="item3">
+				<a target="_top" href="https://www.ebay.com/itm/MYSTIC-FIGHTERS-CHOOSE-YOUR-CARD-MYFI-SUPER-SECRET-COMPETE-COLLECTION-YuGiOh/202833667373?hash=item2f39d4252d:m:muX1s9a7AUKaleE9WSPu3OA&var=503006051592"><img src="https://i.ebayimg.com/images/g/KnQAAOSwuuVd4t9d/s-l1600.jpg"></a>
+			</div>
+			<div class="item" id="item4">
+				<a target="_top" href="https://www.ebay.com/itm/MYSTIC-FIGHTERS-CHOOSE-YOUR-CARD-MYFI-SUPER-SECRET-COMPETE-COLLECTION-YuGiOh/202833667373?hash=item2f39d4252d:m:muX1s9a7AUKaleE9WSPu3OA&var=503006051592"><img src="https://i.ebayimg.com/images/g/KnQAAOSwuuVd4t9d/s-l1600.jpg"></a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="newproductsection">
+	<div class="row1">
+		<div class="title"><div id="text"><p id="title1">Deck Cores</p></div></div>
+		<div class="section" id="section1">
+				<div class="item" id="item1">
+					<a target="_top" href="https://www.ebay.com/itm/CYBER-DRAGON-DECK-LOT-MP19-SIEGER-HERZ-VIER-REVSYSTEM-OVERFLOW-YuGiOh/202769853626?_trkparms=aid%3D111001%26algo%3DREC.SEED%26ao%3D1%26asc%3D40719%26meid%3D66a3bc357f4a446bacba84fb2d30baa5%26pid%3D100675%26rk%3D4%26rkt%3D15%26mehot%3Dpp%26sd%3D202670104256%26itm%3D202769853626%26pmt%3D1%26noa%3D1%26pg%3D2380057&_trksid=p2380057.c100675.m4236&_trkparms=pageci%3A00b82cdc-187d-11ea-8435-74dbd180d18a%7Cparentrq%3Add76b63f16e0a4d2769c9848ffc791ad%7Ciid%3A1"><img src="https://i.ebayimg.com/images/g/5TAAAOSw-0ddae9k/s-l1600.jpg"></a>
+				</div>
+				<div class="description" id="items1description">
+					<div class="text">
+						<p>Sample Text!</p>
+					</div>
 				</div>
 				<div class="item" id="item2">
 					<a target="_top" href="https://www.ebay.com/itm/GIMMICK-PUPPET-DOLL-DECK-LOT-LED5-BISQUE-GIGANTES-CHIMERA-BABY-PARADE-YuGiOh/202785784912?_trkparms=aid%3D111001%26algo%3DREC.SEED%26ao%3D1%26asc%3D40719%26meid%3D66a3bc357f4a446bacba84fb2d30baa5%26pid%3D100675%26rk%3D3%26rkt%3D15%26sd%3D202670104256%26itm%3D202785784912%26pmt%3D1%26noa%3D1%26pg%3D2380057&_trksid=p2380057.c100675.m4236&_trkparms=pageci%3A00b82cdc-187d-11ea-8435-74dbd180d18a%7Cparentrq%3Add76b63f16e0a4d2769c9848ffc791ad%7Ciid%3A1"><img src="https://i.ebayimg.com/images/g/mjYAAOSwIM5drd03/s-l1600.jpg"></a>
