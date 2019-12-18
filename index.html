@@ -1779,6 +1779,7 @@
 			width: fit-content;
 			padding-bottom: 20px;
 			margin:0 auto;
+			width: 100%;
 		}
 		.newproductsection .row1 .title #text {
 			border-bottom: red 1px solid;
@@ -1832,11 +1833,14 @@
 			height: 304px;
 			padding-top: 10px;
 			position: absolute;
-			background:gray;
+			background:white;
 			opacity: 0;
 			transition: .5s ease-in-out;
 		}
-
+		.newproductsection .row1 .section .description .text #title:hover{
+			transition: .5 ease-in-out;
+			color: red;
+		}
 		.newproductsection .row1 .section #items1description {
 			margin-top: 2px;
 			margin-bottom: 2px;
@@ -1920,6 +1924,23 @@
 			line-height: 20px;
 		}
 
+		.newproductsection .row1 .section .description #title{
+			font-size: 30px;
+			padding-bottom: 10px;
+			transition: .5s ease-in-out;
+		}
+
+		.newproductsection .row1 .section .description p {
+			font-size: 15px;
+		}
+		.newproductsection .row1 .line {
+			position: absolute;
+			width: 100%;
+			border-bottom: 1px
+			red solid;
+			transform: translate(0px, 30px);
+		}
+
 	</style>
 <body>
 			<div id="ds_div">
@@ -1932,9 +1953,9 @@
 <div class="menubar">
 	<div class="contents">
 		<a class="buttons" id="link2" href="https://www.ebay.com/str/simplyunlucky?rt=nc&amp;_oac=1" target="_blank"><p class="text">Store Home!</p></a>
-		<a class="buttons" id="link2" href="#FAQ" target="_blank"><p class="text">FAQ!</p></a>
-		<a class="buttons" id="link2" href="https://www.ebay.com/str/simplyunlucky?rt=nc&amp;_oac=1" target="_blank"><p class="text">Contact Us!</p></a>
-		<a class="buttons" id="link2" href="#FAQ" target="_blank"><p class="text">Bookmark Us!</p></a>
+		<a class="buttons" id="link2" href="#FAQ"><p class="text">FAQ!</p></a>
+		<a class="buttons" id="link2" href="http://contact.ebay.com/ws/eBayISAPI.dll?FindAnswers&requested=simplyunlucky&_trksid=p2545226.m2531.l4583&rt=nc" target="_blank"><p class="text">Contact Us!</p></a>
+		<a class="buttons" id="link2" href="http://my.ebay.com/ws/eBayISAPI.dll?AcceptSavedSeller&linkname=includenewsletter&sellerid=simplyunlucky&_trksid=" target="_blank"><p class="text">Bookmark Us!</p></a>
 	</div>
 </div>
 
@@ -2140,54 +2161,44 @@ Before leaving a negative feedback please message us so we can help create a mor
 </div>
 <div class="newproductsection">
 	<div class="row1">
-		<div class="title"><div id="text"><p id="title1">Deck Cores</p></div></div>
+		<div class="title"><div id="text"><p id="title1">Singles</p></div></div>
+		<div class="line"></div>
 		<div class="section" id="section1">
-				<div class="item" id="item1">
-					<a target="_top" href="https://i.ebayimg.com/images/g/6KYAAOSwOFFd6rqQ/s-l1600.jpg"><img src="https://i.ebayimg.com/images/g/mjYAAOSwIM5drd03/s-l1600.jpg"></a>
+			<div class="item" id="item1">
+				<a target="_top" href="https://www.ebay.com/itm/STRUCTURE-DECK-HERO-STRIKE-SDHS-CHOOSE-YOUR-CARD-SUPER-ULTRA-COMMON/202845987819?hash=item2f3a9023eb:m:mRlEjLsJr8mhmpq0JR-22Mw&var=503014882819"><img src="https://i.ebayimg.com/images/g/7CsAAOSwUvhd4DlK/s-l1600.jpg"></a>
+			</div>
+			<div class="description" id="items1description">
+				<div class="text">
+					<p>test</p>
 				</div>
-				<div class="description" id="items1description">
-					<div class="text">
-						<p id="title">DragonMaid</p>
-						<p id="item">3x House Dragonmaid</p>
-						<p>3x Dragonmaid Ernus</p>
-						<p>3x Laundry Dragonmaid</p>
-						<p>3x Dragonmaid Tinkhec</p>
-						<p>3x Dragonmaid Nudyarl</p>
-						<p>3x Parlor Dragonmaid</p>
-						<p>3x Dragonmaid Hospitality</p>
-						<p>3x Dragonmaid Lorpar</p>
-						<p>3x Dragonmaid Welcome</p>
-						<p>3x Dragonmaid Downtime</p>
-						<p>3x Dragonmaid Changeover</p>
-						<p>3x Dragonmaid Send-Off</p>
-					</div>
+			</div>
+			<div class="item" id="item2">
+				<a target="_top" href="https://www.ebay.com/itm/STRUCTURE-DECK-ORDER-OF-THE-SPELLCASTERS-SR08-CHOOSE-YOUR-CARD-SUPER-ULTRA/202846232826?hash=item2f3a93e0fa:m:mopNVUEkxlceMK0QMZcrMzg&var=503014903867"><img src="https://i.ebayimg.com/images/g/bL4AAOSwtgxd5R5H/s-l1600.jpg"></a>
+			</div>
+			<div class="description" id="items2description">
+				<div class="text">
+					<p>Sample Text!</p>
 				</div>
-				<div class="item" id="item2">
-					<a target="_top" href="https://www.ebay.com/itm/GIMMICK-PUPPET-DOLL-DECK-LOT-LED5-BISQUE-GIGANTES-CHIMERA-BABY-PARADE-YuGiOh/202785784912?_trkparms=aid%3D111001%26algo%3DREC.SEED%26ao%3D1%26asc%3D40719%26meid%3D66a3bc357f4a446bacba84fb2d30baa5%26pid%3D100675%26rk%3D3%26rkt%3D15%26sd%3D202670104256%26itm%3D202785784912%26pmt%3D1%26noa%3D1%26pg%3D2380057&_trksid=p2380057.c100675.m4236&_trkparms=pageci%3A00b82cdc-187d-11ea-8435-74dbd180d18a%7Cparentrq%3Add76b63f16e0a4d2769c9848ffc791ad%7Ciid%3A1"><img src="https://i.ebayimg.com/images/g/mjYAAOSwIM5drd03/s-l1600.jpg"></a>
+			</div>
+			<div class="item" id="item3">
+				<a target="_top" href="https://www.ebay.com/itm/MYSTIC-FIGHTERS-CHOOSE-YOUR-CARD-MYFI-SUPER-SECRET-COMPETE-COLLECTION-YuGiOh/202833667373?hash=item2f39d4252d:m:muX1s9a7AUKaleE9WSPu3OA&var=503006051592"><img src="https://i.ebayimg.com/images/g/KnQAAOSwuuVd4t9d/s-l1600.jpg"></a>
+			</div>
+			<div class="description" id="items3description">
+				<div class="text">
+					<p>Sample Text!</p>
 				</div>
-				<div class="description" id="items2description">
-					<div class="text">
-						<p>Sample Text!</p>
-					</div>
+			</div>
+			<div class="item" id="item4">
+				<a target="_top" href="https://www.ebay.com/itm/MYSTIC-FIGHTERS-CHOOSE-YOUR-CARD-MYFI-SUPER-SECRET-COMPETE-COLLECTION-YuGiOh/202833667373?hash=item2f39d4252d:m:muX1s9a7AUKaleE9WSPu3OA&var=503006051592"><img src="https://i.ebayimg.com/images/g/KnQAAOSwuuVd4t9d/s-l1600.jpg"></a>
+			</div>
+			<div class="description" id="items4description">
+				<div class="text">
+					<p>Sample Text!</p>
 				</div>
-				<div class="item" id="item3">
-					<a target="_top" href="https://www.ebay.com/itm/GRAVEKEEPERS-DECK-LOT-MP19-Supernaturalist-Headman-Temple-YuGiOh/202769853613?_trkparms=aid%3D111001%26algo%3DREC.SEED%26ao%3D1%26asc%3D40719%26meid%3D66a3bc357f4a446bacba84fb2d30baa5%26pid%3D100675%26rk%3D5%26rkt%3D15%26sd%3D202670104256%26itm%3D202769853613%26pmt%3D1%26noa%3D1%26pg%3D2380057&_trksid=p2380057.c100675.m4236&_trkparms=pageci%3A00b82cdc-187d-11ea-8435-74dbd180d18a%7Cparentrq%3Add76b63f16e0a4d2769c9848ffc791ad%7Ciid%3A1"><img src="https://i.ebayimg.com/images/g/w28AAOSwm5Zdappa/s-l1600.jpg"></a>
-				</div>
-				<div class="description" id="items3description">
-					<div class="text">
-						<p>Sample Text!</p>
-					</div>
-				</div>
-				<div class="item" id="item4">
-					<a target="_top" href="https://www.ebay.com/itm/BATTLEWASP-DECK-LOT-BLHR-HAMA-AZUSA-HALBERD-STING-DART-NEST-PIN-YuGiOh/202731220376?_trkparms=aid%3D111001%26algo%3DREC.SEED%26ao%3D1%26asc%3D40719%26meid%3D66a3bc357f4a446bacba84fb2d30baa5%26pid%3D100675%26rk%3D6%26rkt%3D15%26mehot%3Dag%26sd%3D202670104256%26itm%3D202731220376%26pmt%3D1%26noa%3D1%26pg%3D2380057&_trksid=p2380057.c100675.m4236&_trkparms=pageci%3A00b82cdc-187d-11ea-8435-74dbd180d18a%7Cparentrq%3Add76b63f16e0a4d2769c9848ffc791ad%7Ciid%3A1"><img src="https://i.ebayimg.com/images/g/lD0AAOSwE0tdJ3z~/s-l1600.jpg"></a>
-				</div>
-				<div class="description" id="items4description">
-					<div class="text">
-						<p>Sample Text!</p>
-					</div>
-				</div>
+			</div>
 		</div>
-		<div class="title"><div id="text"><p id="title2">Singles</p></div></div>
+		<div class="title"><div id="text"><p id="title2">Mixed Lots</p></div></div>
+		<div class="line"></div>
 		<div class="section" id="section2">
 			<div class="item" id="item1">
 				<a target="_top" href="https://www.ebay.com/itm/STRUCTURE-DECK-HERO-STRIKE-SDHS-CHOOSE-YOUR-CARD-SUPER-ULTRA-COMMON/202845987819?hash=item2f3a9023eb:m:mRlEjLsJr8mhmpq0JR-22Mw&var=503014882819"><img src="https://i.ebayimg.com/images/g/7CsAAOSwUvhd4DlK/s-l1600.jpg"></a>
@@ -2227,6 +2238,7 @@ Before leaving a negative feedback please message us so we can help create a mor
 <div class="newproductsection">
 	<div class="row1">
 		<div class="title"><div id="text"><p id="title1">Deck Cores</p></div></div>
+		<div class="line"></div>
 		<div class="section" id="section1">
 				<div class="item" id="item1">
 					<a target="_top" href="https://www.ebay.com/itm/CYBER-DRAGON-DECK-LOT-MP19-SIEGER-HERZ-VIER-REVSYSTEM-OVERFLOW-YuGiOh/202769853626?_trkparms=aid%3D111001%26algo%3DREC.SEED%26ao%3D1%26asc%3D40719%26meid%3D66a3bc357f4a446bacba84fb2d30baa5%26pid%3D100675%26rk%3D4%26rkt%3D15%26mehot%3Dpp%26sd%3D202670104256%26itm%3D202769853626%26pmt%3D1%26noa%3D1%26pg%3D2380057&_trksid=p2380057.c100675.m4236&_trkparms=pageci%3A00b82cdc-187d-11ea-8435-74dbd180d18a%7Cparentrq%3Add76b63f16e0a4d2769c9848ffc791ad%7Ciid%3A1"><img src="https://i.ebayimg.com/images/g/5TAAAOSw-0ddae9k/s-l1600.jpg"></a>
@@ -2261,26 +2273,60 @@ Before leaving a negative feedback please message us so we can help create a mor
 					</div>
 				</div>
 		</div>
-		<div class="title"><div id="text"><p id="title2">Singles</p></div></div>
+		<div class="title"><div id="text"><p id="title2">Deck Lots</p></div></div>
+		<div class="line"></div>
 		<div class="section" id="section2">
 			<div class="item" id="item1">
-				<a target="_top" href="https://www.ebay.com/itm/STRUCTURE-DECK-HERO-STRIKE-SDHS-CHOOSE-YOUR-CARD-SUPER-ULTRA-COMMON/202845987819?hash=item2f3a9023eb:m:mRlEjLsJr8mhmpq0JR-22Mw&var=503014882819"><img src="https://i.ebayimg.com/images/g/7CsAAOSwUvhd4DlK/s-l1600.jpg"></a>
+				<a target="_top" href="https://i.ebayimg.com/images/g/6KYAAOSwOFFd6rqQ/s-l1600.jpg"><img src="https://i.ebayimg.com/images/g/6KYAAOSwOFFd6rqQ/s-l1600.jpg"></a>
+			</div>
+			<div class="description" id="items1description">
+				<div class="text">
+					<a href="https://www.ebay.com/itm/DRAGONMAID-DECK-36-HOUSE-HOSPITALITY-PARLOR-LAUNDRY-SEND-OFF-MYFI-YuGiOh/202853906451"><p id="title">DragonMaid</p></a>
+					<p id="item">3x House Dragonmaid</p>
+					<p>3x Dragonmaid Ernus</p>
+					<p>3x Laundry Dragonmaid</p>
+					<p>3x Dragonmaid Tinkhec</p>
+					<p>3x Dragonmaid Nudyarl</p>
+					<p>3x Parlor Dragonmaid</p>
+					<p>3x Dragonmaid Hospitality</p>
+					<p>3x Dragonmaid Lorpar</p>
+					<p>3x Dragonmaid Welcome</p>
+					<p>3x Dragonmaid Downtime</p>
+					<p>3x Dragonmaid Changeover</p>
+					<p>3x Dragonmaid Send-Off</p>
+				</div>
 			</div>
 			<div class="item" id="item2">
-				<a target="_top" href="https://www.ebay.com/itm/STRUCTURE-DECK-ORDER-OF-THE-SPELLCASTERS-SR08-CHOOSE-YOUR-CARD-SUPER-ULTRA/202846232826?hash=item2f3a93e0fa:m:mopNVUEkxlceMK0QMZcrMzg&var=503014903867"><img src="https://i.ebayimg.com/images/g/bL4AAOSwtgxd5R5H/s-l1600.jpg"></a>
+				<a target="_top" href="https://www.ebay.com/itm/GIMMICK-PUPPET-DOLL-DECK-LOT-LED5-BISQUE-GIGANTES-CHIMERA-BABY-PARADE-YuGiOh/202785784912?_trkparms=aid%3D111001%26algo%3DREC.SEED%26ao%3D1%26asc%3D40719%26meid%3D66a3bc357f4a446bacba84fb2d30baa5%26pid%3D100675%26rk%3D3%26rkt%3D15%26sd%3D202670104256%26itm%3D202785784912%26pmt%3D1%26noa%3D1%26pg%3D2380057&_trksid=p2380057.c100675.m4236&_trkparms=pageci%3A00b82cdc-187d-11ea-8435-74dbd180d18a%7Cparentrq%3Add76b63f16e0a4d2769c9848ffc791ad%7Ciid%3A1"><img src="https://i.ebayimg.com/images/g/mjYAAOSwIM5drd03/s-l1600.jpg"></a>
+			</div>
+			<div class="description" id="items2description">
+				<div class="text">
+					<p>Sample Text!</p>
+				</div>
 			</div>
 			<div class="item" id="item3">
-				<a target="_top" href="https://www.ebay.com/itm/MYSTIC-FIGHTERS-CHOOSE-YOUR-CARD-MYFI-SUPER-SECRET-COMPETE-COLLECTION-YuGiOh/202833667373?hash=item2f39d4252d:m:muX1s9a7AUKaleE9WSPu3OA&var=503006051592"><img src="https://i.ebayimg.com/images/g/KnQAAOSwuuVd4t9d/s-l1600.jpg"></a>
+				<a target="_top" href="https://www.ebay.com/itm/GRAVEKEEPERS-DECK-LOT-MP19-Supernaturalist-Headman-Temple-YuGiOh/202769853613?_trkparms=aid%3D111001%26algo%3DREC.SEED%26ao%3D1%26asc%3D40719%26meid%3D66a3bc357f4a446bacba84fb2d30baa5%26pid%3D100675%26rk%3D5%26rkt%3D15%26sd%3D202670104256%26itm%3D202769853613%26pmt%3D1%26noa%3D1%26pg%3D2380057&_trksid=p2380057.c100675.m4236&_trkparms=pageci%3A00b82cdc-187d-11ea-8435-74dbd180d18a%7Cparentrq%3Add76b63f16e0a4d2769c9848ffc791ad%7Ciid%3A1"><img src="https://i.ebayimg.com/images/g/w28AAOSwm5Zdappa/s-l1600.jpg"></a>
+			</div>
+			<div class="description" id="items3description">
+				<div class="text">
+					<p>Sample Text!</p>
+				</div>
 			</div>
 			<div class="item" id="item4">
-				<a target="_top" href="https://www.ebay.com/itm/MYSTIC-FIGHTERS-CHOOSE-YOUR-CARD-MYFI-SUPER-SECRET-COMPETE-COLLECTION-YuGiOh/202833667373?hash=item2f39d4252d:m:muX1s9a7AUKaleE9WSPu3OA&var=503006051592"><img src="https://i.ebayimg.com/images/g/KnQAAOSwuuVd4t9d/s-l1600.jpg"></a>
+				<a target="_top" href="https://www.ebay.com/itm/BATTLEWASP-DECK-LOT-BLHR-HAMA-AZUSA-HALBERD-STING-DART-NEST-PIN-YuGiOh/202731220376?_trkparms=aid%3D111001%26algo%3DREC.SEED%26ao%3D1%26asc%3D40719%26meid%3D66a3bc357f4a446bacba84fb2d30baa5%26pid%3D100675%26rk%3D6%26rkt%3D15%26mehot%3Dag%26sd%3D202670104256%26itm%3D202731220376%26pmt%3D1%26noa%3D1%26pg%3D2380057&_trksid=p2380057.c100675.m4236&_trkparms=pageci%3A00b82cdc-187d-11ea-8435-74dbd180d18a%7Cparentrq%3Add76b63f16e0a4d2769c9848ffc791ad%7Ciid%3A1"><img src="https://i.ebayimg.com/images/g/lD0AAOSwE0tdJ3z~/s-l1600.jpg"></a>
+			</div>
+			<div class="description" id="items4description">
+				<div class="text">
+					<p>Sample Text!</p>
+				</div>
 			</div>
 		</div>
 	</div>
 </div>
 <div class="newproductsection">
 	<div class="row1">
-		<div class="title"><div id="text"><p id="title1">Deck Cores</p></div></div>
+		<div class="title"><div id="text"><p id="title1">Store Inventory</p></div></div>
+		<div class="line"></div>
 		<div class="section" id="section1">
 				<div class="item" id="item1">
 					<a target="_top" href="https://www.ebay.com/itm/CYBER-DRAGON-DECK-LOT-MP19-SIEGER-HERZ-VIER-REVSYSTEM-OVERFLOW-YuGiOh/202769853626?_trkparms=aid%3D111001%26algo%3DREC.SEED%26ao%3D1%26asc%3D40719%26meid%3D66a3bc357f4a446bacba84fb2d30baa5%26pid%3D100675%26rk%3D4%26rkt%3D15%26mehot%3Dpp%26sd%3D202670104256%26itm%3D202769853626%26pmt%3D1%26noa%3D1%26pg%3D2380057&_trksid=p2380057.c100675.m4236&_trkparms=pageci%3A00b82cdc-187d-11ea-8435-74dbd180d18a%7Cparentrq%3Add76b63f16e0a4d2769c9848ffc791ad%7Ciid%3A1"><img src="https://i.ebayimg.com/images/g/5TAAAOSw-0ddae9k/s-l1600.jpg"></a>
@@ -2293,26 +2339,62 @@ Before leaving a negative feedback please message us so we can help create a mor
 				<div class="item" id="item2">
 					<a target="_top" href="https://www.ebay.com/itm/GIMMICK-PUPPET-DOLL-DECK-LOT-LED5-BISQUE-GIGANTES-CHIMERA-BABY-PARADE-YuGiOh/202785784912?_trkparms=aid%3D111001%26algo%3DREC.SEED%26ao%3D1%26asc%3D40719%26meid%3D66a3bc357f4a446bacba84fb2d30baa5%26pid%3D100675%26rk%3D3%26rkt%3D15%26sd%3D202670104256%26itm%3D202785784912%26pmt%3D1%26noa%3D1%26pg%3D2380057&_trksid=p2380057.c100675.m4236&_trkparms=pageci%3A00b82cdc-187d-11ea-8435-74dbd180d18a%7Cparentrq%3Add76b63f16e0a4d2769c9848ffc791ad%7Ciid%3A1"><img src="https://i.ebayimg.com/images/g/mjYAAOSwIM5drd03/s-l1600.jpg"></a>
 				</div>
+					<div class="description" id="items2description">
+						<div class="text">
+							<p>test</p>
+						</div>
+					</div>
 				<div class="item" id="item3">
 					<a target="_top" href="https://www.ebay.com/itm/GRAVEKEEPERS-DECK-LOT-MP19-Supernaturalist-Headman-Temple-YuGiOh/202769853613?_trkparms=aid%3D111001%26algo%3DREC.SEED%26ao%3D1%26asc%3D40719%26meid%3D66a3bc357f4a446bacba84fb2d30baa5%26pid%3D100675%26rk%3D5%26rkt%3D15%26sd%3D202670104256%26itm%3D202769853613%26pmt%3D1%26noa%3D1%26pg%3D2380057&_trksid=p2380057.c100675.m4236&_trkparms=pageci%3A00b82cdc-187d-11ea-8435-74dbd180d18a%7Cparentrq%3Add76b63f16e0a4d2769c9848ffc791ad%7Ciid%3A1"><img src="https://i.ebayimg.com/images/g/w28AAOSwm5Zdappa/s-l1600.jpg"></a>
+				</div>
+				<div class="description" id="items3description">
+					<div class="text">
+						<p>test</p>
+					</div>
 				</div>
 				<div class="item" id="item4">
 					<a target="_top" href="https://www.ebay.com/itm/BATTLEWASP-DECK-LOT-BLHR-HAMA-AZUSA-HALBERD-STING-DART-NEST-PIN-YuGiOh/202731220376?_trkparms=aid%3D111001%26algo%3DREC.SEED%26ao%3D1%26asc%3D40719%26meid%3D66a3bc357f4a446bacba84fb2d30baa5%26pid%3D100675%26rk%3D6%26rkt%3D15%26mehot%3Dag%26sd%3D202670104256%26itm%3D202731220376%26pmt%3D1%26noa%3D1%26pg%3D2380057&_trksid=p2380057.c100675.m4236&_trkparms=pageci%3A00b82cdc-187d-11ea-8435-74dbd180d18a%7Cparentrq%3Add76b63f16e0a4d2769c9848ffc791ad%7Ciid%3A1"><img src="https://i.ebayimg.com/images/g/lD0AAOSwE0tdJ3z~/s-l1600.jpg"></a>
 				</div>
+				<div class="description" id="items4description">
+					<div class="text">
+						<p>test</p>
+					</div>
+				</div>
 		</div>
-		<div class="title"><div id="text"><p id="title2">Singles</p></div></div>
+		<div class="title"><div id="text"><p id="title2">Pack Lots</p></div></div>
+		<div class="line"></div>
 		<div class="section" id="section2">
 			<div class="item" id="item1">
-				<a target="_top" href="https://www.ebay.com/itm/STRUCTURE-DECK-HERO-STRIKE-SDHS-CHOOSE-YOUR-CARD-SUPER-ULTRA-COMMON/202845987819?hash=item2f3a9023eb:m:mRlEjLsJr8mhmpq0JR-22Mw&var=503014882819"><img src="https://i.ebayimg.com/images/g/7CsAAOSwUvhd4DlK/s-l1600.jpg"></a>
+				<a target="_top" href="https://www.ebay.com/itm/CYBER-DRAGON-DECK-LOT-MP19-SIEGER-HERZ-VIER-REVSYSTEM-OVERFLOW-YuGiOh/202769853626?_trkparms=aid%3D111001%26algo%3DREC.SEED%26ao%3D1%26asc%3D40719%26meid%3D66a3bc357f4a446bacba84fb2d30baa5%26pid%3D100675%26rk%3D4%26rkt%3D15%26mehot%3Dpp%26sd%3D202670104256%26itm%3D202769853626%26pmt%3D1%26noa%3D1%26pg%3D2380057&_trksid=p2380057.c100675.m4236&_trkparms=pageci%3A00b82cdc-187d-11ea-8435-74dbd180d18a%7Cparentrq%3Add76b63f16e0a4d2769c9848ffc791ad%7Ciid%3A1"><img src="https://i.ebayimg.com/images/g/5TAAAOSw-0ddae9k/s-l1600.jpg"></a>
+			</div>
+			<div class="description" id="items1description">
+				<div class="text">
+					<p>Sample Text!</p>
+				</div>
 			</div>
 			<div class="item" id="item2">
-				<a target="_top" href="https://www.ebay.com/itm/STRUCTURE-DECK-ORDER-OF-THE-SPELLCASTERS-SR08-CHOOSE-YOUR-CARD-SUPER-ULTRA/202846232826?hash=item2f3a93e0fa:m:mopNVUEkxlceMK0QMZcrMzg&var=503014903867"><img src="https://i.ebayimg.com/images/g/bL4AAOSwtgxd5R5H/s-l1600.jpg"></a>
+				<a target="_top" href="https://www.ebay.com/itm/GIMMICK-PUPPET-DOLL-DECK-LOT-LED5-BISQUE-GIGANTES-CHIMERA-BABY-PARADE-YuGiOh/202785784912?_trkparms=aid%3D111001%26algo%3DREC.SEED%26ao%3D1%26asc%3D40719%26meid%3D66a3bc357f4a446bacba84fb2d30baa5%26pid%3D100675%26rk%3D3%26rkt%3D15%26sd%3D202670104256%26itm%3D202785784912%26pmt%3D1%26noa%3D1%26pg%3D2380057&_trksid=p2380057.c100675.m4236&_trkparms=pageci%3A00b82cdc-187d-11ea-8435-74dbd180d18a%7Cparentrq%3Add76b63f16e0a4d2769c9848ffc791ad%7Ciid%3A1"><img src="https://i.ebayimg.com/images/g/mjYAAOSwIM5drd03/s-l1600.jpg"></a>
+			</div>
+			<div class="description" id="items2description">
+				<div class="text">
+					<p>test</p>
+				</div>
 			</div>
 			<div class="item" id="item3">
-				<a target="_top" href="https://www.ebay.com/itm/MYSTIC-FIGHTERS-CHOOSE-YOUR-CARD-MYFI-SUPER-SECRET-COMPETE-COLLECTION-YuGiOh/202833667373?hash=item2f39d4252d:m:muX1s9a7AUKaleE9WSPu3OA&var=503006051592"><img src="https://i.ebayimg.com/images/g/KnQAAOSwuuVd4t9d/s-l1600.jpg"></a>
+				<a target="_top" href="https://www.ebay.com/itm/GRAVEKEEPERS-DECK-LOT-MP19-Supernaturalist-Headman-Temple-YuGiOh/202769853613?_trkparms=aid%3D111001%26algo%3DREC.SEED%26ao%3D1%26asc%3D40719%26meid%3D66a3bc357f4a446bacba84fb2d30baa5%26pid%3D100675%26rk%3D5%26rkt%3D15%26sd%3D202670104256%26itm%3D202769853613%26pmt%3D1%26noa%3D1%26pg%3D2380057&_trksid=p2380057.c100675.m4236&_trkparms=pageci%3A00b82cdc-187d-11ea-8435-74dbd180d18a%7Cparentrq%3Add76b63f16e0a4d2769c9848ffc791ad%7Ciid%3A1"><img src="https://i.ebayimg.com/images/g/w28AAOSwm5Zdappa/s-l1600.jpg"></a>
+			</div>
+			<div class="description" id="items3description">
+				<div class="text">
+					<p>test</p>
+				</div>
 			</div>
 			<div class="item" id="item4">
-				<a target="_top" href="https://www.ebay.com/itm/MYSTIC-FIGHTERS-CHOOSE-YOUR-CARD-MYFI-SUPER-SECRET-COMPETE-COLLECTION-YuGiOh/202833667373?hash=item2f39d4252d:m:muX1s9a7AUKaleE9WSPu3OA&var=503006051592"><img src="https://i.ebayimg.com/images/g/KnQAAOSwuuVd4t9d/s-l1600.jpg"></a>
+				<a target="_top" href="https://www.ebay.com/itm/BATTLEWASP-DECK-LOT-BLHR-HAMA-AZUSA-HALBERD-STING-DART-NEST-PIN-YuGiOh/202731220376?_trkparms=aid%3D111001%26algo%3DREC.SEED%26ao%3D1%26asc%3D40719%26meid%3D66a3bc357f4a446bacba84fb2d30baa5%26pid%3D100675%26rk%3D6%26rkt%3D15%26mehot%3Dag%26sd%3D202670104256%26itm%3D202731220376%26pmt%3D1%26noa%3D1%26pg%3D2380057&_trksid=p2380057.c100675.m4236&_trkparms=pageci%3A00b82cdc-187d-11ea-8435-74dbd180d18a%7Cparentrq%3Add76b63f16e0a4d2769c9848ffc791ad%7Ciid%3A1"><img src="https://i.ebayimg.com/images/g/lD0AAOSwE0tdJ3z~/s-l1600.jpg"></a>
+			</div>
+			<div class="description" id="items4description">
+				<div class="text">
+					<p>test</p>
+				</div>
 			</div>
 		</div>
 	</div>
